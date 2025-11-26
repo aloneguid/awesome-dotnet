@@ -1,6 +1,6 @@
 # Awesome .NET
 
-Community-curated, PR free, self-amaging list of awesome .NET goodness.
+Community-curated, PR free, self-managing list of awesome .NET goodness.
 
 ## How to Contribute
 
