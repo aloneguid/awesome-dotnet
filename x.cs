@@ -29,4 +29,6 @@ GitHubClient CreateClient(out string owner, out string repo) {
     var client = new GitHubClient(new ProductHeaderValue("UpdateReadme")) {
         Credentials = new Credentials(token)
     };
+
+    return client;
 }
