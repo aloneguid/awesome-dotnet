@@ -1,7 +1,7 @@
 name: Suggest a Link
 description: Suggest a new link to be added to the awesome list
 title: "...link title..."
-labels: ["link-suggestion"]
+labels: ["link"]
 body:
   - type: markdown
     attributes:

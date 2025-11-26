@@ -1,10 +1,10 @@
-name: Update README with Popular Issues
+name: Hourly run
 
 on:
-  issues:
-    types: [opened, edited, labeled]
-  issue_comment:
-    types: [created]
+#   issues:
+#     types: [opened, edited, labeled]
+#   issue_comment:
+#     types: [created]
   push:
     branches:
       - master
@@ -29,10 +29,10 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Update README with popular links
+      - name: run x.cs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: dotnet run workflow/update-readme.cs
+        run: dotnet run x.cs
 
       - name: Commit and push if changed
         run: |

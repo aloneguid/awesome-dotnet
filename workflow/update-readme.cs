@@ -24,8 +24,8 @@ if (repoParts.Length != 2) {
     return 1;
 }
 
-var owner = repoParts[0];
-var repo = repoParts[1];
+string owner = repoParts[0];
+string repo = repoParts[1];
 
 Console.WriteLine($"Processing repository: {owner}/{repo}");
 
