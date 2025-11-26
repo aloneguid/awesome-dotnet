@@ -1,13 +1,15 @@
-# awesome-dotnet
+# Awesome .NET
 
-Awesome .NET libraries - A community-curated list of awesome .NET libraries and tools. Making sure there is no single point of failure.
+Community-curated, PR free, self-amaging list of awesome .NET goodness.
 
 ## How to Contribute
 
 1. [Create a new issue](../../issues/new/choose) and fill in all the information.
-2. If your suggestion gets at least **5 likes (👍)**, or just owner's single like, it will be automatically added to this list! The list of issues is checked automatically every hour.
+2. You like appears in the list in one of two cases:
+  - If gets at least **5 likes (👍)** from any GitHub users.
+  - Or a like from myself, the Benevolent Dictator for Life (BDFL).
 
-## Awesome Links
+# Links
 
 <!-- AWESOME-LINKS-START -->
 

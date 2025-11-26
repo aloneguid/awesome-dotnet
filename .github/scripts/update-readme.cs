@@ -78,7 +78,7 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
     var readme = await File.ReadAllTextAsync(readmePath);
 
     // Check if there's a section for awesome links
-    const string sectionMarker = "## Awesome Links";
+    const string sectionMarker = "# Links";
     const string startMarker = "<!-- AWESOME-LINKS-START -->";
     const string endMarker = "<!-- AWESOME-LINKS-END -->";
 
@@ -184,7 +184,7 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
     foreach (var category in categoryOrder) {
         if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0) {
             sb.AppendLine();
-            sb.AppendLine($"### {category}");
+            sb.AppendLine($"## {category}");
             sb.AppendLine();
             // Sort links alphabetically by title (case-insensitive)
             foreach (var link in links.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
@@ -202,7 +202,7 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
         if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0) {
             Console.WriteLine($"Adding additional category \"{category}\" to output");
             sb.AppendLine();
-            sb.AppendLine($"### {category}");
+            sb.AppendLine($"## {category}");
             sb.AppendLine();
             // Sort links alphabetically by title (case-insensitive)
             foreach (var link in links.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
