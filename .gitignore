@@ -1,0 +1,20 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# NuGet
+*.nupkg
+packages/
+
+# IDE
+.idea/
+*.DotSettings.user
