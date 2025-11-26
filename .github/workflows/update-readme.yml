@@ -27,8 +27,8 @@ jobs:
           script: |
             const fs = require('fs');
             
-            // Get all open issues
-            const issues = await github.rest.issues.listForRepo({
+            // Get all open issues with pagination
+            const allIssues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
@@ -37,7 +37,7 @@ jobs:
             
             // Filter issues with at least 5 thumbs up reactions
             const popularIssues = [];
-            for (const issue of issues.data) {
+            for (const issue of allIssues) {
               // Skip pull requests
               if (issue.pull_request) continue;
               
@@ -71,14 +71,17 @@ jobs:
             
             // Helper function to parse issue body from template
             function parseIssueBody(body) {
-              if (!body) return { url: null, description: null };
+              if (!body) return { url: null, description: null, linkTitle: null };
               
-              // Try to extract URL field from issue template
-              const urlMatch = body.match(/### URL\s*\n\s*([^\n]+)/);
-              const descMatch = body.match(/### Description\s*\n\s*([^\n#]+)/);
+              // Try to extract fields from issue template format
+              // The template generates sections like "### URL\n\nvalue"
+              const urlMatch = body.match(/### URL\s*\n+\s*([^\n]+)/);
+              const descMatch = body.match(/### Description\s*\n+\s*([^\n#]+)/);
+              const titleMatch = body.match(/### Link Title\s*\n+\s*([^\n#]+)/);
               
               let url = urlMatch ? urlMatch[1].trim() : null;
               let description = descMatch ? descMatch[1].trim() : null;
+              let linkTitle = titleMatch ? titleMatch[1].trim() : null;
               
               // Fallback: find any URL in the body
               if (!url) {
@@ -98,7 +101,7 @@ jobs:
                 description = lines.length > 0 ? lines[0].trim() : null;
               }
               
-              return { url, description };
+              return { url, description, linkTitle };
             }
             
             // Build the new links section
@@ -106,11 +109,11 @@ jobs:
             if (popularIssues.length > 0) {
               linksSection = `\n${sectionMarker}\n\n${startMarker}\n`;
               for (const issue of popularIssues) {
-                const { url, description } = parseIssueBody(issue.body);
+                const { url, description, linkTitle } = parseIssueBody(issue.body);
                 
                 if (url) {
-                  // Clean up title (remove [Link] prefix if present)
-                  let title = issue.title.replace(/^\[Link\]\s*/i, '').trim();
+                  // Use linkTitle from template, or clean up issue title (remove [Link] prefix if present)
+                  let title = linkTitle || issue.title.replace(/^\[Link\]\s*/i, '').trim();
                   
                   linksSection += `- [${title}](${url})`;
                   if (description) {
@@ -125,7 +128,7 @@ jobs:
             // Update README
             if (readme.includes(startMarker) && readme.includes(endMarker)) {
               // Replace existing section
-              const regex = new RegExp(`${sectionMarker}\\n\\n${startMarker}[\\s\\S]*?${endMarker}\\n?`, 'g');
+              const regex = new RegExp(`${sectionMarker}\\n\\n${startMarker}[\\s\\S]*?${endMarker}\\n?`);
               readme = readme.replace(regex, linksSection.slice(1)); // Remove leading newline
             } else if (linksSection) {
               // Append new section
@@ -146,4 +149,4 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
-          git diff --staged --quiet || (git commit -m "Update README with popular links" && git push)
+          git diff --staged --quiet || (git commit -m "Update README with popular links" && git push origin HEAD)
