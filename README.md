@@ -11,5 +11,6 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 ## Awesome Links
 
 <!-- AWESOME-LINKS-START -->
+- [Stowage](https://github.com/aloneguid/stowage) - Yes (👍 1)
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C (👍 1)
 <!-- AWESOME-LINKS-END -->
