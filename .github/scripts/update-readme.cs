@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿#:package Octokit@13.0.1
+
+using System.Text;
 using System.Text.RegularExpressions;
 using Octokit;
 

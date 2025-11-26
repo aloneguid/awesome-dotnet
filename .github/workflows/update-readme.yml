@@ -32,7 +32,7 @@ jobs:
       - name: Update README with popular links
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: dotnet run --project .github/scripts/UpdateReadme/UpdateReadme.csproj
+        run: dotnet run .github/scripts/update-readme.cs
 
       - name: Commit and push if changed
         run: |
