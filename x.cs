@@ -60,7 +60,7 @@ async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issu
         var update = new IssueUpdate { State = ItemState.Closed };
         await client.Issue.Update(owner, repo, issue.Number, update);
 
-        WriteLine($"Posted comment and closed issue #{issue.Number}");
+        WriteLine($"✔️ posted comment and closed.");
     }
 }   
 
