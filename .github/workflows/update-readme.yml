@@ -114,6 +114,11 @@ jobs:
               for (const issue of popularIssues) {
                 const { url, description, category } = parseIssueBody(issue.body);
                 
+                console.log(`Processing issue #${issue.number}: "${issue.title}"`);
+                console.log(`  URL: ${url || '(none)'}`);
+                console.log(`  Description: ${description || '(none)'}`);
+                console.log(`  Category: ${category || '(none)'}`);
+                
                 if (url) {
                   // Use issue title, clean up [Link] prefix if present
                   let title = issue.title.replace(/^\[Link\]\s*/i, '').trim();
@@ -126,11 +131,23 @@ jobs:
                     url,
                     description
                   });
+                  console.log(`  -> Added to category "${category}"`);
+                } else {
+                  console.log(`  -> SKIPPED: No URL found`);
                 }
               }
               
               // Define category order
               const categoryOrder = ['Libraries', 'Frameworks', 'Tools', 'Documentation', 'Other'];
+              
+              // Log categories found vs. expected
+              const foundCategories = Object.keys(linksByCategory);
+              console.log(`\nCategories found in issues: ${foundCategories.join(', ') || '(none)'}`);
+              console.log(`Expected category order: ${categoryOrder.join(', ')}`);
+              const additionalCategories = foundCategories.filter(c => !categoryOrder.includes(c));
+              if (additionalCategories.length > 0) {
+                console.log(`WARNING: Categories not in predefined order (will be added at the end): ${additionalCategories.join(', ')}`);
+              }
               
               linksSection = `\n${sectionMarker}\n\n${startMarker}\n`;
               for (const category of categoryOrder) {
@@ -145,15 +162,56 @@ jobs:
                   }
                 }
               }
+              
+              // Also add any categories that were not in the predefined order
+              for (const category of additionalCategories) {
+                if (linksByCategory[category] && linksByCategory[category].length > 0) {
+                  console.log(`Adding additional category "${category}" to output`);
+                  linksSection += `\n### ${category}\n\n`;
+                  for (const link of linksByCategory[category]) {
+                    linksSection += `- [${link.title}](${link.url})`;
+                    if (link.description) {
+                      linksSection += ` - ${link.description}`;
+                    }
+                    linksSection += `\n`;
+                  }
+                }
+              }
+              
               linksSection += `\n${endMarker}\n`;
+              
+              // Print the replacement content for diagnostic purposes
+              console.log('\n--- Replacement content (linksSection) ---');
+              console.log(linksSection);
+              console.log('--- End of replacement content ---\n');
             }
             
             // Update README
             if (readme.includes(startMarker) && readme.includes(endMarker)) {
               // Replace existing section
-              const regex = new RegExp(`${sectionMarker}\\n\\n${startMarker}[\\s\\S]*?${endMarker}\\n?`);
+              let regex = new RegExp(`${sectionMarker}\\n\\n${startMarker}[\\s\\S]*?${endMarker}\\n?`);
+              let matchResult = readme.match(regex);
+              if (matchResult) {
+                console.log('--- Existing section to be replaced ---');
+                console.log(matchResult[0]);
+                console.log('--- End of existing section ---\n');
+              } else {
+                console.log('WARNING: Primary regex did not match existing section. Trying alternative pattern...');
+                // Try alternative regex with more flexible whitespace matching
+                regex = new RegExp(`${sectionMarker}\\s*\\n+\\s*${startMarker}[\\s\\S]*?${endMarker}\\n?`);
+                matchResult = readme.match(regex);
+                if (matchResult) {
+                  console.log('Found match with alternative regex');
+                  console.log('--- Existing section to be replaced ---');
+                  console.log(matchResult[0]);
+                  console.log('--- End of existing section ---\n');
+                } else {
+                  console.log('ERROR: No regex matched the existing section. Links section may not be updated correctly.');
+                }
+              }
               readme = readme.replace(regex, linksSection.slice(1)); // Remove leading newline
             } else if (linksSection) {
+              console.log('No existing markers found. Appending new section.');
               // Append new section
               readme = readme.trimEnd() + '\n' + linksSection;
             }
