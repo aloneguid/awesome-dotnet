@@ -11,6 +11,9 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 ## Awesome Links
 
 <!-- AWESOME-LINKS-START -->
-- [Stowage](https://github.com/aloneguid/stowage) - Yes (👍 1)
-- [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C (👍 1)
+
+### Libraries
+
+- [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers. (👍 1)
+
 <!-- AWESOME-LINKS-END -->
