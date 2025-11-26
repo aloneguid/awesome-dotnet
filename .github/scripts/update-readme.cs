@@ -186,7 +186,8 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
             sb.AppendLine();
             sb.AppendLine($"### {category}");
             sb.AppendLine();
-            foreach (var link in links) {
+            // Sort links alphabetically by title (case-insensitive)
+            foreach (var link in links.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
                 sb.Append($"- [{link.Title}]({link.Url})");
                 if (!string.IsNullOrEmpty(link.Description)) {
                     sb.Append($" - {link.Description}");
@@ -203,7 +204,8 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
             sb.AppendLine();
             sb.AppendLine($"### {category}");
             sb.AppendLine();
-            foreach (var link in links) {
+            // Sort links alphabetically by title (case-insensitive)
+            foreach (var link in links.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
                 sb.Append($"- [{link.Title}]({link.Url})");
                 if (!string.IsNullOrEmpty(link.Description)) {
                     sb.Append($" - {link.Description}");
