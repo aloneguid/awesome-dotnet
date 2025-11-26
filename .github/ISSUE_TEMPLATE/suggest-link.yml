@@ -23,7 +23,7 @@ body:
       placeholder: "https://github.com/..."
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: description
     attributes:
       label: Description
