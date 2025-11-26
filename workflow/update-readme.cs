@@ -5,8 +5,8 @@ using System.Text.RegularExpressions;
 using Octokit;
 
 // Get environment variables
-var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
-var repositoryEnv = Environment.GetEnvironmentVariable("GITHUB_REPOSITORY");
+string token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+string repositoryEnv = Environment.GetEnvironmentVariable("GITHUB_REPOSITORY");
 
 if (string.IsNullOrEmpty(token)) {
     Console.WriteLine("Error: GITHUB_TOKEN environment variable is not set");
