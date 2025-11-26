@@ -35,7 +35,7 @@ jobs:
               per_page: 100
             });
             
-            // Filter issues with at least 5 thumbs up reactions
+            // Filter issues with at least 5 thumbs up reactions or owner approval
             const popularIssues = [];
             for (const issue of allIssues) {
               // Skip pull requests
@@ -48,10 +48,13 @@ jobs:
                 issue_number: issue.number
               });
               
-              // Count thumbs up reactions
-              const thumbsUp = reactions.data.filter(r => r.content === '+1').length;
+              // Count thumbs up reactions and check for owner approval
+              const thumbsUpReactions = reactions.data.filter(r => r.content === '+1');
+              const thumbsUp = thumbsUpReactions.length;
+              const ownerApproved = thumbsUpReactions.some(r => r.user.login === context.repo.owner);
               
-              if (thumbsUp >= 5) {
+              // Include if owner approved or has at least 5 likes
+              if (ownerApproved || thumbsUp >= 5) {
                 popularIssues.push({
                   title: issue.title,
                   body: issue.body,
