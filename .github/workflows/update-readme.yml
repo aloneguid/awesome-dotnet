@@ -74,17 +74,19 @@ jobs:
             
             // Helper function to parse issue body from template
             function parseIssueBody(body) {
-              if (!body) return { url: null, description: null, linkTitle: null };
+              if (!body) return { url: null, description: null, linkTitle: null, category: null };
               
               // Try to extract fields from issue template format
               // The template generates sections like "### URL\n\nvalue"
               const urlMatch = body.match(/### URL\s*\n+\s*([^\n]+)/);
-              const descMatch = body.match(/### Description\s*\n+\s*([^\n#]+)/);
-              const titleMatch = body.match(/### Link Title\s*\n+\s*([^\n#]+)/);
+              const descMatch = body.match(/### Description\s*\n+\s*([\s\S]*?)(?=\n###|$)/);
+              const titleMatch = body.match(/### Link Title\s*\n+\s*([^\n]+)/);
+              const categoryMatch = body.match(/### Category\s*\n+\s*([^\n]+)/);
               
               let url = urlMatch ? urlMatch[1].trim() : null;
               let description = descMatch ? descMatch[1].trim() : null;
               let linkTitle = titleMatch ? titleMatch[1].trim() : null;
+              let category = categoryMatch ? categoryMatch[1].trim() : 'Other';
               
               // Fallback: find any URL in the body
               if (!url) {
@@ -104,28 +106,50 @@ jobs:
                 description = lines.length > 0 ? lines[0].trim() : null;
               }
               
-              return { url, description, linkTitle };
+              return { url, description, linkTitle, category };
             }
             
-            // Build the new links section
+            // Build the new links section grouped by category
             let linksSection = '';
             if (popularIssues.length > 0) {
-              linksSection = `\n${sectionMarker}\n\n${startMarker}\n`;
+              // Parse all issues and group by category
+              const linksByCategory = {};
               for (const issue of popularIssues) {
-                const { url, description, linkTitle } = parseIssueBody(issue.body);
+                const { url, description, linkTitle, category } = parseIssueBody(issue.body);
                 
                 if (url) {
                   // Use linkTitle from template, or clean up issue title (remove [Link] prefix if present)
                   let title = linkTitle || issue.title.replace(/^\[Link\]\s*/i, '').trim();
                   
-                  linksSection += `- [${title}](${url})`;
-                  if (description) {
-                    linksSection += ` - ${description}`;
+                  if (!linksByCategory[category]) {
+                    linksByCategory[category] = [];
                   }
-                  linksSection += ` (👍 ${issue.thumbsUp})\n`;
+                  linksByCategory[category].push({
+                    title,
+                    url,
+                    description,
+                    thumbsUp: issue.thumbsUp
+                  });
                 }
               }
-              linksSection += `${endMarker}\n`;
+              
+              // Define category order
+              const categoryOrder = ['Libraries', 'Frameworks', 'Tools', 'Documentation', 'Other'];
+              
+              linksSection = `\n${sectionMarker}\n\n${startMarker}\n`;
+              for (const category of categoryOrder) {
+                if (linksByCategory[category] && linksByCategory[category].length > 0) {
+                  linksSection += `\n### ${category}\n\n`;
+                  for (const link of linksByCategory[category]) {
+                    linksSection += `- [${link.title}](${link.url})`;
+                    if (link.description) {
+                      linksSection += ` - ${link.description}`;
+                    }
+                    linksSection += ` (👍 ${link.thumbsUp})\n`;
+                  }
+                }
+              }
+              linksSection += `\n${endMarker}\n`;
             }
             
             // Update README
