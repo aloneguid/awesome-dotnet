@@ -15,7 +15,7 @@ on:
 
 permissions:
   contents: write
-  issues: read
+  issues: write
 
 jobs:
   update-readme:
