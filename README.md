@@ -13,7 +13,7 @@ Community-curated, PR free, self-amaging list of awesome .NET goodness.
 
 <!-- AWESOME-LINKS-START -->
 
-### Libraries
+## Libraries
 
 - [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity
 - [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely
@@ -21,17 +21,17 @@ Community-curated, PR free, self-amaging list of awesome .NET goodness.
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C# library to deal with many compression types and formats.
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 
-### Tools
+## Tools
 
 - [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
 
-### IDE
+## IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
-### CLI
+## CLI
 
 - [Spectre.Console](https://github.com/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
 
