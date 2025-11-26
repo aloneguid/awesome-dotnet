@@ -12,8 +12,3 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 
 This awesome list is automatically maintained. When an issue receives 5 or more thumbs up (👍) reactions, the suggested link is automatically added to the README.
 
-## Awesome Links
-
-<!-- AWESOME-LINKS-START -->
-- [test](https://github.com/aloneguid/awesome-dotnet/issues) - bla (👍 1)
-<!-- AWESOME-LINKS-END -->
