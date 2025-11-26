@@ -1,0 +1,46 @@
+name: Suggest a Link
+description: Suggest a new link to be added to the awesome list
+title: "[Link] "
+labels: ["link-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a link! If this issue gets at least **5 likes (👍)**, the link will be automatically added to the README.
+  - type: input
+    id: title
+    attributes:
+      label: Link Title
+      description: The name/title of the library or resource
+      placeholder: "e.g., Newtonsoft.Json"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: The URL to the resource
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of what this resource does
+      placeholder: "A popular high-performance JSON framework for .NET"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category does this belong to?
+      options:
+        - Libraries
+        - Frameworks
+        - Tools
+        - Documentation
+        - Other
+    validations:
+      required: true
