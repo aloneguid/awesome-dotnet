@@ -16,8 +16,4 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 - [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 
-### Other
-
-- [Spectre.Console](https://github.com/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
-
 <!-- AWESOME-LINKS-END -->
