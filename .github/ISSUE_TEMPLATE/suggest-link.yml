@@ -18,6 +18,8 @@ body:
         - Tools
         - Documentation
         - IDE
+        - CLI
+        - GUI
         - Other
     validations:
       required: true
