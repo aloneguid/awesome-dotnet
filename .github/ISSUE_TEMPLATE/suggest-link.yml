@@ -17,6 +17,7 @@ body:
         - Frameworks
         - Tools
         - Documentation
+        - IDE
         - Other
     validations:
       required: true
