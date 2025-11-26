@@ -8,21 +8,18 @@ using Octokit;
 var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
 var repositoryEnv = Environment.GetEnvironmentVariable("GITHUB_REPOSITORY");
 
-if (string.IsNullOrEmpty(token))
-{
+if (string.IsNullOrEmpty(token)) {
     Console.WriteLine("Error: GITHUB_TOKEN environment variable is not set");
     return 1;
 }
 
-if (string.IsNullOrEmpty(repositoryEnv))
-{
+if (string.IsNullOrEmpty(repositoryEnv)) {
     Console.WriteLine("Error: GITHUB_REPOSITORY environment variable is not set");
     return 1;
 }
 
 var repoParts = repositoryEnv.Split('/');
-if (repoParts.Length != 2)
-{
+if (repoParts.Length != 2) {
     Console.WriteLine($"Error: Invalid GITHUB_REPOSITORY format: {repositoryEnv}");
     return 1;
 }
@@ -32,27 +29,21 @@ var repo = repoParts[1];
 
 Console.WriteLine($"Processing repository: {owner}/{repo}");
 
-try
-{
+try {
     await UpdateReadmeWithPopularIssues(token, owner, repo);
     return 0;
-}
-catch (Exception ex)
-{
+} catch (Exception ex) {
     Console.WriteLine($"Error: {ex.Message}");
     return 1;
 }
 
-static async Task UpdateReadmeWithPopularIssues(string token, string owner, string repo)
-{
-    var client = new GitHubClient(new ProductHeaderValue("UpdateReadme"))
-    {
+static async Task UpdateReadmeWithPopularIssues(string token, string owner, string repo) {
+    var client = new GitHubClient(new ProductHeaderValue("UpdateReadme")) {
         Credentials = new Credentials(token)
     };
 
     // Get all open issues
-    var issueRequest = new RepositoryIssueRequest
-    {
+    var issueRequest = new RepositoryIssueRequest {
         State = ItemStateFilter.Open
     };
 
@@ -62,8 +53,7 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
     // Filter issues with at least 5 thumbs up reactions or owner approval
     var popularIssues = new List<PopularIssue>();
 
-    foreach (var issue in issues)
-    {
+    foreach (var issue in issues) {
         // Skip pull requests
         if (issue.PullRequest != null) continue;
 
@@ -76,8 +66,7 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
         var ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
 
         // Include if owner approved or has at least 5 likes
-        if (ownerApproved || thumbsUp >= 5)
-        {
+        if (ownerApproved || thumbsUp >= 5) {
             popularIssues.Add(new PopularIssue(issue.Title, issue.Body, issue.Number));
         }
     }
@@ -97,44 +86,35 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
     var linksSection = BuildLinksSection(popularIssues, sectionMarker, startMarker, endMarker);
 
     // Update README
-    if (readme.Contains(startMarker) && readme.Contains(endMarker))
-    {
+    if (readme.Contains(startMarker) && readme.Contains(endMarker)) {
         // Replace existing section
         var pattern = $@"{Regex.Escape(sectionMarker)}\n\n{Regex.Escape(startMarker)}[\s\S]*?{Regex.Escape(endMarker)}\n?";
         var regex = new Regex(pattern);
         var match = regex.Match(readme);
 
-        if (match.Success)
-        {
+        if (match.Success) {
             Console.WriteLine("--- Existing section to be replaced ---");
             Console.WriteLine(match.Value);
             Console.WriteLine("--- End of existing section ---\n");
-        }
-        else
-        {
+        } else{
             Console.WriteLine("WARNING: Primary regex did not match existing section. Trying alternative pattern...");
             // Try alternative regex with more flexible whitespace matching
             var altPattern = $@"{Regex.Escape(sectionMarker)}\s*\n+\s*{Regex.Escape(startMarker)}[\s\S]*?{Regex.Escape(endMarker)}\n?";
             regex = new Regex(altPattern);
             match = regex.Match(readme);
-            if (match.Success)
-            {
+            if (match.Success) {
                 Console.WriteLine("Found match with alternative regex");
                 Console.WriteLine("--- Existing section to be replaced ---");
                 Console.WriteLine(match.Value);
                 Console.WriteLine("--- End of existing section ---\n");
-            }
-            else
-            {
+            } else{
                 Console.WriteLine("ERROR: No regex matched the existing section. Links section may not be updated correctly.");
             }
         }
 
         // Remove leading newline for replacement
         readme = regex.Replace(readme, linksSection.TrimStart('\n'));
-    }
-    else if (!string.IsNullOrEmpty(linksSection))
-    {
+    } else if (!string.IsNullOrEmpty(linksSection)){
         Console.WriteLine("No existing markers found. Appending new section.");
         // Append new section
         readme = readme.TrimEnd() + "\n" + linksSection;
@@ -145,24 +125,20 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
 
     // Log the result
     Console.WriteLine($"Found {popularIssues.Count} popular issues with 5+ likes");
-    foreach (var issue in popularIssues)
-    {
+    foreach (var issue in popularIssues) {
         Console.WriteLine($"  - #{issue.Number}: {issue.Title}");
     }
 }
 
-static string BuildLinksSection(List<PopularIssue> popularIssues, string sectionMarker, string startMarker, string endMarker)
-{
-    if (popularIssues.Count == 0)
-    {
+static string BuildLinksSection(List<PopularIssue> popularIssues, string sectionMarker, string startMarker, string endMarker) {
+    if (popularIssues.Count == 0) {
         return string.Empty;
     }
 
     // Parse all issues and group by category
     var linksByCategory = new Dictionary<string, List<LinkEntry>>();
 
-    foreach (var issue in popularIssues)
-    {
+    foreach (var issue in popularIssues) {
         var parsed = ParseIssueBody(issue.Body);
 
         Console.WriteLine($"Processing issue #{issue.Number}: \"{issue.Title}\"");
@@ -170,22 +146,18 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
         Console.WriteLine($"  Description: {parsed.Description ?? "(none)"}");
         Console.WriteLine($"  Category: {parsed.Category ?? "(none)"}");
 
-        if (!string.IsNullOrEmpty(parsed.Url))
-        {
+        if (!string.IsNullOrEmpty(parsed.Url)) {
             // Use issue title, clean up [Link] prefix if present
             var title = Regex.Replace(issue.Title, @"^\[Link\]\s*", "", RegexOptions.IgnoreCase).Trim();
 
             var category = parsed.Category ?? "Other";
-            if (!linksByCategory.ContainsKey(category))
-            {
+            if (!linksByCategory.ContainsKey(category)) {
                 linksByCategory[category] = new List<LinkEntry>();
             }
 
             linksByCategory[category].Add(new LinkEntry(title, parsed.Url, parsed.Description));
             Console.WriteLine($"  -> Added to category \"{category}\"");
-        }
-        else
-        {
+        } else {
             Console.WriteLine("  -> SKIPPED: No URL found");
         }
     }
@@ -199,8 +171,7 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
     Console.WriteLine($"Expected category order: {string.Join(", ", categoryOrder)}");
 
     var additionalCategories = foundCategories.Where(c => !categoryOrder.Contains(c)).ToList();
-    if (additionalCategories.Count > 0)
-    {
+    if (additionalCategories.Count > 0) {
         Console.WriteLine($"WARNING: Categories not in predefined order (will be added at the end): {string.Join(", ", additionalCategories)}");
     }
 
@@ -210,18 +181,14 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
     sb.AppendLine();
     sb.AppendLine(startMarker);
 
-    foreach (var category in categoryOrder)
-    {
-        if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0)
-        {
+    foreach (var category in categoryOrder) {
+        if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0) {
             sb.AppendLine();
             sb.AppendLine($"### {category}");
             sb.AppendLine();
-            foreach (var link in links)
-            {
+            foreach (var link in links) {
                 sb.Append($"- [{link.Title}]({link.Url})");
-                if (!string.IsNullOrEmpty(link.Description))
-                {
+                if (!string.IsNullOrEmpty(link.Description)) {
                     sb.Append($" - {link.Description}");
                 }
                 sb.AppendLine();
@@ -230,19 +197,15 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
     }
 
     // Also add any categories that were not in the predefined order
-    foreach (var category in additionalCategories)
-    {
-        if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0)
-        {
+    foreach (var category in additionalCategories) {
+        if (linksByCategory.TryGetValue(category, out var links) && links.Count > 0) {
             Console.WriteLine($"Adding additional category \"{category}\" to output");
             sb.AppendLine();
             sb.AppendLine($"### {category}");
             sb.AppendLine();
-            foreach (var link in links)
-            {
+            foreach (var link in links) {
                 sb.Append($"- [{link.Title}]({link.Url})");
-                if (!string.IsNullOrEmpty(link.Description))
-                {
+                if (!string.IsNullOrEmpty(link.Description)) {
                     sb.Append($" - {link.Description}");
                 }
                 sb.AppendLine();
@@ -263,10 +226,8 @@ static string BuildLinksSection(List<PopularIssue> popularIssues, string section
     return result;
 }
 
-static ParsedIssue ParseIssueBody(string? body)
-{
-    if (string.IsNullOrEmpty(body))
-    {
+static ParsedIssue ParseIssueBody(string? body) {
+    if (string.IsNullOrEmpty(body)) {
         return new ParsedIssue(null, null, null);
     }
 
@@ -281,15 +242,13 @@ static ParsedIssue ParseIssueBody(string? body)
     string? category = categoryMatch.Success ? categoryMatch.Groups[1].Value.Trim() : "Other";
 
     // Fallback: find any URL in the body
-    if (string.IsNullOrEmpty(url))
-    {
+    if (string.IsNullOrEmpty(url)) {
         var anyUrlMatch = Regex.Match(body, @"https?://[^\s)]+");
         url = anyUrlMatch.Success ? anyUrlMatch.Value : null;
     }
 
     // Fallback: use first non-empty, non-URL line as description
-    if (string.IsNullOrEmpty(description))
-    {
+    if (string.IsNullOrEmpty(description)) {
         var lines = body.Split('\n')
             .Select(l => l.Trim())
             .Where(l => !string.IsNullOrEmpty(l) &&
@@ -300,7 +259,6 @@ static ParsedIssue ParseIssueBody(string? body)
     }
 
     return new ParsedIssue(url, description, category);
-}
 }
 
 record PopularIssue(string Title, string? Body, int Number);
