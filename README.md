@@ -6,8 +6,8 @@ Community-curated, PR free, self-amaging list of awesome .NET goodness.
 
 1. [Create a new issue](../../issues/new/choose) and fill in all the information.
 2. You like appears in the list in one of two cases:
-  - If gets at least **5 likes (👍)** from any GitHub users.
-  - Or a like from myself, the Benevolent Dictator for Life (BDFL).
+    - If gets at least **5 likes (👍)** from any GitHub users.
+    - Or a like from myself, the Benevolent Dictator for Life (BDFL).
 
 # Links
 
