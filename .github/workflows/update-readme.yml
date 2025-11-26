@@ -7,8 +7,9 @@ on:
     types: [created]
   workflow_dispatch:
   schedule:
-    # Run every hour to check for reaction updates
-    - cron: '0 * * * *'
+    # Run every 15 minutes to check for reaction updates
+    # (GitHub Actions doesn't have native reaction event triggers)
+    - cron: '*/15 * * * *'
 
 permissions:
   contents: write
