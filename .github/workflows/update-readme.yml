@@ -58,8 +58,7 @@ jobs:
                 popularIssues.push({
                   title: issue.title,
                   body: issue.body,
-                  number: issue.number,
-                  thumbsUp: thumbsUp
+                  number: issue.number
                 });
               }
             }
@@ -74,18 +73,16 @@ jobs:
             
             // Helper function to parse issue body from template
             function parseIssueBody(body) {
-              if (!body) return { url: null, description: null, linkTitle: null, category: null };
+              if (!body) return { url: null, description: null, category: null };
               
               // Try to extract fields from issue template format
               // The template generates sections like "### URL\n\nvalue"
               const urlMatch = body.match(/### URL\s*\n+\s*([^\n]+)/);
               const descMatch = body.match(/### Description\s*\n+\s*([\s\S]*?)(?=\n###|$)/);
-              const titleMatch = body.match(/### Link Title\s*\n+\s*([^\n]+)/);
               const categoryMatch = body.match(/### Category\s*\n+\s*([^\n]+)/);
               
               let url = urlMatch ? urlMatch[1].trim() : null;
               let description = descMatch ? descMatch[1].trim() : null;
-              let linkTitle = titleMatch ? titleMatch[1].trim() : null;
               let category = categoryMatch ? categoryMatch[1].trim() : 'Other';
               
               // Fallback: find any URL in the body
@@ -106,7 +103,7 @@ jobs:
                 description = lines.length > 0 ? lines[0].trim() : null;
               }
               
-              return { url, description, linkTitle, category };
+              return { url, description, category };
             }
             
             // Build the new links section grouped by category
@@ -115,11 +112,11 @@ jobs:
               // Parse all issues and group by category
               const linksByCategory = {};
               for (const issue of popularIssues) {
-                const { url, description, linkTitle, category } = parseIssueBody(issue.body);
+                const { url, description, category } = parseIssueBody(issue.body);
                 
                 if (url) {
-                  // Use linkTitle from template, or clean up issue title (remove [Link] prefix if present)
-                  let title = linkTitle || issue.title.replace(/^\[Link\]\s*/i, '').trim();
+                  // Use issue title, clean up [Link] prefix if present
+                  let title = issue.title.replace(/^\[Link\]\s*/i, '').trim();
                   
                   if (!linksByCategory[category]) {
                     linksByCategory[category] = [];
@@ -127,8 +124,7 @@ jobs:
                   linksByCategory[category].push({
                     title,
                     url,
-                    description,
-                    thumbsUp: issue.thumbsUp
+                    description
                   });
                 }
               }
@@ -145,7 +141,7 @@ jobs:
                     if (link.description) {
                       linksSection += ` - ${link.description}`;
                     }
-                    linksSection += ` (👍 ${link.thumbsUp})\n`;
+                    linksSection += `\n`;
                   }
                 }
               }
@@ -168,7 +164,7 @@ jobs:
             // Log the result
             console.log(`Found ${popularIssues.length} popular issues with 5+ likes`);
             for (const issue of popularIssues) {
-              console.log(`  - #${issue.number}: ${issue.title} (${issue.thumbsUp} 👍)`);
+              console.log(`  - #${issue.number}: ${issue.title}`);
             }
 
       - name: Commit and push if changed

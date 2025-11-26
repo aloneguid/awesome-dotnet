@@ -7,12 +7,17 @@ body:
     attributes:
       value: |
         Thanks for suggesting a link! If this issue gets at least **5 likes (👍)**, the link will be automatically added to the README.
-  - type: input
-    id: title
+  - type: dropdown
+    id: category
     attributes:
-      label: Link Title
-      description: The name/title of the library or resource
-      placeholder: "e.g., Newtonsoft.Json"
+      label: Category
+      description: What category does this belong to?
+      options:
+        - Libraries
+        - Frameworks
+        - Tools
+        - Documentation
+        - Other
     validations:
       required: true
   - type: input
@@ -29,18 +34,5 @@ body:
       label: Description
       description: A brief description of what this resource does
       placeholder: "A popular high-performance JSON framework for .NET"
-    validations:
-      required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category
-      description: What category does this belong to?
-      options:
-        - Libraries
-        - Frameworks
-        - Tools
-        - Documentation
-        - Other
     validations:
       required: true
