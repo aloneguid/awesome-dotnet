@@ -42,14 +42,24 @@ async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
 
     foreach (Issue issue in issues) {
         // Skip pull requests
-        if (issue.PullRequest != null) continue;
+        if (issue.PullRequest != null) {
+            WriteLine($"Skipping issue #{issue.Number}: is a pull request");
+            continue;
+        }
+
+        // Skip issues without the "link" label (case-insensitive)
+        bool hasLinkLabel = issue.Labels.Any(l => l.Name.Equals("link", StringComparison.OrdinalIgnoreCase));
+        if (!hasLinkLabel) {
+            WriteLine($"Skipping issue #{issue.Number}: missing 'link' label");
+            continue;
+        }
 
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
         IReadOnlyList<Reaction> reactions = await client.Reaction.Issue.GetAll(owner, repo, issue.Number);
         List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
         int thumbsUpCount = thumbsUpReactions.Count;
         bool ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
-        bool shouldClose = thumbsUpCount >= MinThumbsUp && ownerApproved;
+        bool shouldClose = thumbsUpCount >= MinThumbsUp || ownerApproved;
 
         WriteLine($"              👍: {thumbsUpCount}");
         WriteLine($"  Owner approved: {ownerApproved}");
