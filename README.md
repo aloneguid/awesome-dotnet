@@ -18,7 +18,7 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C# library to deal with many compression types and formats.
 
-### Other
+### IDE
 
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 
