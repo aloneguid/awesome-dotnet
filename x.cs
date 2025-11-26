@@ -35,6 +35,35 @@ GitHubClient CreateClient(out string owner, out string repo) {
     return client;
 }
 
+async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issue issue) {
+    IReadOnlyList<Reaction> reactions = await client.Reaction.Issue.GetAll(owner, repo, issue.Number);
+    List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
+    int thumbsUpCount = thumbsUpReactions.Count;
+    bool ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
+    bool shouldClose = thumbsUpCount >= MinThumbsUp || ownerApproved;
+
+    WriteLine($"              👍: {thumbsUpCount}");
+    WriteLine($"  Owner approved: {ownerApproved}");
+    WriteLine($"    Should close: {shouldClose}");
+
+    if (shouldClose) {
+        string closeComment = "This issue is being closed because ";
+
+        closeComment += ownerApproved
+            ? "it is approved by the repository owner."
+            : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {MinThumbsUp}).";
+
+        // Add a public comment explaining why the issue is being closed
+        await client.Issue.Comment.Create(owner, repo, issue.Number, closeComment);
+        
+        // Close the issue
+        var update = new IssueUpdate { State = ItemState.Closed };
+        await client.Issue.Update(owner, repo, issue.Number, update);
+
+        WriteLine($"Posted comment and closed issue #{issue.Number}");
+    }
+}   
+
 async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
     IReadOnlyList<Issue> issues = await client.Issue.GetAllForRepository(owner, repo, new RepositoryIssueRequest {
         State = ItemStateFilter.Open
@@ -55,14 +84,6 @@ async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
         }
 
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
-        IReadOnlyList<Reaction> reactions = await client.Reaction.Issue.GetAll(owner, repo, issue.Number);
-        List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
-        int thumbsUpCount = thumbsUpReactions.Count;
-        bool ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
-        bool shouldClose = thumbsUpCount >= MinThumbsUp || ownerApproved;
-
-        WriteLine($"              👍: {thumbsUpCount}");
-        WriteLine($"  Owner approved: {ownerApproved}");
-        WriteLine($"    Should close: {shouldClose}");
+        await ProcessOpenIssue(client, owner, repo, issue);
     }
 }
