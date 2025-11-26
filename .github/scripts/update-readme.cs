@@ -96,7 +96,7 @@ static async Task UpdateReadmeWithPopularIssues(string token, string owner, stri
             Console.WriteLine("--- Existing section to be replaced ---");
             Console.WriteLine(match.Value);
             Console.WriteLine("--- End of existing section ---\n");
-        } else{
+        } else {
             Console.WriteLine("WARNING: Primary regex did not match existing section. Trying alternative pattern...");
             // Try alternative regex with more flexible whitespace matching
             var altPattern = $@"{Regex.Escape(sectionMarker)}\s*\n+\s*{Regex.Escape(startMarker)}[\s\S]*?{Regex.Escape(endMarker)}\n?";
