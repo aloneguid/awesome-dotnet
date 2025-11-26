@@ -15,7 +15,6 @@ Community-curated, PR free, self-amaging list of awesome .NET goodness.
 
 ## Libraries
 
-- [Humanizer](https://github.com/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
 - [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity
 - [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely
 - [Octokit](https://github.com/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
