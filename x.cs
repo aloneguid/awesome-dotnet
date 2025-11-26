@@ -4,7 +4,7 @@ using Octokit;
 using static System.Console;
 
 GitHubClient client = CreateClient(out string owner, out string repo);
-WriteLine($"Authenticated as: {client.Credentials.Login}");
+WriteLine($"Created GitHub client for repository: {owner}/{repo}");
 
 
 GitHubClient CreateClient(out string owner, out string repo) {
