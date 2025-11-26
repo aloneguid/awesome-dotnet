@@ -1,4 +1,4 @@
-# : package Octokit@13.0.1
+#:package Octokit@13.0.1
 
 using Octokit;
 using static System.Console;
@@ -41,6 +41,9 @@ async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
     });
 
     foreach (Issue issue in issues) {
+        // Skip pull requests
+        if (issue.PullRequest != null) continue;
+
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
         IReadOnlyList<Reaction> reactions = await client.Reaction.Issue.GetAll(owner, repo, issue.Number);
         List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
