@@ -18,6 +18,10 @@ Awesome .NET libraries - A community-curated list of awesome .NET libraries and 
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C# library to deal with many compression types and formats.
 
+### Tools
+
+- [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
+
 ### IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
