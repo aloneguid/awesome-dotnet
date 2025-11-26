@@ -5,6 +5,9 @@ on:
     types: [opened, edited, labeled]
   issue_comment:
     types: [created]
+  push:
+    branches:
+      - master
   workflow_dispatch:
   schedule:
     # Run every hour to check for reaction updates
