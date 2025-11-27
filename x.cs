@@ -128,11 +128,28 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     if (url == null || description == null)
         return null;
 
-    return new AwesomeLink(Sanitize(issue.Title),
-        Sanitize(url, false, false),
-        Sanitize(description, true, true),
-        Sanitize(category, true, false),
-        Sanitize(subcategory, true, false));
+    return new AwesomeLink(issue.Title, url, description, category, subcategory);
+}
+
+string Sanitize(string input, bool capitalize = true, bool endWithFullStop = false) {
+    input = input.Trim();
+    if (capitalize && input.Length > 0) {
+        input = char.ToUpper(input[0]) + input.Substring(1);
+    }
+    if (endWithFullStop && !input.EndsWith('.')) {
+        input += ".";
+    }
+    return input;
+}
+
+AwesomeLink SanitizeLink(AwesomeLink link) {
+    return new AwesomeLink(
+        Sanitize(link.Title),
+        Sanitize(link.Url, false, false),
+        Sanitize(link.Description, true, true),
+        Sanitize(link.Category, true, false),
+        Sanitize(link.Subcategory, true, false)
+    );
 }
 
 async Task SaveLinkToCsv(AwesomeLink newLink) {
@@ -142,8 +159,9 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
         using StreamReader reader = new StreamReader(CsvDBPath);
         using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
-        allLinks.AddRange(existing);
+        allLinks.AddRange(existing.Select(SanitizeLink));
     }
+    newLink = SanitizeLink(newLink);
 
     // Remove any existing entry with the same URL (case-insensitive)
     allLinks = allLinks
@@ -238,17 +256,6 @@ async Task RebuildReadme() {
     WriteLine("Writing updated README.md:");
     WriteLine(readme);
     await File.WriteAllTextAsync(ReadmePath, readme);
-}
-
-string Sanitize(string input, bool capitalize = true, bool endWithFullStop = false) {
-    input = input.Trim();
-    if (capitalize && input.Length > 0) {
-        input = char.ToUpper(input[0]) + input.Substring(1);
-    }
-    if (endWithFullStop && !input.EndsWith('.')) {
-        input += ".";
-    }
-    return input;
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
