@@ -8,6 +8,7 @@ Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source
 Aviyal,https://github.com/TheAjaykrishnanR/aviyal,"Window manager for windows written purely in C# thats simple, lightweight and portable.",Inspiration,
 Retroc64,https://github.com/RetroC64/RetroC64/,Programming the Commodore 64 with .NET.,Inspiration,
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
+Json.NET,https://www.newtonsoft.com/json,Popular high-performance JSON framework for .NET.,Libraries,
 Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity.,Libraries,
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Libraries,
 Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
