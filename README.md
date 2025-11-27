@@ -114,6 +114,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Unity Runtime](https://docs.unity3d.com/Manual/dotnetProfileSupport.html) - Customized .NET runtime used by Unity game engine.
 - [Xamarin Runtime ![stars](https://img.shields.io/github/stars/xamarin/xamarin-android?style=social&label=)](https://github.com/xamarin/xamarin-android) - Runtime for Xamarin.Android and Xamarin.iOS applications.
 
+## Source Generators
+
+- [NotNot.AppSettings](https://www.nuget.org/packages/NotNot.AppSettings/) - Automatically create strongly typed C# settings objects from AppSettings.json.
+
 ## Text Processing
 
 - [Humanizer ![stars](https://img.shields.io/github/stars/Humanizr/Humanizer?style=social&label=)](https://github.com/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
