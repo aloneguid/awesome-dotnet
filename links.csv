@@ -7,7 +7,7 @@ NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date 
 Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation,Libraries,Big Data
 SharpCompress,https://github.com/adamhathcock/sharpcompress,fully managed C# library to deal with many compression types and formats.,Libraries,Compression
-Snappier,https://brantburnett.github.io/Snappier/,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic",Libraries,
+Snappier,https://brantburnett.github.io/Snappier/,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic",Libraries,Compression
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,CLI,
 Stowage,https://github.com/aloneguid/stowage,Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.,Libraries,Storage
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
