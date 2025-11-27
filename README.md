@@ -135,9 +135,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 - [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
-### Compiler
-- [Roslyn ![stars](https://img.shields.io/github/stars/dotnet/roslyn?style=social&label=)](https://github.com/dotnet/roslyn) - The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.
-
 ### Performance
 - [BenchmarkDotNet ![stars](https://img.shields.io/github/stars/dotnet/BenchmarkDotNet?style=social&label=)](https://github.com/dotnet/BenchmarkDotNet) - De facto .NET benchmarking tool.
 
@@ -163,7 +160,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ### Mobile
 - [Fabulous ![stars](https://img.shields.io/github/stars/fsprojects/Fabulous?style=social&label=)](https://github.com/fsprojects/Fabulous) - Declarative UI framework for cross-platform mobile & desktop apps using F# and MVU pattern.
 - [MAUI ![stars](https://img.shields.io/github/stars/dotnet/maui?style=social&label=)](https://github.com/dotnet/maui) - .NET Multi-platform App UI for building native mobile and desktop apps with C# and XAML.
-- [Xamarin.Forms ![stars](https://img.shields.io/github/stars/xamarin/Xamarin.Forms?style=social&label=)](https://github.com/xamarin/Xamarin.Forms) - Build native mobile apps using C# and XAML.
 
 ### Web
 - [Blazor ![stars](https://img.shields.io/github/stars/dotnet/aspnetcore?style=social&label=)](https://github.com/dotnet/aspnetcore) - Blazor lets you build interactive web UIs using C# instead of JavaScript.
