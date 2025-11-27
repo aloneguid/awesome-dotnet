@@ -158,7 +158,11 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
     using CsvWriter csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture);
     csvWriter.WriteHeader<AwesomeLink>();
     csvWriter.NextRecord();
-    foreach (AwesomeLink link in allLinks.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
+    IOrderedEnumerable<AwesomeLink> orderedLinks = allLinks
+        .OrderBy(l => l.Category)
+        .ThenBy(l => l.Subcategory)
+        .ThenBy(l => l.Title, StringComparer.OrdinalIgnoreCase);
+    foreach (AwesomeLink link in orderedLinks) {
         csvWriter.WriteRecord(link);
         csvWriter.NextRecord();
     }
