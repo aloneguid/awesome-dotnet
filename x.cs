@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using static System.Console;
 
 const int MinThumbsUp = 5;
+const string CsvDBPath = "links.csv";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 WriteLine($"Created GitHub client for repository: {owner}/{repo}");
@@ -127,11 +128,10 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
 }
 
 async Task SaveLinkToCsv(AwesomeLink newLink) {
-    const string csvPath = "links.csv";
     List<AwesomeLink> allLinks = new List<AwesomeLink>();
 
-    if (File.Exists(csvPath)) {
-        using StreamReader reader = new StreamReader(csvPath);
+    if (File.Exists(CsvDBPath)) {
+        using StreamReader reader = new StreamReader(CsvDBPath);
         using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing);
@@ -146,7 +146,7 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
     allLinks.Add(newLink);
 
     // Write back to CSV (sorted by Title for stability)
-    using StreamWriter writer = new StreamWriter(csvPath, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+    using StreamWriter writer = new StreamWriter(CsvDBPath, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
     using CsvWriter csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture);
     csvWriter.WriteHeader<AwesomeLink>();
     csvWriter.NextRecord();
