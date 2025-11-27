@@ -14,6 +14,19 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### UI
 - [Avalonia ![stars](https://img.shields.io/github/stars/AvaloniaUI/Avalonia?style=social&label=)](https://github.com/AvaloniaUI/Avalonia) - Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems.
+- [Eto.Forms ![stars](https://img.shields.io/github/stars/picoe/Eto?style=social&label=)](https://github.com/picoe/Eto) - Cross platform GUI framework for desktop and mobile applications in .NET.
+- [Fabulous ![stars](https://img.shields.io/github/stars/fsprojects/Fabulous?style=social&label=)](https://github.com/fsprojects/Fabulous) - Declarative UI framework for cross-platform mobile & desktop apps using F# and MVU pattern.
+- [FNA ![stars](https://img.shields.io/github/stars/FNA-XNA/FNA?style=social&label=)](https://github.com/FNA-XNA/FNA) - FNA is an XNA4 reimplementation that focuses on accuracy and preservation.
+- [Godot ![stars](https://img.shields.io/github/stars/godotengine/godot?style=social&label=)](https://github.com/godotengine/godot) - Godot Engine - Multi-platform 2D and 3D game engine with C# support.
+- [MAUI ![stars](https://img.shields.io/github/stars/dotnet/maui?style=social&label=)](https://github.com/dotnet/maui) - .NET Multi-platform App UI for building native mobile and desktop apps with C# and XAML.
+- [MonoGame ![stars](https://img.shields.io/github/stars/MonoGame/MonoGame?style=social&label=)](https://github.com/MonoGame/MonoGame) - One framework for creating powerful cross-platform games.
+- [Prism ![stars](https://img.shields.io/github/stars/PrismLibrary/Prism?style=social&label=)](https://github.com/PrismLibrary/Prism) - Prism is a framework for building loosely coupled maintainable and testable XAML applications in WPF Xamarin Forms and Uno Platform.
+- [ReactiveUI ![stars](https://img.shields.io/github/stars/reactiveui/ReactiveUI?style=social&label=)](https://github.com/reactiveui/ReactiveUI) - An advanced composable functional reactive model-view-viewmodel framework for all .NET platforms.
+- [Stride ![stars](https://img.shields.io/github/stars/stride3d/stride?style=social&label=)](https://github.com/stride3d/stride) - Stride Game Engine is a 2D/3D cross-platform game engine featuring a scene editor and C# scripting.
+- [Uno Platform ![stars](https://img.shields.io/github/stars/unoplatform/uno?style=social&label=)](https://github.com/unoplatform/uno) - Build Mobile Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
+- [WinForms ![stars](https://img.shields.io/github/stars/dotnet/winforms?style=social&label=)](https://github.com/dotnet/winforms) - Windows Forms is a .NET UI framework for building Windows desktop applications.
+- [WPF ![stars](https://img.shields.io/github/stars/dotnet/wpf?style=social&label=)](https://github.com/dotnet/wpf) - WPF is a .NET Core UI framework for building Windows desktop applications.
+- [Xamarin.Forms ![stars](https://img.shields.io/github/stars/xamarin/Xamarin.Forms?style=social&label=)](https://github.com/xamarin/Xamarin.Forms) - Build native mobile apps using C# and XAML.
 
 ### Web
 - [ASP.NET Core ![stars](https://img.shields.io/github/stars/dotnet/aspnetcore?style=social&label=)](https://github.com/dotnet/aspnetcore) - ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.
@@ -101,6 +114,28 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ### Storage
 - [Npgsql ![stars](https://img.shields.io/github/stars/npgsql/npgsql?style=social&label=)](https://github.com/npgsql/npgsql) - The .NET data provider for PostgreSQL.
 - [Stowage ![stars](https://img.shields.io/github/stars/aloneguid/stowage?style=social&label=)](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
+
+### UI
+- [AdonisUI ![stars](https://img.shields.io/github/stars/benruehl/adonis-ui?style=social&label=)](https://github.com/benruehl/adonis-ui) - Lightweight UI toolkit for WPF applications offering classic but enhanced windows visuals.
+- [CommunityToolkit.Mvvm ![stars](https://img.shields.io/github/stars/CommunityToolkit/dotnet?style=social&label=)](https://github.com/CommunityToolkit/dotnet) - The .NET Community Toolkit is a collection of helpers and APIs that work for all .NET developers.
+- [GtkSharp ![stars](https://img.shields.io/github/stars/GtkSharp/GtkSharp?style=social&label=)](https://github.com/GtkSharp/GtkSharp) - .NET wrapper for Gtk and its related components.
+- [HandyControl ![stars](https://img.shields.io/github/stars/HandyOrg/HandyControl?style=social&label=)](https://github.com/HandyOrg/HandyControl) - Contains some simple and commonly used WPF controls.
+- [Helix Toolkit ![stars](https://img.shields.io/github/stars/helix-toolkit/helix-toolkit?style=social&label=)](https://github.com/helix-toolkit/helix-toolkit) - Helix Toolkit is a collection of 3D components for .NET.
+- [ImGui.NET ![stars](https://img.shields.io/github/stars/ImGuiNET/ImGui.NET?style=social&label=)](https://github.com/ImGuiNET/ImGui.NET) - An ImGui wrapper for .NET.
+- [LiveCharts2 ![stars](https://img.shields.io/github/stars/beto-rodriguez/LiveCharts2?style=social&label=)](https://github.com/beto-rodriguez/LiveCharts2) - Simple flexible interactive and powerful charts maps and gauges for .Net.
+- [MahApps.Metro ![stars](https://img.shields.io/github/stars/MahApps/MahApps.Metro?style=social&label=)](https://github.com/MahApps/MahApps.Metro) - A framework that allows developers to cobble together a better UI for their own WPF applications with minimal effort.
+- [MaterialDesignInXamlToolkit ![stars](https://img.shields.io/github/stars/MaterialDesignInXAML/MaterialDesignInXamlToolkit?style=social&label=)](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit) - Google's Material Design in XAML & WPF for C# & VB.Net.
+- [Microcharts ![stars](https://img.shields.io/github/stars/microcharts-dotnet/Microcharts?style=social&label=)](https://github.com/microcharts-dotnet/Microcharts) - Create cross-platform simple charts.
+- [ModernWpf ![stars](https://img.shields.io/github/stars/Kinnara/ModernWpf?style=social&label=)](https://github.com/Kinnara/ModernWpf) - Modern styles and controls for your WPF applications.
+- [OpenTK ![stars](https://img.shields.io/github/stars/opentk/opentk?style=social&label=)](https://github.com/opentk/opentk) - The Open Toolkit library is a fast low-level C# binding for OpenGL OpenCL and OpenAL.
+- [OxyPlot ![stars](https://img.shields.io/github/stars/oxyplot/oxyplot?style=social&label=)](https://github.com/oxyplot/oxyplot) - A cross-platform plotting library for .NET.
+- [Qml.Net ![stars](https://img.shields.io/github/stars/qmlnet/qmlnet?style=social&label=)](https://github.com/qmlnet/qmlnet) - Qml.Net is a C# library to integrate C#/.NET with Qt/Qml.
+- [ScottPlot ![stars](https://img.shields.io/github/stars/ScottPlot/ScottPlot?style=social&label=)](https://github.com/ScottPlot/ScottPlot) - ScottPlot is a free and open-source plotting library for .NET that makes it easy to interactively display large datasets.
+- [SharpDX ![stars](https://img.shields.io/github/stars/sharpdx/SharpDX?style=social&label=)](https://github.com/sharpdx/SharpDX) - SharpDX is an open-source managed .NET wrapper of the DirectX API.
+- [Silk.NET ![stars](https://img.shields.io/github/stars/dotnet/Silk.NET?style=social&label=)](https://github.com/dotnet/Silk.NET) - The high-speed OpenGL OpenAL OpenCL Vulkan GLFW and SDL wrapper library for .NET.
+- [SkiaSharp ![stars](https://img.shields.io/github/stars/mono/SkiaSharp?style=social&label=)](https://github.com/mono/SkiaSharp) - SkiaSharp is a cross-platform 2D graphics API for .NET platforms based on Google's Skia Graphics Library.
+- [Veldrid ![stars](https://img.shields.io/github/stars/mellinoe/veldrid?style=social&label=)](https://github.com/mellinoe/veldrid) - A low-level portable graphics library for .NET.
+- [Wpf.Ui ![stars](https://img.shields.io/github/stars/lepoco/wpfui?style=social&label=)](https://github.com/lepoco/wpfui) - A simple way to make your application written in WPF keep up with modern design trends.
 
 ### Validation
 - [FluentValidation ![stars](https://img.shields.io/github/stars/FluentValidation/FluentValidation?style=social&label=)](https://github.com/FluentValidation/FluentValidation) - A popular .NET library for building strongly-typed validation rules.
