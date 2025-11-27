@@ -1,6 +1,5 @@
 #:package Octokit@14.0.0
 #:package CsvHelper@33.1.0
-#:package Markdig@0.44.0
 
 using Octokit;
 using CsvHelper;
@@ -13,6 +12,7 @@ using static System.Console;
 
 const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
+const string LinksHeader = "# Links";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 WriteLine($"Created GitHub client for repository: {owner}/{repo}");
@@ -205,6 +205,8 @@ async Task RebuildReadme() {
         }
     }
     string generatedSection = string.Join("\n", lines);
+    WriteLine("generated section:");
+    WriteLine(generatedSection);
 
     // Read README.md and replace '# Links' section using Markdig AST
     const string ReadmePath = "README.md";
@@ -214,53 +216,21 @@ async Task RebuildReadme() {
     }
 
     string readme = await File.ReadAllTextAsync(ReadmePath);
-    Markdig.Syntax.MarkdownDocument existingDoc = Markdig.Markdown.Parse(readme);
 
-    // Find the first level-1 heading with text 'Links'
-    int linksIndex = -1;
-    for (int i = 0; i < existingDoc.Count; i++) {
-        if (existingDoc[i] is Markdig.Syntax.HeadingBlock hb && hb.Level == 1) {
-            string text = hb.Inline?.FirstChild?.ToString() ?? "";
-            WriteLine(text);
-            // string text = hb.Inline?.ToString() ?? string.Empty;
-            if (text.Trim().Equals("Links", StringComparison.OrdinalIgnoreCase)) {
-                linksIndex = i;
-                break;
-            }
-        }
+    // delete everything starting with "# Links" to the end of the file
+    int idx = readme.IndexOf(LinksHeader + "\n");
+    if (idx >= 0) {
+        readme = readme.Substring(0, idx + LinksHeader.Length);
+    } else {
+        // If no "# Links" section found, append at the end
+        readme += "\n\n" + LinksHeader;
     }
 
-    if (linksIndex < 0) {
-        // Append our generated doc to the end of README
-        Markdig.Syntax.MarkdownDocument genDoc = Markdig.Markdown.Parse(generatedSection);
-        var sw = new System.IO.StringWriter();
-        NormalizeRenderer renderer = new NormalizeRenderer(sw);
-        renderer.Render(genDoc);
-        string normalized = sw.ToString();
-        string updated = readme.TrimEnd() + "\n\n" + normalized;
-        await File.WriteAllTextAsync(ReadmePath, updated);
-        WriteLine("Appended Links section to README.md");
-        return;
-    }
-
-    // Remove everything from the '# Links' heading (index linksIndex) to the end
-    int blocksToRemove = existingDoc.Count - linksIndex;
-    for (int i = 0; i < blocksToRemove; i++) {
-        existingDoc.RemoveAt(linksIndex);
-    }
-
-    // Append the newly generated section (parsed) to existing document and render
-    Markdig.Syntax.MarkdownDocument newDoc = Markdig.Markdown.Parse(generatedSection);
-    foreach (Markdig.Syntax.Block block in newDoc) {
-        existingDoc.Add(block);
-    }
-
-    var writer = new System.IO.StringWriter();
-    var normalize = new NormalizeRenderer(writer);
-    normalize.Render(existingDoc);
-    string finalMd = writer.ToString();
-    await File.WriteAllTextAsync(ReadmePath, finalMd);
-    WriteLine("Rebuilt Links section in README.md using Markdig");
+    // append the generated section
+    readme += "\n\n" + generatedSection + "\n";
+    WriteLine("Writing updated README.md");
+    WriteLine(readme);
+    await File.WriteAllTextAsync(ReadmePath, readme);
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
