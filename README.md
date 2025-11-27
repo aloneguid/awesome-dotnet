@@ -7,6 +7,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Links
 
 
+## Auth
+
+- [AspNetSaml ![stars](https://img.shields.io/github/stars/jitbit/AspNetSaml?style=social&label=)](https://github.com/jitbit/AspNetSaml/) - Popular SSO/SAML library for ASP.NET.
+
 ## Big Data
 
 - [Apache Spark for .NET ![stars](https://img.shields.io/github/stars/dotnet/spark?style=social&label=)](https://github.com/dotnet/spark) - .NET bindings for Apache Spark for large-scale data processing.
@@ -77,6 +81,11 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
+## Libraries
+
+### Parsing
+- [Silverfly ![stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=social&label=)](https://github.com/furesoft/Silverfly) - A pratt parser framework.
+
 ## Logging
 
 - [Exceptionless ![stars](https://img.shields.io/github/stars/exceptionless/Exceptionless.Net?style=social&label=)](https://github.com/exceptionless/Exceptionless.Net) - Exceptionless .NET Client for collecting errors events and logs.
@@ -84,7 +93,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Microsoft.Extensions.Logging ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - A lightweight and extensible logging API that is a part of ASP.NET Core and can be used in any .NET application.
 - [NLog ![stars](https://img.shields.io/github/stars/NLog/NLog?style=social&label=)](https://github.com/NLog/NLog) - Advanced and Structured Logging for Various .NET Platforms.
 - [Serilog](https://serilog.net/) - Flexible, structured events - log file convenience.
-- [Silverfly ![stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=social&label=)](https://github.com/furesoft/Silverfly) - A pratt parser framework.
 - [ZLogger ![stars](https://img.shields.io/github/stars/Cysharp/ZLogger?style=social&label=)](https://github.com/Cysharp/ZLogger) - Zero allocation text/structured logger for .NET with StringInterpolation and Source Generator.
 
 ## Other

@@ -1,4 +1,5 @@
 Title,Url,Description,Category,Subcategory
+AspNetSaml,https://github.com/jitbit/AspNetSaml/,Popular SSO/SAML library for ASP.NET.,Auth,
 Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Big Data,
 Deedle,https://github.com/fslaborg/Deedle,Easy to use .NET library for data and time series manipulation and scientific programming.,Big Data,
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Big Data,
@@ -45,12 +46,12 @@ OmniSharp,https://www.omnisharp.net/,"Makes C# development available in vim, neo
 SharpIDE,https://github.com/MattParkerDev/SharpIDE,"A modern, cross platform IDE for .NET, built with .NET & Godot.",IDE,
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
+Silverfly,https://github.com/furesoft/Silverfly,A pratt parser framework.,Libraries,Parsing
 Exceptionless,https://github.com/exceptionless/Exceptionless.Net,Exceptionless .NET Client for collecting errors events and logs.,Logging,
 Log4net,https://github.com/apache/logging-log4net,Apache log4net is a versatile widely-used logging library for .NET.,Logging,
 Microsoft.Extensions.Logging,https://github.com/dotnet/runtime,A lightweight and extensible logging API that is a part of ASP.NET Core and can be used in any .NET application.,Logging,
 NLog,https://github.com/NLog/NLog,Advanced and Structured Logging for Various .NET Platforms.,Logging,
 Serilog,https://serilog.net/,"Flexible, structured events - log file convenience.",Logging,
-Silverfly,https://github.com/furesoft/Silverfly,A pratt parser framework.,Logging,
 ZLogger,https://github.com/Cysharp/ZLogger,Zero allocation text/structured logger for .NET with StringInterpolation and Source Generator.,Logging,
 AutoMapper,https://github.com/AutoMapper/AutoMapper,A convention-based object-object mapper in .NET.,Other,
 Aviyal,https://github.com/TheAjaykrishnanR/aviyal,"Window manager for windows written purely in C# thats simple, lightweight and portable.",Other,
