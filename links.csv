@@ -62,7 +62,6 @@ BenchmarkDotNet,https://github.com/dotnet/BenchmarkDotNet,De facto .NET benchmar
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,.NET Conf
 2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,.NET Conf
 .NET Runtime,https://github.com/dotnet/runtime,.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.,Frameworks,Runtime
-Roslyn,https://github.com/dotnet/roslyn,The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.,Tools,Compiler
 ASP.NET Core,https://github.com/dotnet/aspnetcore,ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.,Frameworks,Web
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Libraries,Machine Learning
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Libraries,ORM
