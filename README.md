@@ -25,6 +25,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 - [Humanizer ![stars](https://img.shields.io/github/stars/Humanizr/Humanizer?style=social&label=)](https://github.com/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
 - [Json.NET](https://www.newtonsoft.com/json) - Popular high-performance JSON framework for .NET.
+- [Json.NET ![stars](https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json?style=social&label=)](https://github.com/JamesNK/Newtonsoft.Json) - Popular high-performance JSON framework for .NET.
 - [Lua-CSharp ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=social&label=)](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
 - [NodaTime ![stars](https://img.shields.io/github/stars/nodatime/nodatime?style=social&label=)](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
 - [Octokit ![stars](https://img.shields.io/github/stars/octokit/dotnet-sdk?style=social&label=)](https://github.com/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
