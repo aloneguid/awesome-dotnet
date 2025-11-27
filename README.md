@@ -7,11 +7,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Links
 
 
-## Frameworks
-
-### Web
-- [ASP.NET Core ![stars](https://img.shields.io/github/stars/dotnet/aspnetcore?style=social&label=)](https://github.com/dotnet/aspnetcore) - ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.
-
 ## IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
