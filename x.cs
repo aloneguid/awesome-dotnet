@@ -190,6 +190,21 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
     await writer.FlushAsync();
 }
 
+string AddLinkExtras(string url) {
+
+    if(url.Contains("github.com")) {
+        // get repo owner and name from url
+        Match match = Regex.Match(url, @"github\.com/([^/]+)/([^/]+)");
+        if (match.Success) {
+            string repoOwner = match.Groups[1].Value;
+            string repoName = match.Groups[2].Value;
+            return $" ![GitHub Repo stars](https://img.shields.io/github/stars/{repoOwner}/{repoName}?style=flat-square)";
+        }
+    }
+
+    return "";
+}
+
 async Task RebuildReadme() {
     // Read all links from CSV
     List<AwesomeLink> allLinks = new List<AwesomeLink>();
@@ -228,7 +243,8 @@ async Task RebuildReadme() {
             }
             foreach (AwesomeLink link in sub.Links) {
                 string descPart = string.IsNullOrWhiteSpace(link.Description) ? string.Empty : $" - {link.Description}";
-                lines.Add($"- [{link.Title}]({link.Url}){descPart}");
+                string extras = AddLinkExtras(link.Url);
+                lines.Add($"- [{link.Title}]({link.Url}){extras}{descPart}");
             }
         }
     }
