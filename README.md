@@ -28,6 +28,7 @@ Community-curated, PR free, self-managing list of awesome .NET goodness.
 - [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity
 - [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely
 - [Octokit](https://github.com/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
+- [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic
 
 ### Big Data
 - [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation
