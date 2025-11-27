@@ -128,7 +128,11 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     if (url == null || description == null)
         return null;
 
-    return new AwesomeLink(issue.Title.Trim(), url.Trim(), description.Trim(), category.Trim(), subcategory.Trim());
+    return new AwesomeLink(Sanitize(issue.Title),
+        Sanitize(url, false, false),
+        Sanitize(description, true, true),
+        Sanitize(category, true, false),
+        Sanitize(subcategory, true, false));
 }
 
 async Task SaveLinkToCsv(AwesomeLink newLink) {
@@ -230,6 +234,17 @@ async Task RebuildReadme() {
     WriteLine("Writing updated README.md");
     WriteLine(readme);
     await File.WriteAllTextAsync(ReadmePath, readme);
+}
+
+string Sanitize(string input, bool capitalize = true, bool endWithFullStop = false) {
+    input = input.Trim();
+    if (capitalize && input.Length > 0) {
+        input = char.ToUpper(input[0]) + input.Substring(1);
+    }
+    if (endWithFullStop && !input.EndsWith('.')) {
+        input += ".";
+    }
+    return input;
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
