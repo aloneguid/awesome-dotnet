@@ -40,4 +40,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add README.md
           git add links.csv
-          git diff --staged --quiet || (git commit -m "Update README with popular links" && git push origin HEAD)
+          git diff --staged --quiet || (git commit -m "update local files" && git push origin HEAD)
