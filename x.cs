@@ -3,11 +3,9 @@
 
 using Octokit;
 using CsvHelper;
-using Markdig;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
-using Markdig.Renderers.Normalize;
 using static System.Console;
 
 const int MinThumbsUp = 5;
