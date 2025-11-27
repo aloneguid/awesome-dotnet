@@ -34,6 +34,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Snappy](https://snappy.machinezoo.com/) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 - [ZstdSharp](https://github.com/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
+### Parsing
+- [Silverfly](https://github.com/furesoft/Silverfly) - A pratt parser framework.
+
 ### Storage
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 
