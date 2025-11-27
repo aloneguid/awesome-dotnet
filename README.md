@@ -80,7 +80,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ## Logging
 
 - [Exceptionless ![stars](https://img.shields.io/github/stars/exceptionless/Exceptionless.Net?style=social&label=)](https://github.com/exceptionless/Exceptionless.Net) - Exceptionless .NET Client for collecting errors events and logs.
-- [log4net ![stars](https://img.shields.io/github/stars/apache/logging-log4net?style=social&label=)](https://github.com/apache/logging-log4net) - Apache log4net is a versatile widely-used logging library for .NET.
+- [Log4net ![stars](https://img.shields.io/github/stars/apache/logging-log4net?style=social&label=)](https://github.com/apache/logging-log4net) - Apache log4net is a versatile widely-used logging library for .NET.
 - [Microsoft.Extensions.Logging ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - A lightweight and extensible logging API that is a part of ASP.NET Core and can be used in any .NET application.
 - [NLog ![stars](https://img.shields.io/github/stars/NLog/NLog?style=social&label=)](https://github.com/NLog/NLog) - Advanced and Structured Logging for Various .NET Platforms.
 - [Serilog](https://serilog.net/) - Flexible, structured events - log file convenience.
@@ -144,3 +144,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [2023](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU) - .NET Conf 2023.
 - [2024](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY) - .NET Conf 2024.
 - [2025](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt) - .NET Conf 2025.
+
+### YouTube Channels
+- [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
