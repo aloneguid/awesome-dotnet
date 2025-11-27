@@ -14,6 +14,7 @@ const string CsvDBPath = "links.csv";
 GitHubClient client = CreateClient(out string owner, out string repo);
 WriteLine($"Created GitHub client for repository: {owner}/{repo}");
 await ProcessOpenIssues(client, owner, repo);
+await RebuildReadme();
 
 GitHubClient CreateClient(out string owner, out string repo) {
 
@@ -155,6 +156,18 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
         csvWriter.NextRecord();
     }
     await writer.FlushAsync();
+}
+
+async Task RebuildReadme() {
+    // Read all links from CSV
+    List<AwesomeLink> allLinks = new List<AwesomeLink>();
+
+    if (File.Exists(CsvDBPath)) {
+        using StreamReader reader = new StreamReader(CsvDBPath);
+        using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
+        List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
+        allLinks.AddRange(existing);
+    }
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
