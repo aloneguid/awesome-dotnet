@@ -129,10 +129,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 - [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
-### Online compilers
-- [C# and Razor compiler playground in the browser via Blazor WebAssembly.](https://lab.razor.fyi/#csharp) - C# and Razor compiler playground in the browser via Blazor WebAssembly.
-
 ### Online Compilers
+- [.NET Lab](https://lab.razor.fyi/#csharp) - C# and Razor compiler playground in the browser via Blazor WebAssembly.
 - [Sharplab](https://sharplab.io/) - Amazing online compiler dotnet devs can use as a playground.
 
 ### Performance
