@@ -244,7 +244,7 @@ async Task RebuildReadme() {
             foreach (AwesomeLink link in sub.Links) {
                 string descPart = string.IsNullOrWhiteSpace(link.Description) ? string.Empty : $" - {link.Description}";
                 string extras = AddLinkExtras(link.Url);
-                lines.Add($"- [{link.Title}]({link.Url}){extras}{descPart}");
+                lines.Add($"- [{link.Title}{extras}]({link.Url}){descPart}");
             }
         }
     }
