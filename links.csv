@@ -71,7 +71,6 @@ Avalonia,https://github.com/AvaloniaUI/Avalonia,Avalonia is a cross-platform XAM
 Uno Platform,https://github.com/unoplatform/uno,Build Mobile Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.,UI,Cross-Platform
 Eto.Forms,https://github.com/picoe/Eto,Cross platform GUI framework for desktop and mobile applications in .NET.,UI,Cross-Platform
 MAUI,https://github.com/dotnet/maui,.NET Multi-platform App UI for building native mobile and desktop apps with C# and XAML.,UI,Mobile
-Xamarin.Forms,https://github.com/xamarin/Xamarin.Forms,Build native mobile apps using C# and XAML.,UI,Mobile
 Fabulous,https://github.com/fsprojects/Fabulous,Declarative UI framework for cross-platform mobile & desktop apps using F# and MVU pattern.,UI,Mobile
 Blazor,https://github.com/dotnet/aspnetcore,Blazor lets you build interactive web UIs using C# instead of JavaScript.,UI,Web
 ReactiveUI,https://github.com/reactiveui/ReactiveUI,An advanced composable functional reactive model-view-viewmodel framework for all .NET platforms.,UI,Cross-Platform
