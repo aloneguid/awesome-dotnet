@@ -97,6 +97,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [RestSharp ![stars](https://img.shields.io/github/stars/restsharp/RestSharp?style=social&label=)](https://github.com/restsharp/RestSharp) - Simple REST and HTTP API Client for .NET.
 - [Retroc64 ![stars](https://img.shields.io/github/stars/RetroC64/RetroC64?style=social&label=)](https://github.com/RetroC64/RetroC64/) - Programming the Commodore 64 with .NET.
 
+### Identifiers
+- [Fast ULID library, replacement for GUID - ByteAether.Ulid ![stars](https://img.shields.io/github/stars/ByteAether/Ulid?style=social&label=)](https://github.com/ByteAether/Ulid) - Universally Unique Lexicographically Sortable Identifiers (ULIDs), designed to be globally unique, sortable, human-readable, and AoT compatible.
+
 ## Programming Languages
 
 - [Lua-CSharp ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=social&label=)](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
