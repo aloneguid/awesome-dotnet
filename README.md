@@ -19,7 +19,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ## Inspiration
 
 - [Aviyal](https://github.com/TheAjaykrishnanR/aviyal) ![stars](https://img.shields.io/github/stars/TheAjaykrishnanR/aviyal) - Window manager for windows written purely in C# thats simple, lightweight and portable.
-- [Retroc64](https://retroc64.github.io/) - Programming the Commodore 64 with .NET.
+- [Retroc64](https://github.com/RetroC64/RetroC64/) ![stars](https://img.shields.io/github/stars/RetroC64/RetroC64) - Programming the Commodore 64 with .NET.
 
 ## Libraries
 
@@ -37,8 +37,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ### Compression
 - [FastLZMA2Net](https://github.com/kingsznhone/FastLZMA2Net) ![stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) ![stars](https://img.shields.io/github/stars/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
-- [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
-- [Snappy](https://snappy.machinezoo.com/) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
+- [Snappier](https://github.com/brantburnett/Snappier) ![stars](https://img.shields.io/github/stars/brantburnett/Snappier) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
+- [Snappy](https://github.com/robertvazan/snappy.net) ![stars](https://img.shields.io/github/stars/robertvazan/snappy.net) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 - [ZstdSharp](https://github.com/oleg-st/ZstdSharp) ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
 ### Parsing
@@ -53,7 +53,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
 ### Performance
-- [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
+- [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) ![stars](https://img.shields.io/github/stars/dotnet/BenchmarkDotNet) - De facto .NET benchmarking tool.
 
 ## Videos
 
