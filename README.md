@@ -9,9 +9,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ## Frameworks
 
-### Runtime
-- [.NET Runtime ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - .NET is a cross-platform runtime for cloud mobile desktop and IoT apps.
-
 ### Web
 - [ASP.NET Core ![stars](https://img.shields.io/github/stars/dotnet/aspnetcore?style=social&label=)](https://github.com/dotnet/aspnetcore) - ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.
 
@@ -130,6 +127,19 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Validation
 - [FluentValidation ![stars](https://img.shields.io/github/stars/FluentValidation/FluentValidation?style=social&label=)](https://github.com/FluentValidation/FluentValidation) - A popular .NET library for building strongly-typed validation rules.
+
+## Runtimes
+
+- [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) - The original .NET implementation for Windows desktop applications.
+- [.NET MAUI Runtime ![stars](https://img.shields.io/github/stars/dotnet/maui?style=social&label=)](https://github.com/dotnet/maui) - Runtime components for .NET Multi-platform App UI.
+- [.NET Runtime ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - .NET is a cross-platform runtime for cloud mobile desktop and IoT apps.
+- [CoreCLR ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - The runtime for .NET and includes the Just-In-Time (JIT) compiler called RyuJIT and the GC.
+- [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) - Unity's IL2CPP scripting backend converts IL code to C++ for better performance.
+- [Mono ![stars](https://img.shields.io/github/stars/mono/mono?style=social&label=)](https://github.com/mono/mono) - Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.
+- [Mono Runtime ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - The Mono runtime is a .NET runtime optimized for mobile and gaming scenarios.
+- [NativeAOT ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime) - Ahead-of-time (AOT) compilation support for .NET applications.
+- [Unity Runtime](https://docs.unity3d.com/Manual/dotnetProfileSupport.html) - Customized .NET runtime used by Unity game engine.
+- [Xamarin Runtime ![stars](https://img.shields.io/github/stars/xamarin/xamarin-android?style=social&label=)](https://github.com/xamarin/xamarin-android) - Runtime for Xamarin.Android and Xamarin.iOS applications.
 
 ## Tools
 
