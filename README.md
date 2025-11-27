@@ -45,6 +45,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ### Performance
 - [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
 
+### _No response_
+- [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
+
 ## Videos
 
 ### .NET Conf
