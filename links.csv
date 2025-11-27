@@ -1,13 +1,14 @@
 Title,Url,Description,Category,Subcategory
-Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,Libraries,CLI
 JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
+LinqPad,https://www.linqpad.net/,The .NET Programmer’s Playground.,IDE,### URL
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
 Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity.,Libraries,
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Libraries,
 Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Libraries,Big Data
+Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,Libraries,CLI
 FastLZMA2Net,https://github.com/kingsznhone/FastLZMA2Net,Fast LZMA2 Wrapper for .NET. Windows only.,Libraries,Compression
 SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# library to deal with many compression types and formats.,Libraries,Compression
 Snappier,https://brantburnett.github.io/Snappier/,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Libraries,Compression

@@ -13,6 +13,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
+### ### URL
+- [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
+
 ## Libraries
 
 - [Humanizer](https://github.com/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
