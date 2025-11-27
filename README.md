@@ -42,6 +42,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Snappy ![stars](https://img.shields.io/github/stars/robertvazan/snappy.net?style=social&label=)](https://github.com/robertvazan/snappy.net) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 - [ZstdSharp ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp?style=social&label=)](https://github.com/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
+### Logging
+- [Serilog](https://serilog.net/) - Flexible, structured events - log file convenience.
+
 ### Parsing
 - [Silverfly ![stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=social&label=)](https://github.com/furesoft/Silverfly) - A pratt parser framework.
 
