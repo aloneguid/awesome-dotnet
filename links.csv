@@ -61,7 +61,16 @@ BenchmarkDotNet,https://github.com/dotnet/BenchmarkDotNet,De facto .NET benchmar
 2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,.NET Conf
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,.NET Conf
 2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,.NET Conf
-.NET Runtime,https://github.com/dotnet/runtime,.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.,Frameworks,Runtime
+.NET Runtime,https://github.com/dotnet/runtime,.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.,Runtimes,
+Mono,https://github.com/mono/mono,Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.,Runtimes,
+.NET Framework,https://dotnet.microsoft.com/download/dotnet-framework,The original .NET implementation for Windows desktop applications.,Runtimes,
+CoreCLR,https://github.com/dotnet/runtime,The runtime for .NET and includes the Just-In-Time (JIT) compiler called RyuJIT and the GC.,Runtimes,
+Mono Runtime,https://github.com/dotnet/runtime,The Mono runtime is a .NET runtime optimized for mobile and gaming scenarios.,Runtimes,
+NativeAOT,https://github.com/dotnet/runtime,Ahead-of-time (AOT) compilation support for .NET applications.,Runtimes,
+.NET MAUI Runtime,https://github.com/dotnet/maui,Runtime components for .NET Multi-platform App UI.,Runtimes,
+Xamarin Runtime,https://github.com/xamarin/xamarin-android,Runtime for Xamarin.Android and Xamarin.iOS applications.,Runtimes,
+Unity Runtime,https://docs.unity3d.com/Manual/dotnetProfileSupport.html,Customized .NET runtime used by Unity game engine.,Runtimes,
+IL2CPP,https://docs.unity3d.com/Manual/IL2CPP.html,Unity's IL2CPP scripting backend converts IL code to C++ for better performance.,Runtimes,
 ASP.NET Core,https://github.com/dotnet/aspnetcore,ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.,Frameworks,Web
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Libraries,Machine Learning
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Libraries,ORM
