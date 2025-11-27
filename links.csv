@@ -74,6 +74,8 @@ Xamarin Runtime,https://github.com/xamarin/xamarin-android,Runtime for Xamarin.A
 NotNot.AppSettings,https://www.nuget.org/packages/NotNot.AppSettings/,Automatically create strongly typed C# settings objects from AppSettings.json.,Source Generators,
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Text Processing,
 DotPeek,https://www.jetbrains.com/decompiler/,Free .NET Decompiler and Assembly Browser.,Tools,
+C# and Razor compiler playground in the browser via Blazor WebAssembly.,https://lab.razor.fyi/#csharp,C# and Razor compiler playground in the browser via Blazor WebAssembly.,Tools,Online compilers
+Sharplab,https://sharplab.io/,Amazing online compiler dotnet devs can use as a playground.,Tools,Online Compilers
 BenchmarkDotNet,https://github.com/dotnet/BenchmarkDotNet,De facto .NET benchmarking tool.,Tools,Performance
 Avalonia,https://github.com/AvaloniaUI/Avalonia,Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems.,UI,
 Blazor,https://github.com/dotnet/aspnetcore,Blazor lets you build interactive web UIs using C# instead of JavaScript.,UI,

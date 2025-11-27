@@ -129,6 +129,12 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 - [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
+### Online compilers
+- [C# and Razor compiler playground in the browser via Blazor WebAssembly.](https://lab.razor.fyi/#csharp) - C# and Razor compiler playground in the browser via Blazor WebAssembly.
+
+### Online Compilers
+- [Sharplab](https://sharplab.io/) - Amazing online compiler dotnet devs can use as a playground.
+
 ### Performance
 - [BenchmarkDotNet ![stars](https://img.shields.io/github/stars/dotnet/BenchmarkDotNet?style=social&label=)](https://github.com/dotnet/BenchmarkDotNet) - De facto .NET benchmarking tool.
 
