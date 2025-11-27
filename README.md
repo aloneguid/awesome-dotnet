@@ -61,6 +61,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Hangfire ![stars](https://img.shields.io/github/stars/HangfireIO/Hangfire?style=social&label=)](https://github.com/HangfireIO/Hangfire) - An easy way to perform background job processing in .NET and .NET Core applications.
 
 ### Big Data
+- [Apache Spark for .NET ![stars](https://img.shields.io/github/stars/dotnet/spark?style=social&label=)](https://github.com/dotnet/spark) - .NET bindings for Apache Spark for large-scale data processing.
+- [Deedle ![stars](https://img.shields.io/github/stars/fslaborg/Deedle?style=social&label=)](https://github.com/fslaborg/Deedle) - Easy to use .NET library for data and time series manipulation and scientific programming.
 - [Parquet.Net ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=social&label=)](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
 
 ### CLI
@@ -81,6 +83,23 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Snappy ![stars](https://img.shields.io/github/stars/robertvazan/snappy.net?style=social&label=)](https://github.com/robertvazan/snappy.net) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 - [ZstdSharp ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp?style=social&label=)](https://github.com/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
+### Data Formats
+- [ClosedXML ![stars](https://img.shields.io/github/stars/ClosedXML/ClosedXML?style=social&label=)](https://github.com/ClosedXML/ClosedXML) - ClosedXML makes it easier for developers to create Excel 2007+ files.
+- [CsvHelper ![stars](https://img.shields.io/github/stars/JoshClose/CsvHelper?style=social&label=)](https://github.com/JoshClose/CsvHelper) - Library to help reading and writing CSV files.
+- [EPPlus ![stars](https://img.shields.io/github/stars/EPPlusSoftware/EPPlus?style=social&label=)](https://github.com/EPPlusSoftware/EPPlus) - EPPlus-Excel spreadsheets for .NET.
+- [ExcelDataReader ![stars](https://img.shields.io/github/stars/ExcelDataReader/ExcelDataReader?style=social&label=)](https://github.com/ExcelDataReader/ExcelDataReader) - Lightweight and fast library for reading Microsoft Excel files.
+- [FileHelpers ![stars](https://img.shields.io/github/stars/MarcosMeli/FileHelpers?style=social&label=)](https://github.com/MarcosMeli/FileHelpers) - The FileHelpers library for importing/exporting data from fixed length or delimited records in files databases or streams.
+- [NPOI ![stars](https://img.shields.io/github/stars/nissl-lab/npoi?style=social&label=)](https://github.com/nissl-lab/npoi) - .NET library for reading and writing Microsoft Office binary and OOXML file formats.
+
+### Distributed Systems
+- [Akka.NET ![stars](https://img.shields.io/github/stars/akkadotnet/akka.net?style=social&label=)](https://github.com/akkadotnet/akka.net) - Canonical actor model implementation for .NET with local and distributed actors.
+- [Orleans ![stars](https://img.shields.io/github/stars/dotnet/orleans?style=social&label=)](https://github.com/dotnet/orleans) - Orleans is a cross-platform framework for building distributed applications with .NET.
+
+### Event Sourcing
+- [EventStore ![stars](https://img.shields.io/github/stars/EventStore/EventStore?style=social&label=)](https://github.com/EventStore/EventStore) - The stream database optimised for event sourcing.
+- [Marten ![stars](https://img.shields.io/github/stars/JasperFx/marten?style=social&label=)](https://github.com/JasperFx/marten) - .NET Transactional Document DB and Event Store on PostgreSQL.
+- [NEventStore ![stars](https://img.shields.io/github/stars/NEventStore/NEventStore?style=social&label=)](https://github.com/NEventStore/NEventStore) - A persistence library used to abstract different storage implementations when using event sourcing.
+
 ### HTTP
 - [RestSharp ![stars](https://img.shields.io/github/stars/restsharp/RestSharp?style=social&label=)](https://github.com/restsharp/RestSharp) - Simple REST and HTTP API Client for .NET.
 
@@ -99,7 +118,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [AutoMapper ![stars](https://img.shields.io/github/stars/AutoMapper/AutoMapper?style=social&label=)](https://github.com/AutoMapper/AutoMapper) - A convention-based object-object mapper in .NET.
 
 ### Messaging
+- [MassTransit ![stars](https://img.shields.io/github/stars/MassTransit/MassTransit?style=social&label=)](https://github.com/MassTransit/MassTransit) - Distributed application framework for .NET supporting message-based architectures.
 - [MediatR ![stars](https://img.shields.io/github/stars/jbogard/MediatR?style=social&label=)](https://github.com/jbogard/MediatR) - Simple mediator implementation in .NET for in-process messaging.
+- [Rebus ![stars](https://img.shields.io/github/stars/rebus-org/Rebus?style=social&label=)](https://github.com/rebus-org/Rebus) - Simple and lean service bus implementation for .NET.
 
 ### ORM
 - [Dapper ![stars](https://img.shields.io/github/stars/DapperLib/Dapper?style=social&label=)](https://github.com/DapperLib/Dapper) - Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.
@@ -111,9 +132,18 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ### Resilience
 - [Polly ![stars](https://img.shields.io/github/stars/App-vNext/Polly?style=social&label=)](https://github.com/App-vNext/Polly) - Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry Circuit Breaker Timeout Bulkhead Isolation and Fallback in a fluent and thread-safe manner.
 
+### Serialization
+- [Apache Avro ![stars](https://img.shields.io/github/stars/apache/avro?style=social&label=)](https://github.com/apache/avro) - Apache Avro is a data serialization system with .NET implementation.
+- [FlatBuffers ![stars](https://img.shields.io/github/stars/google/flatbuffers?style=social&label=)](https://github.com/google/flatbuffers) - Memory efficient serialization library with .NET support.
+- [MessagePack ![stars](https://img.shields.io/github/stars/MessagePack-CSharp/MessagePack-CSharp?style=social&label=)](https://github.com/MessagePack-CSharp/MessagePack-CSharp) - Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.
+- [Protocol Buffers ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net) - Protocol Buffers library for idiomatic .NET.
+
 ### Storage
 - [Npgsql ![stars](https://img.shields.io/github/stars/npgsql/npgsql?style=social&label=)](https://github.com/npgsql/npgsql) - The .NET data provider for PostgreSQL.
 - [Stowage ![stars](https://img.shields.io/github/stars/aloneguid/stowage?style=social&label=)](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
+
+### Testing
+- [Bogus ![stars](https://img.shields.io/github/stars/bchavez/Bogus?style=social&label=)](https://github.com/bchavez/Bogus) - A simple fake data generator for C# F# and VB.NET for testing and seeding databases.
 
 ### UI
 - [AdonisUI ![stars](https://img.shields.io/github/stars/benruehl/adonis-ui?style=social&label=)](https://github.com/benruehl/adonis-ui) - Lightweight UI toolkit for WPF applications offering classic but enhanced windows visuals.
