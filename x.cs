@@ -198,7 +198,7 @@ string AddLinkExtras(string url) {
         if (match.Success) {
             string repoOwner = match.Groups[1].Value;
             string repoName = match.Groups[2].Value;
-            return $" ![GitHub Repo stars](https://img.shields.io/github/stars/{repoOwner}/{repoName}?style=flat-square)";
+            return $" ![stars](https://img.shields.io/github/stars/{repoOwner}/{repoName})";
         }
     }
 
