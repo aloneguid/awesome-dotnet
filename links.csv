@@ -91,7 +91,3 @@ Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for 
 RestSharp,https://github.com/restsharp/RestSharp,Simple REST and HTTP API Client for .NET.,Libraries,HTTP
 Polly,https://github.com/App-vNext/Polly,Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry Circuit Breaker Timeout Bulkhead Isolation and Fallback in a fluent and thread-safe manner.,Libraries,Resilience
 AutoMapper,https://github.com/AutoMapper/AutoMapper,A convention-based object-object mapper in .NET.,Libraries,Mapping
-IdentityServer,https://github.com/DuendeSoftware/IdentityServer,The most flexible and standards-compliant OpenID Connect and OAuth 2.x framework for ASP.NET Core.,Libraries,Authentication
-MediatR,https://github.com/jbogard/MediatR,Simple mediator implementation in .NET for in-process messaging.,Libraries,Messaging
-FluentValidation,https://github.com/FluentValidation/FluentValidation,A popular .NET library for building strongly-typed validation rules.,Libraries,Validation
-Hangfire,https://github.com/HangfireIO/Hangfire,An easy way to perform background job processing in .NET and .NET Core applications.,Libraries,Background Jobs
