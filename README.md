@@ -1,10 +1,8 @@
 # Awesome .NET
 
-Community-curated, PR free, self-managing list of awesome .NET goodness. Make sure this list is alive even when I'm not!
+Community-curated, PR free, self-managing list of awesome .NET goodness. Make sure this list is alive even when I'm dead!
 
-## How to Contribute
-
-To add a new link, [create a new issue](../../issues/new/choose) and fill in all the information. The link will appear on this page automatically if gets at least **5 likes (👍)** or a like from BDFL. To update existing link, create a new issue with existing URL, all the information will be replaced.
+To add a new link, [create a new issue](../../issues/new/choose) and fill in all the information. The link will appear on this page automatically if gets at least **5 likes (👍)** or a like from BDFL. To update existing link, create a new issue with existing URL, all the information will be replaced. The links and categories are sorted alphabetically every time this is is regenerated.
 
 # Links
 
