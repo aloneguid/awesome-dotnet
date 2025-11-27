@@ -19,6 +19,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ## Inspiration
 
 - [Aviyal](https://github.com/TheAjaykrishnanR/aviyal) - Window manager for windows written purely in C# thats simple, lightweight and portable.
+- [Retroc64](https://retroc64.github.io/) - Programming the Commodore 64 with .NET.
 
 ## Libraries
 

@@ -6,6 +6,7 @@ SharpIDE,https://github.com/MattParkerDev/SharpIDE,"A modern, cross platform IDE
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
 Aviyal,https://github.com/TheAjaykrishnanR/aviyal,"Window manager for windows written purely in C# thats simple, lightweight and portable.",Inspiration,
+Retroc64,https://retroc64.github.io/,Programming the Commodore 64 with .NET.,Inspiration,
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
 Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity.,Libraries,
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Libraries,
