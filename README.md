@@ -12,8 +12,13 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
 - [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
 - [OmniSharp](https://www.omnisharp.net/) - Makes C# development available in vim, neovim, sublime, emacs, brackets.
+- [SharpIDE](https://github.com/MattParkerDev/SharpIDE) - A modern, cross platform IDE for .NET, built with .NET & Godot.
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
+
+## Inspiration
+
+- [Aviyal](https://github.com/TheAjaykrishnanR/aviyal) - Window manager for windows written purely in C# thats simple, lightweight and portable.
 
 ## Libraries
 
@@ -39,6 +44,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Silverfly](https://github.com/furesoft/Silverfly) - A pratt parser framework.
 
 ### Storage
+- [Npgsql](https://github.com/npgsql/npgsql) - The .NET data provider for PostgreSQL.
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 
 ## Tools
