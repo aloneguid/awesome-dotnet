@@ -138,6 +138,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [WinForms ![stars](https://img.shields.io/github/stars/dotnet/winforms?style=social&label=)](https://github.com/dotnet/winforms) - Windows Forms is a .NET UI framework for building Windows desktop applications.
 - [WPF ![stars](https://img.shields.io/github/stars/dotnet/wpf?style=social&label=)](https://github.com/dotnet/wpf) - WPF is a .NET Core UI framework for building Windows desktop applications.
 
+## Unit Testing
+
+- [XUnit ![stars](https://img.shields.io/github/stars/xunit/xunit?style=social&label=)](https://github.com/xunit/xunit) - Free, open source, community-focused unit testing tool for .NET.
+
 ## Videos
 
 ### .NET Conf
