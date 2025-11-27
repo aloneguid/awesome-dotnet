@@ -1,8 +1,10 @@
 #:package Octokit@14.0.0
 #:package CsvHelper@33.1.0
+#:package Markdig@0.44.0
 
 using Octokit;
 using CsvHelper;
+using Markdig;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -161,13 +163,68 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
 async Task RebuildReadme() {
     // Read all links from CSV
     List<AwesomeLink> allLinks = new List<AwesomeLink>();
-
     if (File.Exists(CsvDBPath)) {
         using StreamReader reader = new StreamReader(CsvDBPath);
         using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing);
     }
+
+    // Group links by Category and Subcategory; sort all alphabetically
+    var grouped = allLinks
+        .GroupBy(l => l.Category ?? "Other")
+        .OrderBy(g => g.Key, StringComparer.OrdinalIgnoreCase)
+        .Select(g => new {
+            Category = g.Key,
+            Subgroups = g.GroupBy(x => x.Subcategory ?? "")
+                .OrderBy(sg => sg.Key, StringComparer.OrdinalIgnoreCase)
+                .Select(sg => new {
+                    Subcategory = sg.Key,
+                    Links = sg.OrderBy(x => x.Title, StringComparer.OrdinalIgnoreCase).ToList()
+                }).ToList()
+        }).ToList();
+
+    // Build Markdown content
+    StringBuilder md = new StringBuilder();
+    md.AppendLine("# Links");
+    foreach (var category in grouped) {
+        md.AppendLine();
+        md.AppendLine($"## {category.Category}");
+        foreach (var sub in category.Subgroups) {
+            if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
+                md.AppendLine();
+                md.AppendLine($"### {sub.Subcategory}");
+            } else {
+                md.AppendLine();
+            }
+            foreach (AwesomeLink link in sub.Links) {
+                md.AppendLine($"- [{link.Title}]({link.Url}) - {link.Description}");
+            }
+        }
+    }
+
+    // Read README.md, find '# Links' and replace everything after it with our new block
+    const string ReadmePath = "README.md";
+    if (!File.Exists(ReadmePath)) {
+        WriteLine("README.md not found; skipping rebuild.");
+        return;
+    }
+
+    string readme = await File.ReadAllTextAsync(ReadmePath);
+    int idx = readme.IndexOf("# Links", StringComparison.OrdinalIgnoreCase);
+    if (idx < 0) {
+        // Append if not present
+        string updated = readme.TrimEnd() + "\n\n" + md.ToString();
+        await File.WriteAllTextAsync(ReadmePath, updated);
+        WriteLine("Appended Links section to README.md");
+        return;
+    }
+
+    // Replace from '# Links' to end
+    string prefix = readme.Substring(0, idx);
+    string updatedReadme = prefix.TrimEnd() + "\n\n" + md.ToString();
+    await File.WriteAllTextAsync(ReadmePath, updatedReadme);
+    WriteLine("Rebuilt Links section in README.md");
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
