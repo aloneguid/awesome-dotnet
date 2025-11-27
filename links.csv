@@ -16,7 +16,7 @@ Snappy,https://snappy.machinezoo.com/,"Uses P/Invoke to C++ for great performanc
 ZstdSharp,https://github.com/oleg-st/ZstdSharp,Port of zstd compression library to C#.,Libraries,Compression
 Silverfly,https://github.com/furesoft/Silverfly,A pratt parser framework.,Libraries,Parsing
 Stowage,https://github.com/aloneguid/stowage,Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.,Libraries,Storage
-DotPeek,https://www.jetbrains.com/decompiler/,Free .NET Decompiler and Assembly Browser.,Tools,_No response_
+DotPeek,https://www.jetbrains.com/decompiler/,Free .NET Decompiler and Assembly Browser.,Tools,
 BenchmarkDotNet,https://benchmarkdotnet.org/,De facto .NET benchmarking tool.,Tools,Performance
 2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,.NET Conf
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,.NET Conf
