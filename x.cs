@@ -241,9 +241,10 @@ async Task RebuildReadme() {
         return;
     }
 
-    // Remove everything from the '# Links' heading to the end
-    while (existingDoc.Count > linksIndex) {
-        existingDoc.RemoveAt(existingDoc.Count - 1);
+    // Remove everything from the '# Links' heading (index linksIndex) to the end
+    int blocksToRemove = existingDoc.Count - linksIndex;
+    for (int i = 0; i < blocksToRemove; i++) {
+        existingDoc.RemoveAt(linksIndex);
     }
 
     // Append the newly generated section (parsed) to existing document and render
