@@ -13,6 +13,26 @@ Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interprete
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Libraries,
 Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Libraries,Big Data
+Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Libraries,Big Data
+Deedle,https://github.com/fslaborg/Deedle,Easy to use .NET library for data and time series manipulation and scientific programming.,Libraries,Big Data
+Akka.NET,https://github.com/akkadotnet/akka.net,Canonical actor model implementation for .NET with local and distributed actors.,Libraries,Distributed Systems
+Orleans,https://github.com/dotnet/orleans,Orleans is a cross-platform framework for building distributed applications with .NET.,Libraries,Distributed Systems
+MassTransit,https://github.com/MassTransit/MassTransit,Distributed application framework for .NET supporting message-based architectures.,Libraries,Messaging
+Rebus,https://github.com/rebus-org/Rebus,Simple and lean service bus implementation for .NET.,Libraries,Messaging
+NEventStore,https://github.com/NEventStore/NEventStore,A persistence library used to abstract different storage implementations when using event sourcing.,Libraries,Event Sourcing
+EventStore,https://github.com/EventStore/EventStore,The stream database optimised for event sourcing.,Libraries,Event Sourcing
+Marten,https://github.com/JasperFx/marten,.NET Transactional Document DB and Event Store on PostgreSQL.,Libraries,Event Sourcing
+Apache Avro,https://github.com/apache/avro,Apache Avro is a data serialization system with .NET implementation.,Libraries,Serialization
+Protocol Buffers,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Libraries,Serialization
+MessagePack,https://github.com/MessagePack-CSharp/MessagePack-CSharp,Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.,Libraries,Serialization
+FlatBuffers,https://github.com/google/flatbuffers,Memory efficient serialization library with .NET support.,Libraries,Serialization
+CsvHelper,https://github.com/JoshClose/CsvHelper,Library to help reading and writing CSV files.,Libraries,Data Formats
+FileHelpers,https://github.com/MarcosMeli/FileHelpers,The FileHelpers library for importing/exporting data from fixed length or delimited records in files databases or streams.,Libraries,Data Formats
+ClosedXML,https://github.com/ClosedXML/ClosedXML,ClosedXML makes it easier for developers to create Excel 2007+ files.,Libraries,Data Formats
+EPPlus,https://github.com/EPPlusSoftware/EPPlus,EPPlus-Excel spreadsheets for .NET.,Libraries,Data Formats
+NPOI,https://github.com/nissl-lab/npoi,.NET library for reading and writing Microsoft Office binary and OOXML file formats.,Libraries,Data Formats
+ExcelDataReader,https://github.com/ExcelDataReader/ExcelDataReader,Lightweight and fast library for reading Microsoft Excel files.,Libraries,Data Formats
+Bogus,https://github.com/bchavez/Bogus,A simple fake data generator for C# F# and VB.NET for testing and seeding databases.,Libraries,Testing
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,Libraries,CLI
 System.CommandLine,https://github.com/dotnet/command-line-api,System.CommandLine is a powerful command line parser for building modern CLI applications.,Libraries,CLI
 CommandLineParser,https://github.com/commandlineparser/commandline,The best C# command line parser that brings standardized *nix getopt style to .NET.,Libraries,CLI
