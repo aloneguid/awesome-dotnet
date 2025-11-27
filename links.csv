@@ -1,14 +1,15 @@
 Title,Url,Description,Category,Subcategory
-BenchmarkDotNet,https://benchmarkdotnet.org/,De facto .NET benchmarking tool.,Tools,Performance
-Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
-JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
-Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity,Libraries,
-NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely",Libraries,
-Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
-Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation,Libraries,Big Data
-SharpCompress,https://github.com/adamhathcock/sharpcompress,fully managed C# library to deal with many compression types and formats.,Libraries,Compression
-Snappier,https://brantburnett.github.io/Snappier/,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic",Libraries,Compression
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,CLI,
-Stowage,https://github.com/aloneguid/stowage,Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.,Libraries,Storage
+JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
+Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
+Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity.,Libraries,
+NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Libraries,
+Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
+Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Libraries,Big Data
+SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# library to deal with many compression types and formats.,Libraries,Compression
+Snappier,https://brantburnett.github.io/Snappier/,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Libraries,Compression
+Snappy,https://snappy.machinezoo.com/,"Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.",Libraries,Compression
+Stowage,https://github.com/aloneguid/stowage,Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.,Libraries,Storage
+BenchmarkDotNet,https://benchmarkdotnet.org/,De facto .NET benchmarking tool.,Tools,Performance

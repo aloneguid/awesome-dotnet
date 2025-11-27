@@ -25,16 +25,17 @@ Community-curated, PR free, self-managing list of awesome .NET goodness.
 ## Libraries
 
 - [Humanizer](https://github.com/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
-- [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity
-- [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely
+- [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
+- [NodaTime](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
 - [Octokit](https://github.com/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
 
 ### Big Data
-- [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation
+- [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
 
 ### Compression
-- [SharpCompress](https://github.com/adamhathcock/sharpcompress) - fully managed C# library to deal with many compression types and formats.
-- [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic
+- [SharpCompress](https://github.com/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
+- [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
+- [Snappy](https://snappy.machinezoo.com/) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 
 ### Storage
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
