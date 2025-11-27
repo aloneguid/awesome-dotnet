@@ -1,6 +1,9 @@
-#:package Octokit@13.0.1
+#:package Octokit@14.0.0
+#:package CsvHelper@33.1.0
 
 using Octokit;
+using CsvHelper;
+using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 using static System.Console;
@@ -54,6 +57,10 @@ async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issu
             WriteLine($"❌ Unable to parse issue #{issue.Number} body to extract link information. Skipping closure.");
             return;
         }
+
+        // Write link to CSV before closing (deduplicated by URL)
+        await SaveLinkToCsv(link);
+        WriteLine($"💾 Saved link to CSV: {link.Url}");
 
         string closeComment = "This issue is being closed because ";
 
@@ -117,6 +124,37 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
         return null;
 
     return new AwesomeLink(issue.Title.Trim(), url.Trim(), description.Trim(), category.Trim(), "");
+}
+
+async Task SaveLinkToCsv(AwesomeLink newLink) {
+    const string csvPath = "links.csv";
+    List<AwesomeLink> allLinks = new List<AwesomeLink>();
+
+    if (File.Exists(csvPath)) {
+        using StreamReader reader = new StreamReader(csvPath);
+        using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
+        List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
+        allLinks.AddRange(existing);
+    }
+
+    // Remove any existing entry with the same URL (case-insensitive)
+    allLinks = allLinks
+        .Where(l => !l.Url.Equals(newLink.Url, StringComparison.OrdinalIgnoreCase))
+        .ToList();
+
+    // Add the new link
+    allLinks.Add(newLink);
+
+    // Write back to CSV (sorted by Title for stability)
+    using StreamWriter writer = new StreamWriter(csvPath, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+    using CsvWriter csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture);
+    csvWriter.WriteHeader<AwesomeLink>();
+    csvWriter.NextRecord();
+    foreach (AwesomeLink link in allLinks.OrderBy(l => l.Title, StringComparer.OrdinalIgnoreCase)) {
+        csvWriter.WriteRecord(link);
+        csvWriter.NextRecord();
+    }
+    await writer.FlushAsync();
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
