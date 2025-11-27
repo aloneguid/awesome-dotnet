@@ -220,8 +220,9 @@ async Task RebuildReadme() {
     int linksIndex = -1;
     for (int i = 0; i < existingDoc.Count; i++) {
         if (existingDoc[i] is Markdig.Syntax.HeadingBlock hb && hb.Level == 1) {
-            WriteLine(hb.Inline?.ToString() ?? string.Empty);
-            string text = hb.Inline?.ToString() ?? string.Empty;
+            string text = hb.Inline?.FirstChild?.ToString() ?? "";
+            WriteLine(text);
+            // string text = hb.Inline?.ToString() ?? string.Empty;
             if (text.Trim().Equals("Links", StringComparison.OrdinalIgnoreCase)) {
                 linksIndex = i;
                 break;
