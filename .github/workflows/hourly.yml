@@ -35,7 +35,7 @@ jobs:
 
       - name: run x.cs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: dotnet run x.cs
 
       - name: Commit and push if changed
