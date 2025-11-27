@@ -48,6 +48,39 @@ Blazor,https://github.com/dotnet/aspnetcore,Blazor lets you build interactive we
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Libraries,Machine Learning
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Libraries,ORM
 Avalonia,https://github.com/AvaloniaUI/Avalonia,Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems.,Frameworks,UI
+WPF,https://github.com/dotnet/wpf,WPF is a .NET Core UI framework for building Windows desktop applications.,Frameworks,UI
+WinForms,https://github.com/dotnet/winforms,Windows Forms is a .NET UI framework for building Windows desktop applications.,Frameworks,UI
+MAUI,https://github.com/dotnet/maui,.NET Multi-platform App UI for building native mobile and desktop apps with C# and XAML.,Frameworks,UI
+Uno Platform,https://github.com/unoplatform/uno,Build Mobile Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.,Frameworks,UI
+Eto.Forms,https://github.com/picoe/Eto,Cross platform GUI framework for desktop and mobile applications in .NET.,Frameworks,UI
+ReactiveUI,https://github.com/reactiveui/ReactiveUI,An advanced composable functional reactive model-view-viewmodel framework for all .NET platforms.,Frameworks,UI
+Prism,https://github.com/PrismLibrary/Prism,Prism is a framework for building loosely coupled maintainable and testable XAML applications in WPF Xamarin Forms and Uno Platform.,Frameworks,UI
+MahApps.Metro,https://github.com/MahApps/MahApps.Metro,A framework that allows developers to cobble together a better UI for their own WPF applications with minimal effort.,Libraries,UI
+MaterialDesignInXamlToolkit,https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit,Google's Material Design in XAML & WPF for C# & VB.Net.,Libraries,UI
+ScottPlot,https://github.com/ScottPlot/ScottPlot,ScottPlot is a free and open-source plotting library for .NET that makes it easy to interactively display large datasets.,Libraries,UI
+LiveCharts2,https://github.com/beto-rodriguez/LiveCharts2,Simple flexible interactive and powerful charts maps and gauges for .Net.,Libraries,UI
+OxyPlot,https://github.com/oxyplot/oxyplot,A cross-platform plotting library for .NET.,Libraries,UI
+Microcharts,https://github.com/microcharts-dotnet/Microcharts,Create cross-platform simple charts.,Libraries,UI
+ModernWpf,https://github.com/Kinnara/ModernWpf,Modern styles and controls for your WPF applications.,Libraries,UI
+HandyControl,https://github.com/HandyOrg/HandyControl,Contains some simple and commonly used WPF controls.,Libraries,UI
+Wpf.Ui,https://github.com/lepoco/wpfui,A simple way to make your application written in WPF keep up with modern design trends.,Libraries,UI
+AdonisUI,https://github.com/benruehl/adonis-ui,Lightweight UI toolkit for WPF applications offering classic but enhanced windows visuals.,Libraries,UI
+CommunityToolkit.Mvvm,https://github.com/CommunityToolkit/dotnet,The .NET Community Toolkit is a collection of helpers and APIs that work for all .NET developers.,Libraries,UI
+Xamarin.Forms,https://github.com/xamarin/Xamarin.Forms,Build native mobile apps using C# and XAML.,Frameworks,UI
+SkiaSharp,https://github.com/mono/SkiaSharp,SkiaSharp is a cross-platform 2D graphics API for .NET platforms based on Google's Skia Graphics Library.,Libraries,UI
+Silk.NET,https://github.com/dotnet/Silk.NET,The high-speed OpenGL OpenAL OpenCL Vulkan GLFW and SDL wrapper library for .NET.,Libraries,UI
+OpenTK,https://github.com/opentk/opentk,The Open Toolkit library is a fast low-level C# binding for OpenGL OpenCL and OpenAL.,Libraries,UI
+MonoGame,https://github.com/MonoGame/MonoGame,One framework for creating powerful cross-platform games.,Frameworks,UI
+FNA,https://github.com/FNA-XNA/FNA,FNA is an XNA4 reimplementation that focuses on accuracy and preservation.,Frameworks,UI
+Stride,https://github.com/stride3d/stride,Stride Game Engine is a 2D/3D cross-platform game engine featuring a scene editor and C# scripting.,Frameworks,UI
+Godot,https://github.com/godotengine/godot,Godot Engine - Multi-platform 2D and 3D game engine with C# support.,Frameworks,UI
+Helix Toolkit,https://github.com/helix-toolkit/helix-toolkit,Helix Toolkit is a collection of 3D components for .NET.,Libraries,UI
+SharpDX,https://github.com/sharpdx/SharpDX,SharpDX is an open-source managed .NET wrapper of the DirectX API.,Libraries,UI
+Veldrid,https://github.com/mellinoe/veldrid,A low-level portable graphics library for .NET.,Libraries,UI
+ImGui.NET,https://github.com/ImGuiNET/ImGui.NET,An ImGui wrapper for .NET.,Libraries,UI
+GtkSharp,https://github.com/GtkSharp/GtkSharp,.NET wrapper for Gtk and its related components.,Libraries,UI
+Qml.Net,https://github.com/qmlnet/qmlnet,Qml.Net is a C# library to integrate C#/.NET with Qt/Qml.,Libraries,UI
+Fabulous,https://github.com/fsprojects/Fabulous,Declarative UI framework for cross-platform mobile & desktop apps using F# and MVU pattern.,Frameworks,UI
 Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.,Libraries,ORM
 RestSharp,https://github.com/restsharp/RestSharp,Simple REST and HTTP API Client for .NET.,Libraries,HTTP
 Polly,https://github.com/App-vNext/Polly,Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry Circuit Breaker Timeout Bulkhead Isolation and Fallback in a fluent and thread-safe manner.,Libraries,Resilience
