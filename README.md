@@ -33,9 +33,11 @@ Community-curated, PR free, self-managing list of awesome .NET goodness.
 - [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
 
 ### Compression
+- [FastLZMA2Net](https://github.com/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
 - [SharpCompress](https://github.com/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
 - [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
 - [Snappy](https://snappy.machinezoo.com/) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
+- [ZstdSharp](https://github.com/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
 ### Storage
 - [Stowage](https://github.com/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
