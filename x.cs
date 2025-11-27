@@ -118,15 +118,17 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     Match urlMatch = Regex.Match(body, @"### URL\s*\n+\s*([^\n]+)");
     Match descMatch = Regex.Match(body, @"### Description\s*\n+\s*([\s\S]*?)(?=\n###|$)");
     Match categoryMatch = Regex.Match(body, @"### Category\s*\n+\s*([^\n]+)");
+    Match subcategoryMatch = Regex.Match(body, @"### Subcategory\s*\n+\s*([^\n]+)");
 
     string? url = urlMatch.Success ? urlMatch.Groups[1].Value.Trim() : null;
     string? description = descMatch.Success ? descMatch.Groups[1].Value.Trim() : null;
-    string? category = categoryMatch.Success ? categoryMatch.Groups[1].Value.Trim() : "Other";
+    string category = categoryMatch.Success ? categoryMatch.Groups[1].Value.Trim() : "Other";
+    string subcategory = subcategoryMatch.Success ? subcategoryMatch.Groups[1].Value.Trim() : "";
 
-    if (url == null || description == null || category == null)
+    if (url == null || description == null)
         return null;
 
-    return new AwesomeLink(issue.Title.Trim(), url.Trim(), description.Trim(), category.Trim(), "");
+    return new AwesomeLink(issue.Title.Trim(), url.Trim(), description.Trim(), category.Trim(), subcategory.Trim());
 }
 
 async Task SaveLinkToCsv(AwesomeLink newLink) {
