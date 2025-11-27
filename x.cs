@@ -128,7 +128,7 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     if (url == null || description == null)
         return null;
 
-    if(subcategory == "_No response_") 
+    if(subcategory == "_No response_" || subcategory.ToLower() == "none" || subcategory == "-")
         subcategory = "";
 
     return new AwesomeLink(issue.Title, url, description, category, subcategory);
