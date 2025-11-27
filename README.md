@@ -10,11 +10,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 ## IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
+- [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
-
-### ### URL
-- [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
 
 ## Libraries
 
@@ -46,6 +44,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Performance
 - [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
+
+### _No response_
+- [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
 ## Videos
 
