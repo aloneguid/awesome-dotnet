@@ -216,7 +216,7 @@ async Task RebuildReadme() {
     string readme = await File.ReadAllTextAsync(ReadmePath);
 
     // delete everything starting with "# Links" to the end of the file
-    int idx = readme.IndexOf(LinksHeader + "\n");
+    int idx = readme.IndexOf(LinksHeader);
     if (idx >= 0) {
         readme = readme.Substring(0, idx + LinksHeader.Length);
     } else {
