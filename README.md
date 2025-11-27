@@ -41,3 +41,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Performance
 - [BenchmarkDotNet](https://benchmarkdotnet.org/) - De facto .NET benchmarking tool.
+
+## Videos
+
+### .NET Conf
+- [2023](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU) - .NET Conf 2023.
+- [2024](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY) - .NET Conf 2024.
+- [2025](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt) - .NET Conf 2025.
