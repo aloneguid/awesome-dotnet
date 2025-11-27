@@ -185,7 +185,6 @@ async Task RebuildReadme() {
 
     // Build Markdown lines, then normalize output using Markdig's NormalizeRenderer
     List<string> lines = new List<string>();
-    lines.Add("# Links");
     foreach (var category in grouped) {
         lines.Add("");
         lines.Add($"## {category.Category}");
