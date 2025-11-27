@@ -8,6 +8,7 @@ using Markdig;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using Markdig.Renderers.Normalize;
 using static System.Console;
 
 const int MinThumbsUp = 5;
@@ -172,7 +173,7 @@ async Task RebuildReadme() {
 
     // Group links by Category and Subcategory; sort all alphabetically
     var grouped = allLinks
-        .GroupBy(l => l.Category ?? "Other")
+        .GroupBy(l => string.IsNullOrWhiteSpace(l.Category) ? "Other" : l.Category)
         .OrderBy(g => g.Key, StringComparer.OrdinalIgnoreCase)
         .Select(g => new {
             Category = g.Key,
@@ -184,26 +185,28 @@ async Task RebuildReadme() {
                 }).ToList()
         }).ToList();
 
-    // Build Markdown content
-    StringBuilder md = new StringBuilder();
-    md.AppendLine("# Links");
+    // Build Markdown lines, then normalize output using Markdig's NormalizeRenderer
+    List<string> lines = new List<string>();
+    lines.Add("# Links");
     foreach (var category in grouped) {
-        md.AppendLine();
-        md.AppendLine($"## {category.Category}");
+        lines.Add("");
+        lines.Add($"## {category.Category}");
         foreach (var sub in category.Subgroups) {
             if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
-                md.AppendLine();
-                md.AppendLine($"### {sub.Subcategory}");
+                lines.Add("");
+                lines.Add($"### {sub.Subcategory}");
             } else {
-                md.AppendLine();
+                lines.Add("");
             }
             foreach (AwesomeLink link in sub.Links) {
-                md.AppendLine($"- [{link.Title}]({link.Url}) - {link.Description}");
+                string descPart = string.IsNullOrWhiteSpace(link.Description) ? string.Empty : $" - {link.Description}";
+                lines.Add($"- [{link.Title}]({link.Url}){descPart}");
             }
         }
     }
+    string generatedSection = string.Join("\n", lines);
 
-    // Read README.md, find '# Links' and replace everything after it with our new block
+    // Read README.md and replace '# Links' section using Markdig AST
     const string ReadmePath = "README.md";
     if (!File.Exists(ReadmePath)) {
         WriteLine("README.md not found; skipping rebuild.");
@@ -211,20 +214,50 @@ async Task RebuildReadme() {
     }
 
     string readme = await File.ReadAllTextAsync(ReadmePath);
-    int idx = readme.IndexOf("# Links", StringComparison.OrdinalIgnoreCase);
-    if (idx < 0) {
-        // Append if not present
-        string updated = readme.TrimEnd() + "\n\n" + md.ToString();
+    Markdig.Syntax.MarkdownDocument existingDoc = Markdig.Markdown.Parse(readme);
+
+    // Find the first level-1 heading with text 'Links'
+    int linksIndex = -1;
+    for (int i = 0; i < existingDoc.Count; i++) {
+        if (existingDoc[i] is Markdig.Syntax.HeadingBlock hb && hb.Level == 1) {
+            string text = hb.Inline?.ToString() ?? string.Empty;
+            if (text.Trim().Equals("Links", StringComparison.OrdinalIgnoreCase)) {
+                linksIndex = i;
+                break;
+            }
+        }
+    }
+
+    if (linksIndex < 0) {
+        // Append our generated doc to the end of README
+        Markdig.Syntax.MarkdownDocument genDoc = Markdig.Markdown.Parse(generatedSection);
+        var sw = new System.IO.StringWriter();
+        NormalizeRenderer renderer = new NormalizeRenderer(sw);
+        renderer.Render(genDoc);
+        string normalized = sw.ToString();
+        string updated = readme.TrimEnd() + "\n\n" + normalized;
         await File.WriteAllTextAsync(ReadmePath, updated);
         WriteLine("Appended Links section to README.md");
         return;
     }
 
-    // Replace from '# Links' to end
-    string prefix = readme.Substring(0, idx);
-    string updatedReadme = prefix.TrimEnd() + "\n\n" + md.ToString();
-    await File.WriteAllTextAsync(ReadmePath, updatedReadme);
-    WriteLine("Rebuilt Links section in README.md");
+    // Remove everything from the '# Links' heading to the end
+    while (existingDoc.Count > linksIndex) {
+        existingDoc.RemoveAt(existingDoc.Count - 1);
+    }
+
+    // Append the newly generated section (parsed) to existing document and render
+    Markdig.Syntax.MarkdownDocument newDoc = Markdig.Markdown.Parse(generatedSection);
+    foreach (Markdig.Syntax.Block block in newDoc) {
+        existingDoc.Add(block);
+    }
+
+    var writer = new System.IO.StringWriter();
+    var normalize = new NormalizeRenderer(writer);
+    normalize.Render(existingDoc);
+    string finalMd = writer.ToString();
+    await File.WriteAllTextAsync(ReadmePath, finalMd);
+    WriteLine("Rebuilt Links section in README.md using Markdig");
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
