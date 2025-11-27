@@ -11,6 +11,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
 - [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
+- [OmniSharp](https://www.omnisharp.net/) - Makes C# development available in vim, neovim, sublime, emacs, brackets.
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 

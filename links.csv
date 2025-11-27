@@ -1,6 +1,7 @@
 Title,Url,Description,Category,Subcategory
 JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
 LinqPad,https://www.linqpad.net/,The .NET Programmer’s Playground.,IDE,
+OmniSharp,https://www.omnisharp.net/,"Makes C# development available in vim, neovim, sublime, emacs, brackets.",IDE,
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Libraries,
