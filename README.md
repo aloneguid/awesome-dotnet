@@ -1,13 +1,10 @@
 # Awesome .NET
 
-Community-curated, PR free, self-managing list of awesome .NET goodness.
+Community-curated, PR free, self-managing list of awesome .NET goodness. Make sure this list is alive even when I'm not!
 
 ## How to Contribute
 
-1. [Create a new issue](../../issues/new/choose) and fill in all the information.
-2. You like appears in the list in one of two cases:
-    - If gets at least **5 likes (👍)** from any GitHub users.
-    - Or a like from myself, the Benevolent Dictator for Life (BDFL).
+To add a new link, [create a new issue](../../issues/new/choose) and fill in all the information. The link will appear on this page automatically if gets at least **5 likes (👍)** or a like from BDFL. To update existing link, create a new issue with existing URL, all the information will be replaced.
 
 # Links
 
