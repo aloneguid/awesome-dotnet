@@ -20,6 +20,11 @@ Snappier,https://github.com/brantburnett/Snappier,"Pure C# port of Google's Snap
 Snappy,https://github.com/robertvazan/snappy.net,"Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.",Libraries,Compression
 ZstdSharp,https://github.com/oleg-st/ZstdSharp,Port of zstd compression library to C#.,Libraries,Compression
 Serilog,https://serilog.net/,"Flexible, structured events - log file convenience.",Libraries,Logging
+NLog,https://github.com/NLog/NLog,Advanced and Structured Logging for Various .NET Platforms.,Libraries,Logging
+log4net,https://github.com/apache/logging-log4net,Apache log4net is a versatile widely-used logging library for .NET.,Libraries,Logging
+ZLogger,https://github.com/Cysharp/ZLogger,Zero allocation text/structured logger for .NET with StringInterpolation and Source Generator.,Libraries,Logging
+Microsoft.Extensions.Logging,https://github.com/dotnet/runtime,A lightweight and extensible logging API that is a part of ASP.NET Core and can be used in any .NET application.,Libraries,Logging
+Exceptionless,https://github.com/exceptionless/Exceptionless.Net,Exceptionless .NET Client for collecting errors events and logs.,Libraries,Logging
 Silverfly,https://github.com/furesoft/Silverfly,A pratt parser framework.,Libraries,Parsing
 Npgsql,https://github.com/npgsql/npgsql,The .NET data provider for PostgreSQL.,Libraries,Storage
 Stowage,https://github.com/aloneguid/stowage,Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.,Libraries,Storage
@@ -28,3 +33,18 @@ BenchmarkDotNet,https://github.com/dotnet/BenchmarkDotNet,De facto .NET benchmar
 2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,.NET Conf
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,.NET Conf
 2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,.NET Conf
+.NET Runtime,https://github.com/dotnet/runtime,.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.,Frameworks,Runtime
+Roslyn,https://github.com/dotnet/roslyn,The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.,Tools,Compiler
+ASP.NET Core,https://github.com/dotnet/aspnetcore,ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.,Frameworks,Web
+Blazor,https://github.com/dotnet/aspnetcore,Blazor lets you build interactive web UIs using C# instead of JavaScript.,Frameworks,Web
+ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Libraries,Machine Learning
+Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Libraries,ORM
+Avalonia,https://github.com/AvaloniaUI/Avalonia,Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems.,Frameworks,UI
+Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.,Libraries,ORM
+RestSharp,https://github.com/restsharp/RestSharp,Simple REST and HTTP API Client for .NET.,Libraries,HTTP
+Polly,https://github.com/App-vNext/Polly,Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry Circuit Breaker Timeout Bulkhead Isolation and Fallback in a fluent and thread-safe manner.,Libraries,Resilience
+AutoMapper,https://github.com/AutoMapper/AutoMapper,A convention-based object-object mapper in .NET.,Libraries,Mapping
+IdentityServer,https://github.com/DuendeSoftware/IdentityServer,The most flexible and standards-compliant OpenID Connect and OAuth 2.x framework for ASP.NET Core.,Libraries,Authentication
+MediatR,https://github.com/jbogard/MediatR,Simple mediator implementation in .NET for in-process messaging.,Libraries,Messaging
+FluentValidation,https://github.com/FluentValidation/FluentValidation,A popular .NET library for building strongly-typed validation rules.,Libraries,Validation
+Hangfire,https://github.com/HangfireIO/Hangfire,An easy way to perform background job processing in .NET and .NET Core applications.,Libraries,Background Jobs
