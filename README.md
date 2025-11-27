@@ -29,12 +29,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [NodaTime ![stars](https://img.shields.io/github/stars/nodatime/nodatime?style=social&label=)](https://github.com/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
 - [Octokit ![stars](https://img.shields.io/github/stars/octokit/dotnet-sdk?style=social&label=)](https://github.com/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
 
-### Authentication
-- [IdentityServer ![stars](https://img.shields.io/github/stars/DuendeSoftware/IdentityServer?style=social&label=)](https://github.com/DuendeSoftware/IdentityServer) - The most flexible and standards-compliant OpenID Connect and OAuth 2.x framework for ASP.NET Core.
-
-### Background Jobs
-- [Hangfire ![stars](https://img.shields.io/github/stars/HangfireIO/Hangfire?style=social&label=)](https://github.com/HangfireIO/Hangfire) - An easy way to perform background job processing in .NET and .NET Core applications.
-
 ### Big Data
 - [Apache Spark for .NET ![stars](https://img.shields.io/github/stars/dotnet/spark?style=social&label=)](https://github.com/dotnet/spark) - .NET bindings for Apache Spark for large-scale data processing.
 - [Deedle ![stars](https://img.shields.io/github/stars/fslaborg/Deedle?style=social&label=)](https://github.com/fslaborg/Deedle) - Easy to use .NET library for data and time series manipulation and scientific programming.
@@ -94,7 +88,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Messaging
 - [MassTransit ![stars](https://img.shields.io/github/stars/MassTransit/MassTransit?style=social&label=)](https://github.com/MassTransit/MassTransit) - Distributed application framework for .NET supporting message-based architectures.
-- [MediatR ![stars](https://img.shields.io/github/stars/jbogard/MediatR?style=social&label=)](https://github.com/jbogard/MediatR) - Simple mediator implementation in .NET for in-process messaging.
 - [Rebus ![stars](https://img.shields.io/github/stars/rebus-org/Rebus?style=social&label=)](https://github.com/rebus-org/Rebus) - Simple and lean service bus implementation for .NET.
 
 ### ORM
@@ -119,9 +112,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Testing
 - [Bogus ![stars](https://img.shields.io/github/stars/bchavez/Bogus?style=social&label=)](https://github.com/bchavez/Bogus) - A simple fake data generator for C# F# and VB.NET for testing and seeding databases.
-
-### Validation
-- [FluentValidation ![stars](https://img.shields.io/github/stars/FluentValidation/FluentValidation?style=social&label=)](https://github.com/FluentValidation/FluentValidation) - A popular .NET library for building strongly-typed validation rules.
 
 ## Runtimes
 
