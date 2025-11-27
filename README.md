@@ -12,41 +12,41 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
 - [LinqPad](https://www.linqpad.net/) - The .NET Programmer’s Playground.
 - [OmniSharp](https://www.omnisharp.net/) - Makes C# development available in vim, neovim, sublime, emacs, brackets.
-- [SharpIDE](https://github.com/MattParkerDev/SharpIDE) ![GitHub Repo stars](https://img.shields.io/github/stars/MattParkerDev/SharpIDE?style=flat-square) - A modern, cross platform IDE for .NET, built with .NET & Godot.
+- [SharpIDE](https://github.com/MattParkerDev/SharpIDE) ![stars](https://img.shields.io/github/stars/MattParkerDev/SharpIDE) - A modern, cross platform IDE for .NET, built with .NET & Godot.
 - [Visual Studio](https://visualstudio.microsoft.com/) - The Greatest. The Most Powerful.
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
 ## Inspiration
 
-- [Aviyal](https://github.com/TheAjaykrishnanR/aviyal) ![GitHub Repo stars](https://img.shields.io/github/stars/TheAjaykrishnanR/aviyal?style=flat-square) - Window manager for windows written purely in C# thats simple, lightweight and portable.
+- [Aviyal](https://github.com/TheAjaykrishnanR/aviyal) ![stars](https://img.shields.io/github/stars/TheAjaykrishnanR/aviyal) - Window manager for windows written purely in C# thats simple, lightweight and portable.
 - [Retroc64](https://retroc64.github.io/) - Programming the Commodore 64 with .NET.
 
 ## Libraries
 
-- [Humanizer](https://github.com/Humanizr/Humanizer) ![GitHub Repo stars](https://img.shields.io/github/stars/Humanizr/Humanizer?style=flat-square) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
-- [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) ![GitHub Repo stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=flat-square) - High performance Lua interpreter implemented in C# for .NET and Unity.
-- [NodaTime](https://github.com/nodatime/nodatime) ![GitHub Repo stars](https://img.shields.io/github/stars/nodatime/nodatime?style=flat-square) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
-- [Octokit](https://github.com/octokit/dotnet-sdk) ![GitHub Repo stars](https://img.shields.io/github/stars/octokit/dotnet-sdk?style=flat-square) - .NET SDK in C# for GitHub's standard GitHub.com product.
+- [Humanizer](https://github.com/Humanizr/Humanizer) ![stars](https://img.shields.io/github/stars/Humanizr/Humanizer) - Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
+- [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp) ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
+- [NodaTime](https://github.com/nodatime/nodatime) ![stars](https://img.shields.io/github/stars/nodatime/nodatime) - Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
+- [Octokit](https://github.com/octokit/dotnet-sdk) ![stars](https://img.shields.io/github/stars/octokit/dotnet-sdk) - .NET SDK in C# for GitHub's standard GitHub.com product.
 
 ### Big Data
-- [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) ![GitHub Repo stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=flat-square) - Fully managed Apache Parquet implementation.
+- [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
 
 ### CLI
-- [Spectre.Console](https://github.com/spectreconsole/spectre.console) ![GitHub Repo stars](https://img.shields.io/github/stars/spectreconsole/spectre.console?style=flat-square) - A .NET library that makes it easier to create beautiful console applications.
+- [Spectre.Console](https://github.com/spectreconsole/spectre.console) ![stars](https://img.shields.io/github/stars/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
 
 ### Compression
-- [FastLZMA2Net](https://github.com/kingsznhone/FastLZMA2Net) ![GitHub Repo stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net?style=flat-square) - Fast LZMA2 Wrapper for .NET. Windows only.
-- [SharpCompress](https://github.com/adamhathcock/sharpcompress) ![GitHub Repo stars](https://img.shields.io/github/stars/adamhathcock/sharpcompress?style=flat-square) - Fully managed C# library to deal with many compression types and formats.
+- [FastLZMA2Net](https://github.com/kingsznhone/FastLZMA2Net) ![stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
+- [SharpCompress](https://github.com/adamhathcock/sharpcompress) ![stars](https://img.shields.io/github/stars/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
 - [Snappier](https://brantburnett.github.io/Snappier/) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
 - [Snappy](https://snappy.machinezoo.com/) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
-- [ZstdSharp](https://github.com/oleg-st/ZstdSharp) ![GitHub Repo stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp?style=flat-square) - Port of zstd compression library to C#.
+- [ZstdSharp](https://github.com/oleg-st/ZstdSharp) ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
 
 ### Parsing
-- [Silverfly](https://github.com/furesoft/Silverfly) ![GitHub Repo stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=flat-square) - A pratt parser framework.
+- [Silverfly](https://github.com/furesoft/Silverfly) ![stars](https://img.shields.io/github/stars/furesoft/Silverfly) - A pratt parser framework.
 
 ### Storage
-- [Npgsql](https://github.com/npgsql/npgsql) ![GitHub Repo stars](https://img.shields.io/github/stars/npgsql/npgsql?style=flat-square) - The .NET data provider for PostgreSQL.
-- [Stowage](https://github.com/aloneguid/stowage) ![GitHub Repo stars](https://img.shields.io/github/stars/aloneguid/stowage?style=flat-square) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
+- [Npgsql](https://github.com/npgsql/npgsql) ![stars](https://img.shields.io/github/stars/npgsql/npgsql) - The .NET data provider for PostgreSQL.
+- [Stowage](https://github.com/aloneguid/stowage) ![stars](https://img.shields.io/github/stars/aloneguid/stowage) - Bloat-free zero dependency .NET cloud storage kit that supports at minimum THE major cloud providers.
 
 ## Tools
 
