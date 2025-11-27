@@ -71,7 +71,6 @@ NativeAOT,https://github.com/dotnet/runtime,Ahead-of-time (AOT) compilation supp
 Xamarin Runtime,https://github.com/xamarin/xamarin-android,Runtime for Xamarin.Android and Xamarin.iOS applications.,Runtimes,
 Unity Runtime,https://docs.unity3d.com/Manual/dotnetProfileSupport.html,Customized .NET runtime used by Unity game engine.,Runtimes,
 IL2CPP,https://docs.unity3d.com/Manual/IL2CPP.html,Unity's IL2CPP scripting backend converts IL code to C++ for better performance.,Runtimes,
-ASP.NET Core,https://github.com/dotnet/aspnetcore,ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows Mac or Linux.,Frameworks,Web
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Libraries,Machine Learning
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Libraries,ORM
 WPF,https://github.com/dotnet/wpf,WPF is a .NET Core UI framework for building Windows desktop applications.,UI,Desktop
