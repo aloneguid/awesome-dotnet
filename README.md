@@ -7,10 +7,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Links
 
 
-## CLI
-
-- [Spectre.Console](https://github.com/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
-
 ## IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
@@ -26,6 +22,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Big Data
 - [Parquet.Net](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
+
+### CLI
+- [Spectre.Console](https://github.com/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
 
 ### Compression
 - [FastLZMA2Net](https://github.com/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
