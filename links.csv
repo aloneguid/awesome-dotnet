@@ -14,6 +14,14 @@ NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date 
 Octokit,https://github.com/octokit/dotnet-sdk,.NET SDK in C# for GitHub's standard GitHub.com product.,Libraries,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Libraries,Big Data
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,Libraries,CLI
+System.CommandLine,https://github.com/dotnet/command-line-api,System.CommandLine is a powerful command line parser for building modern CLI applications.,Libraries,CLI
+CommandLineParser,https://github.com/commandlineparser/commandline,The best C# command line parser that brings standardized *nix getopt style to .NET.,Libraries,CLI
+Cocona,https://github.com/mayuki/Cocona,Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.,Libraries,CLI
+CliFx,https://github.com/Tyrrrz/CliFx,Declarative framework for building command line interfaces with dependency injection and validation support.,Libraries,CLI
+Gui.cs,https://github.com/gui-cs/Terminal.Gui,Cross-platform Terminal UI toolkit for .NET that makes it easy to build rich console applications.,Libraries,CLI
+Colorful.Console,https://github.com/tomakita/Colorful.Console,Style your .NET console output with ease using RGB colors and gradients.,Libraries,CLI
+Sharprompt,https://github.com/shibayan/Sharprompt,Interactive command-line prompts for .NET Core inspired by Inquirer.js.,Libraries,CLI
+Crayon,https://github.com/riezebosch/crayon,Extremely simple console coloring for .NET applications.,Libraries,CLI
 FastLZMA2Net,https://github.com/kingsznhone/FastLZMA2Net,Fast LZMA2 Wrapper for .NET. Windows only.,Libraries,Compression
 SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# library to deal with many compression types and formats.,Libraries,Compression
 Snappier,https://github.com/brantburnett/Snappier,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Libraries,Compression
