@@ -51,7 +51,15 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Parquet.Net ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=social&label=)](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
 
 ### CLI
+- [CliFx ![stars](https://img.shields.io/github/stars/Tyrrrz/CliFx?style=social&label=)](https://github.com/Tyrrrz/CliFx) - Declarative framework for building command line interfaces with dependency injection and validation support.
+- [Cocona ![stars](https://img.shields.io/github/stars/mayuki/Cocona?style=social&label=)](https://github.com/mayuki/Cocona) - Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.
+- [Colorful.Console ![stars](https://img.shields.io/github/stars/tomakita/Colorful.Console?style=social&label=)](https://github.com/tomakita/Colorful.Console) - Style your .NET console output with ease using RGB colors and gradients.
+- [CommandLineParser ![stars](https://img.shields.io/github/stars/commandlineparser/commandline?style=social&label=)](https://github.com/commandlineparser/commandline) - The best C# command line parser that brings standardized *nix getopt style to .NET.
+- [Crayon ![stars](https://img.shields.io/github/stars/riezebosch/crayon?style=social&label=)](https://github.com/riezebosch/crayon) - Extremely simple console coloring for .NET applications.
+- [Gui.cs ![stars](https://img.shields.io/github/stars/gui-cs/Terminal.Gui?style=social&label=)](https://github.com/gui-cs/Terminal.Gui) - Cross-platform Terminal UI toolkit for .NET that makes it easy to build rich console applications.
+- [Sharprompt ![stars](https://img.shields.io/github/stars/shibayan/Sharprompt?style=social&label=)](https://github.com/shibayan/Sharprompt) - Interactive command-line prompts for .NET Core inspired by Inquirer.js.
 - [Spectre.Console ![stars](https://img.shields.io/github/stars/spectreconsole/spectre.console?style=social&label=)](https://github.com/spectreconsole/spectre.console) - A .NET library that makes it easier to create beautiful console applications.
+- [System.CommandLine ![stars](https://img.shields.io/github/stars/dotnet/command-line-api?style=social&label=)](https://github.com/dotnet/command-line-api) - System.CommandLine is a powerful command line parser for building modern CLI applications.
 
 ### Compression
 - [FastLZMA2Net ![stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net?style=social&label=)](https://github.com/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
