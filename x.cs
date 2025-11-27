@@ -212,8 +212,8 @@ async Task RebuildReadme() {
         }
     }
     string generatedSection = string.Join("\n", lines);
-    WriteLine("generated section:");
-    WriteLine(generatedSection);
+    // WriteLine("generated section:");
+    // WriteLine(generatedSection);
 
     // Read README.md and replace '# Links' section using Markdig AST
     const string ReadmePath = "README.md";
@@ -235,7 +235,7 @@ async Task RebuildReadme() {
 
     // append the generated section
     readme += "\n\n" + generatedSection + "\n";
-    WriteLine("Writing updated README.md");
+    WriteLine("Writing updated README.md:");
     WriteLine(readme);
     await File.WriteAllTextAsync(ReadmePath, readme);
 }
