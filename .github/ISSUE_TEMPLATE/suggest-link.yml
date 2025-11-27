@@ -19,10 +19,10 @@ body:
     id: subcategory
     attributes:
       label: Subcategory
-      description: What subcategory does this belong to?
+      description: What subcategory does this belong to? (Optional)
       placeholder: "Web, Mobile, Data Science..."
     validations:
-      required: true
+      required: false
   - type: input
     id: url
     attributes:
