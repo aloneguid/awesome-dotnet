@@ -11,7 +11,6 @@ Community-curated, PR free, self-managing list of awesome .NET goodness.
 
 # Links
 
-# Links
 
 ## CLI
 
