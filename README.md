@@ -131,6 +131,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### Online Compilers
 - [.NET Lab](https://lab.razor.fyi/#csharp) - C# and Razor compiler playground in the browser via Blazor WebAssembly.
+- [OneCompiler](https://onecompiler.com/csharp) - Online compiler with many languages supported, including C#.
 - [Sharplab](https://sharplab.io/) - Amazing online compiler dotnet devs can use as a playground.
 
 ### Performance
