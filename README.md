@@ -79,6 +79,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 # Game Engines
 
+- [CryEngine](https://www.cryengine.com/) - The most powerful game development platform for you and your team to create world-class entertainment experiences.
 - [Evergine](https://evergine.com/) - Another decent game engine.
 - [Falco Engine](https://falco3d.com/) - Free cross-platform 3D game engine with C# scripting, Bullet physics and OpenAL audio.
 - [Flax Engine](https://flaxengine.com/) - Free cross-platform 3D game engine with C# scripting, Bullet physics and OpenAL audio.
@@ -87,6 +88,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [NeoAxis](https://www.neoaxis.com/) - A versatile game engine for creating video games and real-time apps.
 - [Prowl Engine ![stars](https://img.shields.io/github/stars/ProwlEngine/Prowl?style=social&label=)](https://github.com/ProwlEngine/Prowl) - An Open Source C# 3D Game Engine under MIT license, inspired by Unity and featuring a complete editor.
 - [S&box](https://sbox.game/about) - Spiritual successor to Garry's Mod and a love letter to Source 2 ❤.
+- [SharpGDX ![stars](https://img.shields.io/github/stars/SharpGDX/SharpGDX?style=social&label=)](https://github.com/SharpGDX/SharpGDX) - C# Port of libGDX.
 - [StereoKit](https://stereokit.net) - Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.
 - [Stride](https://www.stride3d.net/) - Free and open-source cross-platform C# game engine. It is fit for both 2D and 3D games, as well as any other interactive content running on desktop and VR.
 - [Unity](https://unity.com/) - The most popular game engine in the world.
