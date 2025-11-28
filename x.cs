@@ -13,7 +13,7 @@ using Humanizer;
 
 const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
-const string LinksHeader = "# Links";
+const string LinksMarker = "<!-- auto-generated content below -->";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
@@ -122,9 +122,9 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
     else {
         awl = SanitizeLink(awl);
         string md = ToMarkdownLink(awl);
-        string titledMd = $"## {awl.Category}\n\n";
+        string titledMd = $"# {awl.Category}\n\n";
         if(!string.IsNullOrEmpty(awl.Subcategory)) {
-            titledMd += $"### {awl.Subcategory}\n\n";
+            titledMd += $"## {awl.Subcategory}\n\n";
         }
         titledMd += md;
 
@@ -310,11 +310,11 @@ async Task RebuildReadme() {
     List<string> lines = new List<string>();
     foreach (var category in grouped) {
         lines.Add("");
-        lines.Add($"## {category.Category}");
+        lines.Add($"# {category.Category}");
         foreach (var sub in category.Subgroups) {
             if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
                 lines.Add("");
-                lines.Add($"### {sub.Subcategory}");
+                lines.Add($"## {sub.Subcategory}");
             } else {
                 lines.Add("");
             }
@@ -336,13 +336,13 @@ async Task RebuildReadme() {
 
     string readme = await File.ReadAllTextAsync(ReadmePath);
 
-    // delete everything starting with "# Links" to the end of the file
-    int idx = readme.IndexOf(LinksHeader);
+    // delete everything starting with the marker to the end of the file
+    int idx = readme.IndexOf(LinksMarker);
     if (idx >= 0) {
-        readme = readme.Substring(0, idx + LinksHeader.Length);
+        readme = readme.Substring(0, idx + LinksMarker.Length);
     } else {
-        // If no "# Links" section found, append at the end
-        readme += "\n\n" + LinksHeader;
+        // If no marker found, append at the end
+        readme += "\n\n" + LinksMarker;
     }
 
     // append the generated section
