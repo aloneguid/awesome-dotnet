@@ -80,13 +80,20 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Game Engines
 
 - [CryEngine](https://www.cryengine.com/) - The most powerful game development platform for you and your team to create world-class entertainment experiences.
+- [Defold](https://forum.defold.com/t/defold-c-support/79479) - Engine with experimental C# support.
 - [Evergine](https://evergine.com/) - Another decent game engine.
 - [Falco Engine](https://falco3d.com/) - Free cross-platform 3D game engine with C# scripting, Bullet physics and OpenAL audio.
+- [Flat Red Ball ![stars](https://img.shields.io/github/stars/vchelaru/FlatRedBall?style=social&label=)](https://github.com/vchelaru/FlatRedBall) - Cross-platform 2D game engine focused on ultimate productivity. Built in .NET.
 - [Flax Engine](https://flaxengine.com/) - Free cross-platform 3D game engine with C# scripting, Bullet physics and OpenAL audio.
+- [FNA](https://fna-xna.github.io/) - Reimplementation of the Microsoft XNA Game Studio 4.0 Refresh libraries.
 - [Godot](https://godotengine.org/) - Free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!.
 - [Hazel Engine](https://hazelengine.com) - Simple-yet-powerful 3D game engine made by Studio Cherno and volunteers, available for use now with big plans for the future.
+- [MonoGame](https://monogame.net/) - One framework for creating powerful cross-platform games.
+- [Moonworks ![stars](https://img.shields.io/github/stars/MoonsideGames/MoonWorks?style=social&label=)](https://github.com/MoonsideGames/MoonWorks) - A free cross-platform game development framework.
+- [Murder Engine ![stars](https://img.shields.io/github/stars/isadorasophia/murder?style=social&label=)](https://github.com/isadorasophia/murder) - Pixel art ECS game engine.
 - [NeoAxis](https://www.neoaxis.com/) - A versatile game engine for creating video games and real-time apps.
 - [Prowl Engine ![stars](https://img.shields.io/github/stars/ProwlEngine/Prowl?style=social&label=)](https://github.com/ProwlEngine/Prowl) - An Open Source C# 3D Game Engine under MIT license, inspired by Unity and featuring a complete editor.
+- [Rebel Fork RBFX ![stars](https://img.shields.io/github/stars/rbfx/rbfx?style=social&label=)](https://github.com/rbfx/rbfx) - Lightweight Game Engine/Framework in C++17 with WYSIWYG Editor. Experimental C# bindings.
 - [S&box](https://sbox.game/about) - Spiritual successor to Garry's Mod and a love letter to Source 2 ❤.
 - [SharpGDX ![stars](https://img.shields.io/github/stars/SharpGDX/SharpGDX?style=social&label=)](https://github.com/SharpGDX/SharpGDX) - C# Port of libGDX.
 - [StereoKit](https://stereokit.net) - Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.
