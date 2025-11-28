@@ -2,7 +2,8 @@ name: The Workflow
 
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [opened, edited]
+    # types: [opened, edited, labeled]
   issue_comment:
     types: [created]
   push:
