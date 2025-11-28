@@ -92,6 +92,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Moonworks ![stars](https://img.shields.io/github/stars/MoonsideGames/MoonWorks?style=social&label=)](https://github.com/MoonsideGames/MoonWorks) - A free cross-platform game development framework.
 - [Murder Engine ![stars](https://img.shields.io/github/stars/isadorasophia/murder?style=social&label=)](https://github.com/isadorasophia/murder) - Pixel art ECS game engine.
 - [NeoAxis](https://www.neoaxis.com/) - A versatile game engine for creating video games and real-time apps.
+- [Osu! Framework ![stars](https://img.shields.io/github/stars/ppy/osu-framework?style=social&label=)](https://github.com/ppy/osu-framework) - A game framework written with osu! (A free-to-win rhythm game) in mind.
 - [Prowl Engine ![stars](https://img.shields.io/github/stars/ProwlEngine/Prowl?style=social&label=)](https://github.com/ProwlEngine/Prowl) - An Open Source C# 3D Game Engine under MIT license, inspired by Unity and featuring a complete editor.
 - [Rebel Fork RBFX ![stars](https://img.shields.io/github/stars/rbfx/rbfx?style=social&label=)](https://github.com/rbfx/rbfx) - Lightweight Game Engine/Framework in C++17 with WYSIWYG Editor. Experimental C# bindings.
 - [S&box](https://sbox.game/about) - Spiritual successor to Garry's Mod and a love letter to Source 2 ❤.
