@@ -1,6 +1,6 @@
 name: Suggest a Link
 description: Suggest a new link to be added to the awesome list
-title: "...link title..."
+title: "...short name e.g. xUnit..."
 labels: ["link"]
 body:
   - type: markdown

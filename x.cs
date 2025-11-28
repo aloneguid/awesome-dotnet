@@ -6,6 +6,7 @@ using Octokit;
 using CsvHelper;
 using System.Globalization;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using static System.Console;
 
@@ -15,7 +16,8 @@ const string LinksHeader = "# Links";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
-WriteLine($"Created GitHub client for repository: {owner}/{repo}. Event: {wfEvent}");
+int? eventIssueNumber = GetEventIssueNumber();
+WriteLine($"Created GitHub client for repository: {owner}/{repo}. Event: {wfEvent}, issue id: {eventIssueNumber}");
 await ProcessOpenIssues(client, owner, repo);
 await RebuildReadme();
 
@@ -43,6 +45,24 @@ GitHubClient CreateClient(out string owner, out string repo) {
     };
 
     return client;
+}
+
+int? GetEventIssueNumber() {
+    string? eventPath = Environment.GetEnvironmentVariable("GITHUB_EVENT_PATH");
+    if (string.IsNullOrEmpty(eventPath) || !File.Exists(eventPath)) {
+        return null;
+    }
+
+    string eventJson = File.ReadAllText(eventPath);
+    
+    // Parse JSON to get issue.number
+    using JsonDocument doc = JsonDocument.Parse(eventJson);
+    if (doc.RootElement.TryGetProperty("issue", out JsonElement issueElement) &&
+        issueElement.TryGetProperty("number", out JsonElement numberElement)) {
+        return numberElement.GetInt32();
+    }
+    
+    return null;
 }
 
 async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issue issue) {
@@ -82,7 +102,17 @@ async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issu
 
         WriteLine($"✔️ posted comment and closed.");
     }
-}   
+}
+
+async Task ProcessIssueUpdates(GitHubClient client, string owner, string repo, Issue issue) {
+    if(wfEvent != "issues")
+        return;
+
+    // Placeholder for future issue update processing logic
+    // IReadOnlyList<IssueComment> comments = await client.Issue.Comment.GetAllForIssue(issue.Repository.Id, issue.Number);
+    // var lastComment = comments.OrderByDescending(c => c.CreatedAt).FirstOrDefault();
+    // lastComment.
+}
 
 async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
     IReadOnlyList<Issue> issues = await client.Issue.GetAllForRepository(owner, repo, new RepositoryIssueRequest {
@@ -104,6 +134,7 @@ async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
         }
 
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
+        await ProcessIssueUpdates(client, owner, repo, issue);
         await ProcessOpenIssue(client, owner, repo, issue);
     }
 }
