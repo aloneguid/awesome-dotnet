@@ -1,4 +1,4 @@
-name: Hourly run
+name: The Workflow
 
 on:
   issues:

@@ -1,5 +1,6 @@
 #:package Octokit@14.0.0
 #:package CsvHelper@33.1.0
+#:package Humanizer@3.0.1
 
 using Octokit;
 using CsvHelper;
@@ -13,7 +14,8 @@ const string CsvDBPath = "links.csv";
 const string LinksHeader = "# Links";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
-WriteLine($"Created GitHub client for repository: {owner}/{repo}");
+string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
+WriteLine($"Created GitHub client for repository: {owner}/{repo}. Event: {wfEvent}");
 await ProcessOpenIssues(client, owner, repo);
 await RebuildReadme();
 
