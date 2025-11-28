@@ -39,6 +39,7 @@ EventStore,https://github.com/EventStore/EventStore,The stream database optimise
 MassTransit,https://github.com/MassTransit/MassTransit,Distributed application framework for .NET supporting message-based architectures.,Distributed Systems,
 NEventStore,https://github.com/NEventStore/NEventStore,A persistence library used to abstract different storage implementations when using event sourcing.,Distributed Systems,
 Orleans,https://github.com/dotnet/orleans,Orleans is a cross-platform framework for building distributed applications with .NET.,Distributed Systems,
+Proto.Actor,https://proto.actor,Cross-platform actor framework for .NET and Go.,Distributed Systems,
 Rebus,https://github.com/rebus-org/Rebus,Simple and lean service bus implementation for .NET.,Distributed Systems,
 JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
 LinqPad,https://www.linqpad.net/,The .NET Programmer’s Playground.,IDE,
