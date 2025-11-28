@@ -17,8 +17,8 @@ const string LinksHeader = "# Links";
 GitHubClient client = CreateClient(out string owner, out string repo);
 string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
 int? eventIssueNumber = GetEventIssueNumber();
-WriteLine($"Created GitHub client for repository: {owner}/{repo}. Event: {wfEvent}, issue id: {eventIssueNumber}");
-await ProcessOpenIssues(client, owner, repo);
+WriteLine($"Created GitHub client for repository: '{owner}/{repo}'. Event: '{wfEvent}', issue id: '{eventIssueNumber}'");
+await ProcessOpenIssues();
 await RebuildReadme();
 
 GitHubClient CreateClient(out string owner, out string repo) {
@@ -65,7 +65,7 @@ int? GetEventIssueNumber() {
     return null;
 }
 
-async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issue issue) {
+async Task ProcessOpenIssue(Issue issue) {
     IReadOnlyList<Reaction> reactions = await client.Reaction.Issue.GetAll(owner, repo, issue.Number);
     List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
     int thumbsUpCount = thumbsUpReactions.Count;
@@ -104,7 +104,7 @@ async Task ProcessOpenIssue(GitHubClient client, string owner, string repo, Issu
     }
 }
 
-async Task ProcessIssueUpdates(GitHubClient client, string owner, string repo, Issue issue) {
+async Task ProcessIssueUpdates(Issue issue) {
     if(wfEvent != "issues")
         return;
 
@@ -114,7 +114,7 @@ async Task ProcessIssueUpdates(GitHubClient client, string owner, string repo, I
     // lastComment.
 }
 
-async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
+async Task ProcessOpenIssues() {
     IReadOnlyList<Issue> issues = await client.Issue.GetAllForRepository(owner, repo, new RepositoryIssueRequest {
         State = ItemStateFilter.Open
     });
@@ -134,8 +134,8 @@ async Task ProcessOpenIssues(GitHubClient client, string owner, string repo) {
         }
 
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
-        await ProcessIssueUpdates(client, owner, repo, issue);
-        await ProcessOpenIssue(client, owner, repo, issue);
+        await ProcessIssueUpdates(issue);
+        await ProcessOpenIssue(issue);
     }
 }
 
