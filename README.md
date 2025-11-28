@@ -77,6 +77,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Proto.Actor](https://proto.actor) - Cross-platform actor framework for .NET and Go.
 - [Rebus ![stars](https://img.shields.io/github/stars/rebus-org/Rebus?style=social&label=)](https://github.com/rebus-org/Rebus) - Simple and lean service bus implementation for .NET.
 
+# Game Engines
+
+- [Unity](https://unity.com/) - The most popular game engine in the world.
+
 # IDE
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/) - The world's most loved .NET and game dev IDE. Now free for non-commercial use.
