@@ -95,6 +95,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Prowl Engine ![stars](https://img.shields.io/github/stars/ProwlEngine/Prowl?style=social&label=)](https://github.com/ProwlEngine/Prowl) - An Open Source C# 3D Game Engine under MIT license, inspired by Unity and featuring a complete editor.
 - [Rebel Fork RBFX ![stars](https://img.shields.io/github/stars/rbfx/rbfx?style=social&label=)](https://github.com/rbfx/rbfx) - Lightweight Game Engine/Framework in C++17 with WYSIWYG Editor. Experimental C# bindings.
 - [S&box](https://sbox.game/about) - Spiritual successor to Garry's Mod and a love letter to Source 2 ❤.
+- [ShapeEngine ![stars](https://img.shields.io/github/stars/DaveGreen-Games/ShapeEngine?style=social&label=)](https://github.com/DaveGreen-Games/ShapeEngine) - Custom made engine based on the great Raylib Framework. Main focus is being performant and only using draw functions instead of textures.
 - [SharpGDX ![stars](https://img.shields.io/github/stars/SharpGDX/SharpGDX?style=social&label=)](https://github.com/SharpGDX/SharpGDX) - C# Port of libGDX.
 - [StereoKit](https://stereokit.net) - Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.
 - [Stride](https://www.stride3d.net/) - Free and open-source cross-platform C# game engine. It is fit for both 2D and 3D games, as well as any other interactive content running on desktop and VR.
