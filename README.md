@@ -172,5 +172,6 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [2025](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt) - .NET Conf 2025.
 
 ### You Tube Channels
+- [.NET Foundation](https://www.youtube.com/@NETFoundation) - The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.
 - [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
 - [NDC Conferences](https://www.youtube.com/@NDC) - High-end events for software developers.
