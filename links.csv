@@ -43,6 +43,8 @@ NEventStore,https://github.com/NEventStore/NEventStore,A persistence library use
 Orleans,https://github.com/dotnet/orleans,Orleans is a cross-platform framework for building distributed applications with .NET.,Distributed Systems,
 Proto.Actor,https://proto.actor,Cross-platform actor framework for .NET and Go.,Distributed Systems,
 Rebus,https://github.com/rebus-org/Rebus,Simple and lean service bus implementation for .NET.,Distributed Systems,
+Godot,https://godotengine.org/,"Free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!.",Game Engines,
+StereoKit,https://stereokit.net,Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.,Game Engines,
 Unity,https://unity.com/,The most popular game engine in the world.,Game Engines,
 JetBrains Rider,https://www.jetbrains.com/rider/,The world's most loved .NET and game dev IDE. Now free for non-commercial use.,IDE,
 LinqPad,https://www.linqpad.net/,The .NET Programmer’s Playground.,IDE,

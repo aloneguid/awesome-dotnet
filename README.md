@@ -79,6 +79,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 # Game Engines
 
+- [Godot](https://godotengine.org/) - Free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!.
+- [StereoKit](https://stereokit.net) - Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.
 - [Unity](https://unity.com/) - The most popular game engine in the world.
 
 # IDE
