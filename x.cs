@@ -84,7 +84,7 @@ async Task ProcessOpenIssue(Issue issue) {
         await SaveLinkToCsv(link);
         WriteLine($"  💾 Saved link to CSV: {link.Url}");
 
-        string closeComment = "This issue is being closed because ";
+        string closeComment = "Thank you! The link suggestion is now merged, because ";
 
         closeComment += ownerApproved
             ? "it is approved by the repository owner."
@@ -114,6 +114,7 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
         sb.Append("  ❌ Unable to parse issue body to extract link information. Please ensure the issue follows the template format.");
     }
     else {
+        awl = SanitizeLink(awl);
         string md = ToMarkdownLink(awl);
         sb.Append("Thanks! This is how the link will appear in the README:\n\n");
         sb.Append(md);
