@@ -28,7 +28,7 @@ Json.NET,https://github.com/JamesNK/Newtonsoft.Json,Popular high-performance JSO
 MessagePack,https://github.com/MessagePack-CSharp/MessagePack-CSharp,Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.,Data Formats,
 NPOI,https://github.com/nissl-lab/npoi,.NET library for reading and writing Microsoft Office binary and OOXML file formats.,Data Formats,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Data Formats,
-Protocol Buffers,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Data Formats,
+protobuf-net,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Data Formats,
 Bogus,https://github.com/bchavez/Bogus,A simple fake data generator for C# F# and VB.NET for testing and seeding databases.,Data Generators,
 Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.,Databases,
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Databases,
@@ -98,3 +98,4 @@ XUnit,https://github.com/xunit/xunit,"Free, open source, community-focused unit 
 .NET Foundation,https://www.youtube.com/@NETFoundation,The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.,Videos,You Tube Channels
 Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,You Tube Channels
 NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,You Tube Channels
+
