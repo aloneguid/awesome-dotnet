@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using static System.Console;
+using Humanizer;
 
 const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
@@ -116,8 +117,14 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
     else {
         awl = SanitizeLink(awl);
         string md = ToMarkdownLink(awl);
+        string titledMd = $"## {awl.Category}\n\n";
+        if(!string.IsNullOrEmpty(awl.Subcategory)) {
+            titledMd += $"### {awl.Subcategory}\n\n";
+        }
+        titledMd += md;
+
         sb.Append("Thanks! This is how the link will appear in the README:\n\n");
-        sb.Append(md);
+        sb.Append(titledMd);
         sb.Append("\n\n");
 
         sb.Append("If you need to make any changes, please update the issue body accordingly. ");
@@ -191,13 +198,27 @@ string Sanitize(string input, bool capitalize = true, bool endWithFullStop = fal
     return input;
 }
 
+string SanitizeCategoryName(string category) {
+    // make sure it's camel cased
+    category = category.Trim();
+    if(string.IsNullOrEmpty(category))
+        return "Other";
+    
+    return category.Titleize();
+}
+
+string SanitizeSubcategoryName(string subcategory) {
+    // make sure it's camel cased
+    return subcategory.Trim().Titleize();
+}
+
 AwesomeLink SanitizeLink(AwesomeLink link) {
     return new AwesomeLink(
         Sanitize(link.Title),
         Sanitize(link.Url, false, false),
         Sanitize(link.Description, true, true),
-        Sanitize(link.Category, true, false),
-        Sanitize(link.Subcategory, true, false)
+        SanitizeCategoryName(link.Category),
+        SanitizeSubcategoryName(link.Subcategory)
     );
 }
 
