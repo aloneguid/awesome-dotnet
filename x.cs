@@ -71,21 +71,18 @@ async Task ProcessOpenIssue(Issue issue) {
     int thumbsUpCount = thumbsUpReactions.Count;
     bool ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
     bool shouldClose = thumbsUpCount >= MinThumbsUp || ownerApproved;
-
-    WriteLine($"              👍: {thumbsUpCount}");
-    WriteLine($"  Owner approved: {ownerApproved}");
-    WriteLine($"    Should close: {shouldClose}");
+    WriteLine($"  +1 reactions: {thumbsUpCount}, owner approved: {ownerApproved}, should close: {shouldClose}");
 
     if (shouldClose) {
         AwesomeLink? link = ToAwesomeLink(issue);
         if (link == null) {
-            WriteLine($"❌ Unable to parse issue #{issue.Number} body to extract link information. Skipping closure.");
+            WriteLine($"  ❌ Unable to parse issue #{issue.Number} body to extract link information. Skipping closure.");
             return;
         }
 
         // Write link to CSV before closing (deduplicated by URL)
         await SaveLinkToCsv(link);
-        WriteLine($"💾 Saved link to CSV: {link.Url}");
+        WriteLine($"  💾 Saved link to CSV: {link.Url}");
 
         string closeComment = "This issue is being closed because ";
 
@@ -108,12 +105,25 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
     if(wfEvent != "issues" || eventIssueNumber != issue.Number)
         return;
 
-    WriteLine($"Processing updates for issue #{issue.Number} due to issue event.");
+    WriteLine($"  processing updates for issue #{issue.Number} due to issue event.");
 
-    // Placeholder for future issue update processing logic
-    // IReadOnlyList<IssueComment> comments = await client.Issue.Comment.GetAllForIssue(issue.Repository.Id, issue.Number);
-    // var lastComment = comments.OrderByDescending(c => c.CreatedAt).FirstOrDefault();
-    // lastComment.
+    var sb = new StringBuilder();
+    // We are here if and only if the issue body (or title) is changed (created or updated).
+    AwesomeLink? awl = ToAwesomeLink(issue);
+    if(awl == null) {
+        sb.Append("  ❌ Unable to parse issue body to extract link information. Please ensure the issue follows the template format.");
+    }
+    else {
+        string md = ToMarkdownLink(awl);
+        sb.Append("Thanks! This is how the link will appear in the README:\n\n");
+        sb.Append(md);
+        sb.Append("\n\n");
+
+        sb.Append("If you need to make any changes, please update the issue body accordingly. ");
+    }
+
+    // post the comment
+    await client.Issue.Comment.Create(owner, repo, issue.Number, sb.ToString());
 }
 
 async Task ProcessOpenIssues() {
@@ -135,7 +145,7 @@ async Task ProcessOpenIssues() {
             continue;
         }
 
-        WriteLine($"Issue #{issue.Number}: {issue.Title}");
+        WriteLine($"> Issue #{issue.Number}: {issue.Title}");
         await ProcessIssueUpdatesIfUpdated(issue);
         await ProcessOpenIssue(issue);
     }
@@ -240,6 +250,11 @@ string AddLinkExtras(string url) {
     return "";
 }
 
+string ToMarkdownLink(AwesomeLink link) {
+    string extras = AddLinkExtras(link.Url);
+    return $"- [{link.Title}{extras}]({link.Url}) - {link.Description}";
+}
+
 async Task RebuildReadme() {
     // Read all links from CSV
     List<AwesomeLink> allLinks = new List<AwesomeLink>();
@@ -277,9 +292,7 @@ async Task RebuildReadme() {
                 lines.Add("");
             }
             foreach (AwesomeLink link in sub.Links) {
-                string descPart = string.IsNullOrWhiteSpace(link.Description) ? string.Empty : $" - {link.Description}";
-                string extras = AddLinkExtras(link.Url);
-                lines.Add($"- [{link.Title}{extras}]({link.Url}){descPart}");
+                lines.Add(ToMarkdownLink(link));
             }
         }
     }
