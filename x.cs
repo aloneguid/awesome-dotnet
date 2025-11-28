@@ -85,14 +85,17 @@ async Task ProcessOpenIssue(Issue issue) {
         await SaveLinkToCsv(link);
         WriteLine($"  💾 Saved link to CSV: {link.Url}");
 
-        string closeComment = "Thank you! The link suggestion is now merged, because ";
+        var sb = new StringBuilder();
+        sb.Append("Thank you! The link suggestion is now merged, because ");
 
-        closeComment += ownerApproved
+        sb.Append(ownerApproved
             ? "it is approved by the repository owner."
-            : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {MinThumbsUp}).";
+            : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {MinThumbsUp}).");
+        
+        sb.AppendLine("You can also make changes in future by editing the issue and re-opening it.");
 
         // Add a public comment explaining why the issue is being closed
-        await client.Issue.Comment.Create(owner, repo, issue.Number, closeComment);
+        await client.Issue.Comment.Create(owner, repo, issue.Number, sb.ToString());
         
         // Close the issue
         var update = new IssueUpdate { State = ItemState.Closed };
