@@ -104,9 +104,11 @@ async Task ProcessOpenIssue(Issue issue) {
     }
 }
 
-async Task ProcessIssueUpdates(Issue issue) {
-    if(wfEvent != "issues")
+async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
+    if(wfEvent != "issues" || eventIssueNumber != issue.Number)
         return;
+
+    WriteLine($"Processing updates for issue #{issue.Number} due to issue event.");
 
     // Placeholder for future issue update processing logic
     // IReadOnlyList<IssueComment> comments = await client.Issue.Comment.GetAllForIssue(issue.Repository.Id, issue.Number);
@@ -134,7 +136,7 @@ async Task ProcessOpenIssues() {
         }
 
         WriteLine($"Issue #{issue.Number}: {issue.Title}");
-        await ProcessIssueUpdates(issue);
+        await ProcessIssueUpdatesIfUpdated(issue);
         await ProcessOpenIssue(issue);
     }
 }
