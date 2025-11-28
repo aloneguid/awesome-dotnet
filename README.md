@@ -171,3 +171,4 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 ### YouTube Channels
 - [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
+- [NDC Conferences](https://www.youtube.com/@NDC) - High-end events for software developers.
