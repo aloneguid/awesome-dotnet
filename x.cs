@@ -88,9 +88,11 @@ async Task ProcessOpenIssue(Issue issue) {
         var sb = new StringBuilder();
         sb.Append("Thank you! The link suggestion is now merged, because ");
 
-        sb.Append(ownerApproved
+        sb.AppendLine(ownerApproved
             ? "it is approved by the repository owner."
             : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {MinThumbsUp}).");
+
+        sb.AppendLine();
         
         sb.AppendLine("You can also make changes in future by editing the issue and re-opening it.");
 
