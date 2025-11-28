@@ -105,7 +105,9 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Media
 
 ## Audio
+- [AudioPlugSharp ![stars](https://img.shields.io/github/stars/mikeoliphant/AudioPlugSharp?style=social&label=)](https://github.com/mikeoliphant/AudioPlugSharp) - Easily create VST (VST3) audio plugins in C# .NET.
 - [Cscore ![stars](https://img.shields.io/github/stars/filoe/cscore?style=social&label=)](https://github.com/filoe/cscore) - About An advanced audio library, written in C#. Provides tons of features. From playing/recording audio to decoding/encoding audio streams/files to processing audio data in realtime (e.g. applying custom effects during playback, create visualizations,...). The possibilities are nearly unlimited.
+- [NAudio ![stars](https://img.shields.io/github/stars/naudio/NAudio?style=social&label=)](https://github.com/naudio/NAudio) - Audio and MIDI library for .NET.
 
 # Other
 
