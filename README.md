@@ -80,6 +80,10 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 # Game Engines
 
 - [Godot](https://godotengine.org/) - Free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!.
+- [Hazel Engine](https://hazelengine.com) - Simple-yet-powerful 3D game engine made by Studio Cherno and volunteers, available for use now with big plans for the future.
+- [NeoAxis](https://www.neoaxis.com/) - A versatile game engine for creating video games and real-time apps.
+- [Prowl Engine ![stars](https://img.shields.io/github/stars/ProwlEngine/Prowl?style=social&label=)](https://github.com/ProwlEngine/Prowl) - An Open Source C# 3D Game Engine under MIT license, inspired by Unity and featuring a complete editor.
+- [S&box](https://sbox.game/about) - Spiritual successor to Garry's Mod and a love letter to Source 2 ❤.
 - [StereoKit](https://stereokit.net) - Easy-to-use open source XR library for building AR and VR applications with C# and OpenXR!.
 - [Unity](https://unity.com/) - The most popular game engine in the world.
 
