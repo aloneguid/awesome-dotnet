@@ -50,7 +50,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [MessagePack ![stars](https://img.shields.io/github/stars/MessagePack-CSharp/MessagePack-CSharp?style=social&label=)](https://github.com/MessagePack-CSharp/MessagePack-CSharp) - Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.
 - [NPOI ![stars](https://img.shields.io/github/stars/nissl-lab/npoi?style=social&label=)](https://github.com/nissl-lab/npoi) - .NET library for reading and writing Microsoft Office binary and OOXML file formats.
 - [Parquet.Net ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=social&label=)](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
-- [Protocol Buffers ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net) - Protocol Buffers library for idiomatic .NET.
+- [protobuf-net ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net) - Protocol Buffers library for idiomatic .NET.
 
 # Data Generators
 
