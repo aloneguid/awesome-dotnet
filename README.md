@@ -70,6 +70,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [MassTransit ![stars](https://img.shields.io/github/stars/MassTransit/MassTransit?style=social&label=)](https://github.com/MassTransit/MassTransit) - Distributed application framework for .NET supporting message-based architectures.
 - [NEventStore ![stars](https://img.shields.io/github/stars/NEventStore/NEventStore?style=social&label=)](https://github.com/NEventStore/NEventStore) - A persistence library used to abstract different storage implementations when using event sourcing.
 - [Orleans ![stars](https://img.shields.io/github/stars/dotnet/orleans?style=social&label=)](https://github.com/dotnet/orleans) - Orleans is a cross-platform framework for building distributed applications with .NET.
+- [Proto.Actor](https://proto.actor) - Cross-platform actor framework for .NET and Go.
 - [Rebus ![stars](https://img.shields.io/github/stars/rebus-org/Rebus?style=social&label=)](https://github.com/rebus-org/Rebus) - Simple and lean service bus implementation for .NET.
 
 ## IDE
