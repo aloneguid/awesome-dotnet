@@ -50,7 +50,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [MessagePack ![stars](https://img.shields.io/github/stars/MessagePack-CSharp/MessagePack-CSharp?style=social&label=)](https://github.com/MessagePack-CSharp/MessagePack-CSharp) - Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.
 - [NPOI ![stars](https://img.shields.io/github/stars/nissl-lab/npoi?style=social&label=)](https://github.com/nissl-lab/npoi) - .NET library for reading and writing Microsoft Office binary and OOXML file formats.
 - [Parquet.Net ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=social&label=)](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
-- [protobuf-net ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net) - Protocol Buffers library for idiomatic .NET.
+- [Protobuf ![stars](https://img.shields.io/github/stars/protocolbuffers/protobuf?style=social&label=)](https://github.com/protocolbuffers/protobuf) - Google's data interchange format, an official .NET library.
+- [Protobuf-net ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net) - Protocol Buffers library for idiomatic .NET.
 
 # Data Generators
 
@@ -62,6 +63,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Entity Framework Core ![stars](https://img.shields.io/github/stars/dotnet/efcore?style=social&label=)](https://github.com/dotnet/efcore) - EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.
 - [Marten ![stars](https://img.shields.io/github/stars/JasperFx/marten?style=social&label=)](https://github.com/JasperFx/marten) - .NET Transactional Document DB and Event Store on PostgreSQL.
 - [Npgsql ![stars](https://img.shields.io/github/stars/npgsql/npgsql?style=social&label=)](https://github.com/npgsql/npgsql) - The .NET data provider for PostgreSQL.
+- [StackExchange.Redis ![stars](https://img.shields.io/github/stars/StackExchange/StackExchange.Redis?style=social&label=)](https://github.com/StackExchange/StackExchange.Redis) - General purpose, the most popular Redis client.
 
 # Distributed Systems
 
@@ -83,6 +85,8 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Visual Studio Code](https://code.visualstudio.com/) - Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
 # Libraries
+
+- [Castle.Core ![stars](https://img.shields.io/github/stars/castleproject/Core?style=social&label=)](https://github.com/castleproject/Core) - About Castle Core, including Castle DynamicProxy, Logging Services and DictionaryAdapter.
 
 ## Parsing
 - [Silverfly ![stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=social&label=)](https://github.com/furesoft/Silverfly) - A pratt parser framework.

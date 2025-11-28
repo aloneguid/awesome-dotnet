@@ -28,12 +28,14 @@ Json.NET,https://github.com/JamesNK/Newtonsoft.Json,Popular high-performance JSO
 MessagePack,https://github.com/MessagePack-CSharp/MessagePack-CSharp,Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.,Data Formats,
 NPOI,https://github.com/nissl-lab/npoi,.NET library for reading and writing Microsoft Office binary and OOXML file formats.,Data Formats,
 Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Parquet implementation.,Data Formats,
-protobuf-net,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Data Formats,
+Protobuf,https://github.com/protocolbuffers/protobuf,"Google's data interchange format, an official .NET library.",Data Formats,
+Protobuf-net,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Data Formats,
 Bogus,https://github.com/bchavez/Bogus,A simple fake data generator for C# F# and VB.NET for testing and seeding databases.,Data Generators,
 Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.,Databases,
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Databases,
 Marten,https://github.com/JasperFx/marten,.NET Transactional Document DB and Event Store on PostgreSQL.,Databases,
 Npgsql,https://github.com/npgsql/npgsql,The .NET data provider for PostgreSQL.,Databases,
+StackExchange.Redis,https://github.com/StackExchange/StackExchange.Redis,"General purpose, the most popular Redis client.",Databases,
 Akka.NET,https://github.com/akkadotnet/akka.net,Canonical actor model implementation for .NET with local and distributed actors.,Distributed Systems,
 EventStore,https://github.com/EventStore/EventStore,The stream database optimised for event sourcing.,Distributed Systems,
 MassTransit,https://github.com/MassTransit/MassTransit,Distributed application framework for .NET supporting message-based architectures.,Distributed Systems,
@@ -47,6 +49,7 @@ OmniSharp,https://www.omnisharp.net/,"Makes C# development available in vim, neo
 SharpIDE,https://github.com/MattParkerDev/SharpIDE,"A modern, cross platform IDE for .NET, built with .NET & Godot.",IDE,
 Visual Studio,https://visualstudio.microsoft.com/,The Greatest. The Most Powerful.,IDE,
 Visual Studio Code,https://code.visualstudio.com/,"Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.",IDE,
+Castle.Core,https://github.com/castleproject/Core,"About Castle Core, including Castle DynamicProxy, Logging Services and DictionaryAdapter.",Libraries,
 Silverfly,https://github.com/furesoft/Silverfly,A pratt parser framework.,Libraries,Parsing
 Exceptionless,https://github.com/exceptionless/Exceptionless.Net,Exceptionless .NET Client for collecting errors events and logs.,Logging,
 Log4net,https://github.com/apache/logging-log4net,Apache log4net is a versatile widely-used logging library for .NET.,Logging,
@@ -98,4 +101,3 @@ XUnit,https://github.com/xunit/xunit,"Free, open source, community-focused unit 
 .NET Foundation,https://www.youtube.com/@NETFoundation,The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.,Videos,You Tube Channels
 Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,You Tube Channels
 NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,You Tube Channels
-
