@@ -102,6 +102,11 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Serilog](https://serilog.net/) - Flexible, structured events - log file convenience.
 - [ZLogger ![stars](https://img.shields.io/github/stars/Cysharp/ZLogger?style=social&label=)](https://github.com/Cysharp/ZLogger) - Zero allocation text/structured logger for .NET with StringInterpolation and Source Generator.
 
+# Media
+
+## Audio
+- [Cscore ![stars](https://img.shields.io/github/stars/filoe/cscore?style=social&label=)](https://github.com/filoe/cscore) - About An advanced audio library, written in C#. Provides tons of features. From playing/recording audio to decoding/encoding audio streams/files to processing audio data in realtime (e.g. applying custom effects during playback, create visualizations,...). The possibilities are nearly unlimited.
+
 # Other
 
 - [AutoMapper ![stars](https://img.shields.io/github/stars/AutoMapper/AutoMapper?style=social&label=)](https://github.com/AutoMapper/AutoMapper) - A convention-based object-object mapper in .NET.

@@ -57,6 +57,7 @@ Microsoft.Extensions.Logging,https://github.com/dotnet/runtime,A lightweight and
 NLog,https://github.com/NLog/NLog,Advanced and Structured Logging for Various .NET Platforms.,Logging,
 Serilog,https://serilog.net/,"Flexible, structured events - log file convenience.",Logging,
 ZLogger,https://github.com/Cysharp/ZLogger,Zero allocation text/structured logger for .NET with StringInterpolation and Source Generator.,Logging,
+Cscore,https://github.com/filoe/cscore,"About An advanced audio library, written in C#. Provides tons of features. From playing/recording audio to decoding/encoding audio streams/files to processing audio data in realtime (e.g. applying custom effects during playback, create visualizations,...). The possibilities are nearly unlimited.",Media,Audio
 AutoMapper,https://github.com/AutoMapper/AutoMapper,A convention-based object-object mapper in .NET.,Other,
 Aviyal,https://github.com/TheAjaykrishnanR/aviyal,"Window manager for windows written purely in C# thats simple, lightweight and portable.",Other,
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Other,
