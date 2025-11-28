@@ -89,9 +89,10 @@ ReactiveUI,https://github.com/reactiveui/ReactiveUI,An advanced composable funct
 Uno Platform,https://github.com/unoplatform/uno,Build Mobile Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.,UI,
 WinForms,https://github.com/dotnet/winforms,Windows Forms is a .NET UI framework for building Windows desktop applications.,UI,
 WPF,https://github.com/dotnet/wpf,WPF is a .NET Core UI framework for building Windows desktop applications.,UI,
+MSTest,https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro,"The official Microsoft Testing Framework. Integrates with VS, VS Code, CLI, pipelines and more.",Unit Testing,
 XUnit,https://github.com/xunit/xunit,"Free, open source, community-focused unit testing tool for .NET.",Unit Testing,
-2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,.NET Conf
-2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,.NET Conf
-2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,.NET Conf
-Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,YouTube Channels
-NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,YouTube Channels
+2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,NET Conf
+2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,NET Conf
+2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,NET Conf
+Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,You Tube Channels
+NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,You Tube Channels
