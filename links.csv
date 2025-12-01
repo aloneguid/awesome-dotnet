@@ -3,6 +3,7 @@ AspNetSaml,https://github.com/jitbit/AspNetSaml/,Popular SSO/SAML library for AS
 Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Big Data,
 Deedle,https://github.com/fslaborg/Deedle,Easy to use .NET library for data and time series manipulation and scientific programming.,Big Data,
 ML.NET,https://github.com/dotnet/machinelearning,ML.NET is an open source and cross-platform machine learning framework for .NET.,Big Data,
+Argx,https://github.com/mihaicaragheorghe/argx,A modern command-line argument parsing library for .NET.,CLI,
 CliFx,https://github.com/Tyrrrz/CliFx,Declarative framework for building command line interfaces with dependency injection and validation support.,CLI,
 Cocona,https://github.com/mayuki/Cocona,Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.,CLI,
 Colorful.Console,https://github.com/tomakita/Colorful.Console,Style your .NET console output with ease using RGB colors and gradients.,CLI,

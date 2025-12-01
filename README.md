@@ -21,6 +21,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 # CLI
 
+- [Argx ![stars](https://img.shields.io/github/stars/mihaicaragheorghe/argx?style=social&label=)](https://github.com/mihaicaragheorghe/argx) - A modern command-line argument parsing library for .NET.
 - [CliFx ![stars](https://img.shields.io/github/stars/Tyrrrz/CliFx?style=social&label=)](https://github.com/Tyrrrz/CliFx) - Declarative framework for building command line interfaces with dependency injection and validation support.
 - [Cocona ![stars](https://img.shields.io/github/stars/mayuki/Cocona?style=social&label=)](https://github.com/mayuki/Cocona) - Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.
 - [Colorful.Console ![stars](https://img.shields.io/github/stars/tomakita/Colorful.Console?style=social&label=)](https://github.com/tomakita/Colorful.Console) - Style your .NET console output with ease using RGB colors and gradients.
