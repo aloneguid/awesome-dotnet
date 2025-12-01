@@ -8,11 +8,12 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 129 links contributed by the community.
+Enjoy awesome 130 links contributed by the community.
 
 
 # Auth
 
+- [Abblix Oidc.Server ![stars](https://img.shields.io/github/stars/Abblix/Oidc.Server?style=social&label=)](https://github.com/Abblix/Oidc.Server) - Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.
 - [AspNetSaml ![stars](https://img.shields.io/github/stars/jitbit/AspNetSaml?style=social&label=)](https://github.com/jitbit/AspNetSaml/) - Popular SSO/SAML library for ASP.NET.
 
 # Big Data
