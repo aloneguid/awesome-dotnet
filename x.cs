@@ -306,24 +306,26 @@ async Task RebuildReadme() {
                 }).ToList()
         }).ToList();
 
-    // Build Markdown lines, then normalize output using Markdig's NormalizeRenderer
-    List<string> lines = new List<string>();
+    // Build Markdown using StringBuilder
+    var sb = new StringBuilder();
+    sb.AppendLine($"Enjoy {allLinks.Count} awesome {"link".ToQuantity(allLinks.Count)} contributed by the community:");
+    sb.AppendLine();
     foreach (var category in grouped) {
-        lines.Add("");
-        lines.Add($"# {category.Category}");
+        sb.AppendLine();
+        sb.AppendLine($"# {category.Category}");
         foreach (var sub in category.Subgroups) {
             if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
-                lines.Add("");
-                lines.Add($"## {sub.Subcategory}");
+                sb.AppendLine();
+                sb.AppendLine($"## {sub.Subcategory}");
             } else {
-                lines.Add("");
+                sb.AppendLine();
             }
             foreach (AwesomeLink link in sub.Links) {
-                lines.Add(ToMarkdownLink(link));
+                sb.AppendLine(ToMarkdownLink(link));
             }
         }
     }
-    string generatedSection = string.Join("\n", lines);
+    string generatedSection = sb.ToString().TrimEnd();
     // WriteLine("generated section:");
     // WriteLine(generatedSection);
 
