@@ -1,0 +1,16 @@
+baseURL = 'https://aloneguid.github.io/awesome-dotnet/'
+languageCode = 'en-us'
+title = 'Awesome .NET'
+theme = 'awesome-dotnet-theme'
+
+[params]
+  description = 'Community-curated, PR free, self-managing list of awesome .NET goodness'
+  author = 'aloneguid'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]

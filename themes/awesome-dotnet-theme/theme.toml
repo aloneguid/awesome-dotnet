@@ -1,0 +1,4 @@
+name = "Awesome .NET Theme"
+license = "MIT"
+description = "A minimal theme for Awesome .NET"
+min_version = "0.120.0"

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ .Site.Title }}</h1>
+            <p class="subtitle">{{ .Site.Params.description }}</p>
+            <p class="intro">
+                This repo makes sure the list is alive even when I'm dead!
+            </p>
+            <p class="how-to">
+                To add a new link, <a href="https://github.com/{{ .Site.Params.author }}/awesome-dotnet/issues/new/choose">create a new issue</a> and fill in all the information. 
+                The link will appear on this page automatically if it gets at least <strong>5 likes (👍)</strong> or a like from BDFL. 
+                To update an existing link, create a new issue with the existing URL; all the information will be replaced. 
+                You can also edit and re-open an old issue if you have created it. 
+                The links and categories are sorted alphabetically every time this is regenerated.
+            </p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <nav class="toc">
+            <h2>Categories</h2>
+            <ul>
+                {{ range .Pages }}
+                <li><a href="#{{ .Title | urlize }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+
+        {{ range .Pages }}
+        <section id="{{ .Title | urlize }}" class="category">
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
+        </section>
+        {{ end }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Generated from <a href="https://github.com/{{ .Site.Params.author }}/awesome-dotnet">awesome-dotnet</a> repository</p>
+        </div>
+    </footer>
+</body>
+</html>

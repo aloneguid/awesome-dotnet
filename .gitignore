@@ -19,3 +19,19 @@ packages/
 .idea/
 *.DotSettings.user
 *.csproj
+
+# Hugo generated files
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Ignore generated content
+/content/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hugo cache
+/.hugo_build.lock

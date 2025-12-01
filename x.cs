@@ -21,6 +21,7 @@ int? eventIssueNumber = GetEventIssueNumber();
 WriteLine($"Created GitHub client for repository: '{owner}/{repo}'. Event: '{wfEvent}', issue id: '{eventIssueNumber}'");
 await ProcessOpenIssues();
 await RebuildReadme();
+await GenerateHugoContent();
 
 GitHubClient CreateClient(out string owner, out string repo) {
 
@@ -350,6 +351,79 @@ async Task RebuildReadme() {
     WriteLine("Writing updated README.md:");
     WriteLine(readme);
     await File.WriteAllTextAsync(ReadmePath, readme);
+}
+
+async Task GenerateHugoContent() {
+    WriteLine("Generating Hugo content from CSV...");
+    
+    // Read all links from CSV
+    List<AwesomeLink> allLinks = new List<AwesomeLink>();
+    if (File.Exists(CsvDBPath)) {
+        using StreamReader reader = new StreamReader(CsvDBPath);
+        using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
+        List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
+        allLinks.AddRange(existing);
+    }
+
+    // Clear and recreate the Hugo content directory
+    const string ContentDir = "content";
+    if (Directory.Exists(ContentDir)) {
+        Directory.Delete(ContentDir, true);
+    }
+    Directory.CreateDirectory(ContentDir);
+
+    // Group links by Category
+    var grouped = allLinks
+        .GroupBy(l => string.IsNullOrWhiteSpace(l.Category) ? "Other" : l.Category)
+        .OrderBy(g => g.Key, StringComparer.OrdinalIgnoreCase);
+
+    int weight = 1;
+    foreach (var category in grouped) {
+        // Create a markdown file for each category
+        string fileName = $"{weight:D2}-{SlugifyCategory(category.Key)}.md";
+        string filePath = Path.Combine(ContentDir, fileName);
+
+        var sb = new StringBuilder();
+        
+        // Hugo front matter
+        sb.AppendLine("---");
+        sb.AppendLine($"title: \"{category.Key}\"");
+        sb.AppendLine($"weight: {weight}");
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Group by subcategory within this category
+        var subgroups = category
+            .GroupBy(x => x.Subcategory ?? "")
+            .OrderBy(sg => sg.Key, StringComparer.OrdinalIgnoreCase);
+
+        foreach (var sub in subgroups) {
+            if (!string.IsNullOrWhiteSpace(sub.Key)) {
+                sb.AppendLine($"### {sub.Key}");
+                sb.AppendLine();
+            }
+
+            foreach (var link in sub.OrderBy(x => x.Title, StringComparer.OrdinalIgnoreCase)) {
+                sb.AppendLine(ToMarkdownLink(link));
+            }
+            sb.AppendLine();
+        }
+
+        await File.WriteAllTextAsync(filePath, sb.ToString());
+        WriteLine($"  Created: {fileName}");
+        weight++;
+    }
+
+    WriteLine($"Hugo content generation complete. Generated {weight - 1} category pages.");
+}
+
+string SlugifyCategory(string category) {
+    // Convert category name to URL-friendly slug
+    string slug = category.ToLowerInvariant();
+    slug = Regex.Replace(slug, @"[^a-z0-9\s-]", "");
+    slug = Regex.Replace(slug, @"\s+", "-");
+    slug = Regex.Replace(slug, @"-+", "-");
+    return slug.Trim('-');
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
