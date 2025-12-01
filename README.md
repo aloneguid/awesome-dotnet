@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy 129 awesome 129 links contributed by the community:
+Enjoy awesome 129 links contributed by the community.
 
 
 # Auth
