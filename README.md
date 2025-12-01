@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 130 links contributed by the community.
+Enjoy awesome 132 links contributed by the community.
 
 
 # Auth
@@ -158,6 +158,8 @@ Enjoy awesome 130 links contributed by the community.
 
 # Programming Languages
 
+- [Boo ![stars](https://img.shields.io/github/stars/boo-lang/boo?style=social&label=)](https://github.com/boo-lang/boo) - A statically typed CLI language, inspired by Python.
+- [IronPython](https://ironpython.net/) - Open-source implementation of the Python programming language which is tightly integrated with .NET. IronPython can use .NET and Python libraries, and other .NET languages can use Python code just as easily.
 - [Lua-CSharp ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=social&label=)](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
 
 # Runtimes
