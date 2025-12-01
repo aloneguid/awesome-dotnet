@@ -58,7 +58,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: dotnet script x.cs
+        run: dotnet run x.cs
       
       - name: Setup Pages
         id: pages
