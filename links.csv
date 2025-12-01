@@ -82,6 +82,7 @@ ZLogger,https://github.com/Cysharp/ZLogger,Zero allocation text/structured logge
 AudioPlugSharp,https://github.com/mikeoliphant/AudioPlugSharp,Easily create VST (VST3) audio plugins in C# .NET.,Media,Audio
 Cscore,https://github.com/filoe/cscore,"About An advanced audio library, written in C#. Provides tons of features. From playing/recording audio to decoding/encoding audio streams/files to processing audio data in realtime (e.g. applying custom effects during playback, create visualizations,...). The possibilities are nearly unlimited.",Media,Audio
 NAudio,https://github.com/naudio/NAudio,Audio and MIDI library for .NET.,Media,Audio
+EFCore.Kusto,https://github.com/anasik/EFCore.Kusto,An EF Core database provider for Azure Data Explorer (ADX) aka Kusto.,ORM,EF Core Providers Connectors
 AutoMapper,https://github.com/AutoMapper/AutoMapper,A convention-based object-object mapper in .NET.,Other,
 Aviyal,https://github.com/TheAjaykrishnanR/aviyal,"Window manager for windows written purely in C# thats simple, lightweight and portable.",Other,
 NodaTime,https://github.com/nodatime/nodatime,"Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.",Other,

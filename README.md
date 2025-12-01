@@ -134,6 +134,11 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 - [Cscore ![stars](https://img.shields.io/github/stars/filoe/cscore?style=social&label=)](https://github.com/filoe/cscore) - About An advanced audio library, written in C#. Provides tons of features. From playing/recording audio to decoding/encoding audio streams/files to processing audio data in realtime (e.g. applying custom effects during playback, create visualizations,...). The possibilities are nearly unlimited.
 - [NAudio ![stars](https://img.shields.io/github/stars/naudio/NAudio?style=social&label=)](https://github.com/naudio/NAudio) - Audio and MIDI library for .NET.
 
+# ORM
+
+## EF Core Providers Connectors
+- [EFCore.Kusto ![stars](https://img.shields.io/github/stars/anasik/EFCore.Kusto?style=social&label=)](https://github.com/anasik/EFCore.Kusto) - An EF Core database provider for Azure Data Explorer (ADX) aka Kusto.
+
 # Other
 
 - [AutoMapper ![stars](https://img.shields.io/github/stars/AutoMapper/AutoMapper?style=social&label=)](https://github.com/AutoMapper/AutoMapper) - A convention-based object-object mapper in .NET.
