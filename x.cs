@@ -308,7 +308,7 @@ async Task RebuildReadme() {
 
     // Build Markdown using StringBuilder
     var sb = new StringBuilder();
-    sb.AppendLine($"Enjoy {allLinks.Count} awesome {"link".ToQuantity(allLinks.Count)} contributed by the community:");
+    sb.AppendLine($"Enjoy awesome {"link".ToQuantity(allLinks.Count)} contributed by the community:");
     sb.AppendLine();
     foreach (var category in grouped) {
         sb.AppendLine();
