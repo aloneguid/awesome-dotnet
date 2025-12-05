@@ -369,4 +369,4 @@ async Task RebuildReadme() {
     await File.WriteAllTextAsync(ReadmePath, readme);
 }
 
-record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory, DateTime CreatedAt);
+record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory, DateTime? CreatedAt);
