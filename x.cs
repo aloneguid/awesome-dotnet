@@ -1,6 +1,7 @@
 #:package Octokit@14.0.0
 #:package CsvHelper@33.1.0
 #:package Humanizer@3.0.1
+#:property PublishTrimmed=false
 
 using Octokit;
 using CsvHelper;
@@ -194,7 +195,7 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     if(subcategory == "_No response_" || subcategory.ToLower() == "none" || subcategory == "-")
         subcategory = "";
 
-    return new AwesomeLink(issue.Title, url, description, category, subcategory);
+    return new AwesomeLink(issue.Title, url, description, category, subcategory, DateTime.UtcNow);
 }
 
 string Sanitize(string input, bool capitalize = true, bool endWithFullStop = false) {
@@ -228,7 +229,8 @@ AwesomeLink SanitizeLink(AwesomeLink link) {
         Sanitize(link.Url, false, false),
         Sanitize(link.Description, true, true),
         SanitizeCategoryName(link.Category),
-        SanitizeSubcategoryName(link.Subcategory)
+        SanitizeSubcategoryName(link.Subcategory),
+        link.CreatedAt
     );
 }
 
@@ -367,4 +369,4 @@ async Task RebuildReadme() {
     await File.WriteAllTextAsync(ReadmePath, readme);
 }
 
-record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory);
+record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory, DateTime CreatedAt);
