@@ -45,4 +45,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add README.md
           git add links.csv
+          git add log.json
           git diff --staged --quiet || (git commit -m "update local files" && git push origin HEAD)

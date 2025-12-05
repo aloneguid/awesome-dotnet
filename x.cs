@@ -13,6 +13,7 @@ using Humanizer;
 
 const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
+const string JsonLogPath = "log.json";
 const string LinksMarker = "<!-- auto-generated content below -->";
 
 GitHubClient client = CreateClient(out string owner, out string repo);
@@ -84,6 +85,10 @@ async Task ProcessOpenIssue(Issue issue) {
         // Write link to CSV before closing (deduplicated by URL)
         await SaveLinkToCsv(link);
         WriteLine($"  💾 Saved link to CSV: {link.Url}");
+        
+        // Log link to JSON (append to log file)
+        await LogLinkToJson(link);
+        WriteLine($"  📝 Logged link to JSON log.");
 
         var sb = new StringBuilder();
         sb.Append("Thank you! The link suggestion is now merged, because ");
@@ -260,6 +265,14 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
         csvWriter.NextRecord();
     }
     await writer.FlushAsync();
+}
+
+async Task LogLinkToJson(AwesomeLink link) {
+    // serialize link to JSON line
+    string jsonLine = JsonSerializer.Serialize(link, new JsonSerializerOptions { WriteIndented = false });
+    
+    // append to log file
+    await File.AppendAllTextAsync(JsonLogPath, jsonLine + Environment.NewLine);
 }
 
 string AddLinkExtras(string url) {
