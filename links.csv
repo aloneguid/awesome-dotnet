@@ -1,4 +1,5 @@
 Title,Url,Description,Category,Subcategory
+Abblix Oidc.Server,https://github.com/Abblix/Oidc.Server,Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.,Auth,
 AspNetSaml,https://github.com/jitbit/AspNetSaml/,Popular SSO/SAML library for ASP.NET.,Auth,
 Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Big Data,
 Deedle,https://github.com/fslaborg/Deedle,Easy to use .NET library for data and time series manipulation and scientific programming.,Big Data,
@@ -92,7 +93,11 @@ Polly,https://github.com/App-vNext/Polly,Polly is a .NET resilience and transien
 RestSharp,https://github.com/restsharp/RestSharp,Simple REST and HTTP API Client for .NET.,Other,
 Retroc64,https://github.com/RetroC64/RetroC64/,Programming the Commodore 64 with .NET.,Other,
 "Fast ULID library, replacement for GUID - ByteAether.Ulid",https://github.com/ByteAether/Ulid,"Universally Unique Lexicographically Sortable Identifiers (ULIDs), designed to be globally unique, sortable, human-readable, and AoT compatible.",Other,Identifiers
+Boo,https://github.com/boo-lang/boo,"A statically typed CLI language, inspired by Python.",Programming Languages,
+IronPython,https://ironpython.net/,"Open-source implementation of the Python programming language which is tightly integrated with .NET. IronPython can use .NET and Python libraries, and other .NET languages can use Python code just as easily.",Programming Languages,
+IronScheme,https://github.com/IronScheme/IronScheme,IronScheme aims to be a R6RS conforming Scheme-like implementation for all .NET implementations and platforms.,Programming Languages,
 Lua-CSharp,https://github.com/nuskey8/Lua-CSharp,High performance Lua interpreter implemented in C# for .NET and Unity.,Programming Languages,
+Oxygene,https://www.remobjects.com/elements/oxygene/,An Object Pascal-based CLI language.,Programming Languages,
 .NET Framework,https://dotnet.microsoft.com/download/dotnet-framework,The original .NET implementation for Windows desktop applications.,Runtimes,
 .NET MAUI Runtime,https://github.com/dotnet/maui,Runtime components for .NET Multi-platform App UI.,Runtimes,
 .NET Runtime,https://github.com/dotnet/runtime,.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.,Runtimes,

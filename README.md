@@ -8,11 +8,12 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy 129 awesome 129 links contributed by the community:
+Enjoy awesome 134 links contributed by the community.
 
 
 # Auth
 
+- [Abblix Oidc.Server ![stars](https://img.shields.io/github/stars/Abblix/Oidc.Server?style=social&label=)](https://github.com/Abblix/Oidc.Server) - Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.
 - [AspNetSaml ![stars](https://img.shields.io/github/stars/jitbit/AspNetSaml?style=social&label=)](https://github.com/jitbit/AspNetSaml/) - Popular SSO/SAML library for ASP.NET.
 
 # Big Data
@@ -157,7 +158,11 @@ Enjoy 129 awesome 129 links contributed by the community:
 
 # Programming Languages
 
+- [Boo ![stars](https://img.shields.io/github/stars/boo-lang/boo?style=social&label=)](https://github.com/boo-lang/boo) - A statically typed CLI language, inspired by Python.
+- [IronPython](https://ironpython.net/) - Open-source implementation of the Python programming language which is tightly integrated with .NET. IronPython can use .NET and Python libraries, and other .NET languages can use Python code just as easily.
+- [IronScheme ![stars](https://img.shields.io/github/stars/IronScheme/IronScheme?style=social&label=)](https://github.com/IronScheme/IronScheme) - IronScheme aims to be a R6RS conforming Scheme-like implementation for all .NET implementations and platforms.
 - [Lua-CSharp ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=social&label=)](https://github.com/nuskey8/Lua-CSharp) - High performance Lua interpreter implemented in C# for .NET and Unity.
+- [Oxygene](https://www.remobjects.com/elements/oxygene/) - An Object Pascal-based CLI language.
 
 # Runtimes
 
