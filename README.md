@@ -1,6 +1,6 @@
 # Awesome .NET
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://youtu.be/-V7MpQaNiR0) ![YouTube Video Likes](https://img.shields.io/youtube/likes/-V7MpQaNiR0)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://youtu.be/-V7MpQaNiR0) [![YouTube Video Likes](https://img.shields.io/youtube/likes/-V7MpQaNiR0)](https://www.youtube.com/watch?v=-V7MpQaNiR0)
 
 Community-curated, PR free, self-managing list of awesome .NET goodness. This repo makes sure the list is alive even when I'm dead!
 
