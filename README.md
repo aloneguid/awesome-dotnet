@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 134 links contributed by the community.
+Enjoy awesome 135 links contributed by the community.
 
 
 # Auth
@@ -42,6 +42,10 @@ Enjoy awesome 134 links contributed by the community.
 - [Snappier ![stars](https://img.shields.io/github/stars/brantburnett/Snappier?style=social&label=)](https://github.com/brantburnett/Snappier) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
 - [Snappy ![stars](https://img.shields.io/github/stars/robertvazan/snappy.net?style=social&label=)](https://github.com/robertvazan/snappy.net) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
 - [ZstdSharp ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp?style=social&label=)](https://github.com/oleg-st/ZstdSharp) - Port of zstd compression library to C#.
+
+# Continuous Integration
+
+- [Sharpliner ![stars](https://img.shields.io/github/stars/sharpliner/sharpliner?style=social&label=)](https://github.com/sharpliner/sharpliner) - Use C# instead of YAML to define your Azure DevOps pipelines.
 
 # Data Formats
 
