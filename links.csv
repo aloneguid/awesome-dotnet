@@ -19,6 +19,7 @@ SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# lib
 Snappier,https://github.com/brantburnett/Snappier,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Compression,,
 Snappy,https://github.com/robertvazan/snappy.net,"Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.",Compression,,
 ZstdSharp,https://github.com/oleg-st/ZstdSharp,Port of zstd compression library to C#.,Compression,,
+Cake,https://cakebuild.net/,"Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.",Continuous Integration,,12/05/2025 10:34:10
 Sharpliner,https://github.com/sharpliner/sharpliner,Use C# instead of YAML to define your Azure DevOps pipelines.,Continuous Integration,,
 Apache Avro,https://github.com/apache/avro,Apache Avro is a data serialization system with .NET implementation.,Data Formats,,
 ClosedXML,https://github.com/ClosedXML/ClosedXML,ClosedXML makes it easier for developers to create Excel 2007+ files.,Data Formats,,

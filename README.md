@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 135 links contributed by the community.
+Enjoy awesome 136 links contributed by the community.
 
 
 # Auth
@@ -45,6 +45,7 @@ Enjoy awesome 135 links contributed by the community.
 
 # Continuous Integration
 
+- [Cake](https://cakebuild.net/) - Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.
 - [Sharpliner ![stars](https://img.shields.io/github/stars/sharpliner/sharpliner?style=social&label=)](https://github.com/sharpliner/sharpliner) - Use C# instead of YAML to define your Azure DevOps pipelines.
 
 # Data Formats
