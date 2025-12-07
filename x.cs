@@ -16,8 +16,8 @@ const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
 const string JsonLogPath = "log.json";
 const string LinksMarker = "<!-- auto-generated content below -->";
-string[] Acronyms = ["YouTube", "CI/CD"];
-var ActonymMap = Acronyms.ToDictionary(k => k.ToLower(), v => v);
+string[] acronyms = ["YouTube", "CI/CD"];
+var acronymMap = acronyms.ToDictionary(k => k.ToLower(), v => v);
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
@@ -214,7 +214,7 @@ string Capitalize(string input) {
             continue;
         }
         
-        if(ActonymMap.TryGetValue(word.ToLower(), out string? acronym)) {    
+        if(acronymMap.TryGetValue(word.ToLower(), out string? acronym)) {    
             r.Add(acronym);
             continue;
         }
