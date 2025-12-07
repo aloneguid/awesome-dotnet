@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 137 links contributed by the community.
+Enjoy awesome 138 links contributed by the community.
 
 
 # Auth
@@ -221,6 +221,8 @@ Enjoy awesome 137 links contributed by the community.
 - [XUnit ![stars](https://img.shields.io/github/stars/xunit/xunit?style=social&label=)](https://github.com/xunit/xunit) - Free, open source, community-focused unit testing tool for .NET.
 
 # Videos
+
+- [Deep .NET](https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1) - YouTube playlist with deeper dive into .NET from Microsoft.
 
 ## NET Conf
 - [2022](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn) - .NET Conf 2022.
