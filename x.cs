@@ -255,7 +255,7 @@ string SanitizeSubcategoryName(string subcategory) {
 
 AwesomeLink SanitizeLink(AwesomeLink link) {
     return new AwesomeLink(
-        Sanitize(link.Title),
+        link.Title.Trim(),
         Sanitize(link.Url, false, false),
         Sanitize(link.Description, true, true),
         SanitizeCategoryName(link.Category),
