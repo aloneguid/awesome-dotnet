@@ -230,7 +230,7 @@ Enjoy awesome 138 links contributed by the community.
 - [2024](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY) - .NET Conf 2024.
 - [2025](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt) - .NET Conf 2025.
 
-## You Tube Channels
+## YouTube Channels
 - [.NET Foundation](https://www.youtube.com/@NETFoundation) - The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.
 - [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
 - [NDC Conferences](https://www.youtube.com/@NDC) - High-end events for software developers.
