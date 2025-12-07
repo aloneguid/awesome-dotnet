@@ -129,6 +129,7 @@ WinForms,https://github.com/dotnet/winforms,Windows Forms is a .NET UI framework
 WPF,https://github.com/dotnet/wpf,WPF is a .NET Core UI framework for building Windows desktop applications.,UI,,
 MSTest,https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro,"The official Microsoft Testing Framework. Integrates with VS, VS Code, CLI, pipelines and more.",Unit Testing,,
 XUnit,https://github.com/xunit/xunit,"Free, open source, community-focused unit testing tool for .NET.",Unit Testing,,
+Deep .NET,https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1,YouTube playlist with deeper dive into .NET from Microsoft.,Videos,,12/07/2025 16:23:38
 2022,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn,.NET Conf 2022.,Videos,NET Conf,12/05/2025 10:42:48
 2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,NET Conf,
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,NET Conf,
