@@ -16,6 +16,8 @@ const int MinThumbsUp = 5;
 const string CsvDBPath = "links.csv";
 const string JsonLogPath = "log.json";
 const string LinksMarker = "<!-- auto-generated content below -->";
+string[] Acronyms = ["YouTube", "CI/CD"];
+var ActonymMap = Acronyms.ToDictionary(k => k.ToLower(), v => v);
 
 GitHubClient client = CreateClient(out string owner, out string repo);
 string wfEvent = Environment.GetEnvironmentVariable("GITHUB_EVENT_NAME") ?? "unknown";
@@ -198,6 +200,34 @@ AwesomeLink? ToAwesomeLink(Issue issue) {
     return new AwesomeLink(issue.Title, url, description, category, subcategory, DateTime.UtcNow);
 }
 
+string Capitalize(string input) {
+    input = input.Trim();
+    string[] words = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+    var r = new List<string>();
+    foreach (string word in words) {
+        if (word.Length == 0)
+            continue;
+        
+        // skipp all caps
+        if(word == word.ToUpper()) {
+            r.Add(word);
+            continue;
+        }
+        
+        if(ActonymMap.TryGetValue(word.ToLower(), out string? acronym)) {    
+            r.Add(acronym);
+            continue;
+        }
+     
+        // capitalize first letter, lowercase rest
+        string lowerWord = word.ToLower();
+        string capitalizedWord = char.ToUpper(lowerWord[0]) + lowerWord.Substring(1);
+        r.Add(capitalizedWord);
+    }
+    
+    return string.Join(' ', r);
+}
+
 string Sanitize(string input, bool capitalize = true, bool endWithFullStop = false) {
     input = input.Trim();
     if (capitalize && input.Length > 0) {
@@ -214,13 +244,13 @@ string SanitizeCategoryName(string category) {
     category = category.Trim();
     if(string.IsNullOrEmpty(category))
         return "Other";
-    
-    return category.Titleize();
+
+    return Capitalize(category);
 }
 
 string SanitizeSubcategoryName(string subcategory) {
     // make sure it's camel cased
-    return subcategory.Trim().Titleize();
+    return Capitalize(subcategory);
 }
 
 AwesomeLink SanitizeLink(AwesomeLink link) {
