@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 139 links contributed by the community.
+Enjoy awesome 140 links contributed by the community.
 
 
 # Auth
@@ -39,6 +39,7 @@ Enjoy awesome 139 links contributed by the community.
 
 - [FastLZMA2Net ![stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net?style=social&label=)](https://github.com/kingsznhone/FastLZMA2Net) - Fast LZMA2 Wrapper for .NET. Windows only.
 - [K4os.Compression.LZ4 ![stars](https://img.shields.io/github/stars/MiloszKrajewski/K4os.Compression.LZ4?style=social&label=)](https://github.com/MiloszKrajewski/K4os.Compression.LZ4) - LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).
+- [lzo.net ![stars](https://img.shields.io/github/stars/zivillian/lzo.net?style=social&label=)](https://github.com/zivillian/lzo.net) - Implementation of the lzo decoder in plain C#/.NET.
 - [SharpCompress ![stars](https://img.shields.io/github/stars/adamhathcock/sharpcompress?style=social&label=)](https://github.com/adamhathcock/sharpcompress) - Fully managed C# library to deal with many compression types and formats.
 - [Snappier ![stars](https://img.shields.io/github/stars/brantburnett/Snappier?style=social&label=)](https://github.com/brantburnett/Snappier) - Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.
 - [Snappy ![stars](https://img.shields.io/github/stars/robertvazan/snappy.net?style=social&label=)](https://github.com/robertvazan/snappy.net) - Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.
