@@ -15,6 +15,7 @@ Sharprompt,https://github.com/shibayan/Sharprompt,Interactive command-line promp
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,CLI,,
 System.CommandLine,https://github.com/dotnet/command-line-api,System.CommandLine is a powerful command line parser for building modern CLI applications.,CLI,,
 FastLZMA2Net,https://github.com/kingsznhone/FastLZMA2Net,Fast LZMA2 Wrapper for .NET. Windows only.,Compression,,
+K4os.Compression.LZ4,https://github.com/MiloszKrajewski/K4os.Compression.LZ4,LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).,Compression,,12/08/2025 14:48:22
 SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# library to deal with many compression types and formats.,Compression,,
 Snappier,https://github.com/brantburnett/Snappier,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Compression,,
 Snappy,https://github.com/robertvazan/snappy.net,"Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.",Compression,,
