@@ -224,15 +224,13 @@ Enjoy awesome 140 links contributed by the community.
 
 # Videos
 
+- [.NET Foundation](https://www.youtube.com/@NETFoundation) - The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.
 - [Deep .NET](https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1) - YouTube playlist with deeper dive into .NET from Microsoft.
+- [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
+- [NDC Conferences](https://www.youtube.com/@NDC) - High-end events for software developers.
 
 ## NET Conf
 - [2022](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn) - .NET Conf 2022.
 - [2023](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU) - .NET Conf 2023.
 - [2024](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY) - .NET Conf 2024.
 - [2025](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt) - .NET Conf 2025.
-
-## YouTube Channels
-- [.NET Foundation](https://www.youtube.com/@NETFoundation) - The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.
-- [Dotnet](https://www.youtube.com/@dotnet) - The official .NET YouTube channel.
-- [NDC Conferences](https://www.youtube.com/@NDC) - High-end events for software developers.
