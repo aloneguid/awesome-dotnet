@@ -12,10 +12,10 @@ using System.Text.RegularExpressions;
 using static System.Console;
 using Humanizer;
 
-const int MinThumbsUp = 5;
-const string CsvDBPath = "links.csv";
-const string JsonLogPath = "log.json";
-const string LinksMarker = "<!-- auto-generated content below -->";
+const int minThumbsUp = 5;
+const string csvDbPath = "links.csv";
+const string jsonLogPath = "log.json";
+const string linksMarker = "<!-- auto-generated content below -->";
 string[] acronyms = ["YouTube", "CI/CD"];
 var acronymMap = acronyms.ToDictionary(k => k.ToLower(), v => v);
 
@@ -61,7 +61,7 @@ int? GetEventIssueNumber() {
     string eventJson = File.ReadAllText(eventPath);
     
     // Parse JSON to get issue.number
-    using JsonDocument doc = JsonDocument.Parse(eventJson);
+    using var doc = JsonDocument.Parse(eventJson);
     if (doc.RootElement.TryGetProperty("issue", out JsonElement issueElement) &&
         issueElement.TryGetProperty("number", out JsonElement numberElement)) {
         return numberElement.GetInt32();
@@ -75,7 +75,7 @@ async Task ProcessOpenIssue(Issue issue) {
     List<Reaction> thumbsUpReactions = reactions.Where(r => r.Content == ReactionType.Plus1).ToList();
     int thumbsUpCount = thumbsUpReactions.Count;
     bool ownerApproved = thumbsUpReactions.Any(r => r.User.Login.Equals(owner, StringComparison.OrdinalIgnoreCase));
-    bool shouldClose = thumbsUpCount >= MinThumbsUp || ownerApproved;
+    bool shouldClose = thumbsUpCount >= minThumbsUp || ownerApproved;
     WriteLine($"  +1 reactions: {thumbsUpCount}, owner approved: {ownerApproved}, should close: {shouldClose}");
 
     if (shouldClose) {
@@ -98,7 +98,7 @@ async Task ProcessOpenIssue(Issue issue) {
 
         sb.AppendLine(ownerApproved
             ? "it is approved by the repository owner."
-            : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {MinThumbsUp}).");
+            : $"community endorsement with {thumbsUpCount} 👍 reactions (≥ {minThumbsUp}).");
 
         sb.AppendLine();
         
@@ -267,8 +267,8 @@ AwesomeLink SanitizeLink(AwesomeLink link) {
 async Task SaveLinkToCsv(AwesomeLink newLink) {
     var allLinks = new List<AwesomeLink>();
 
-    if (File.Exists(CsvDBPath)) {
-        using var reader = new StreamReader(CsvDBPath);
+    if (File.Exists(csvDbPath)) {
+        using var reader = new StreamReader(csvDbPath);
         using var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing.Select(SanitizeLink));
@@ -284,7 +284,7 @@ async Task SaveLinkToCsv(AwesomeLink newLink) {
     allLinks.Add(newLink);
 
     // Write back to CSV (sorted by Title for stability)
-    using var writer = new StreamWriter(CsvDBPath, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+    using var writer = new StreamWriter(csvDbPath, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
     using var csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture);
     csvWriter.WriteHeader<AwesomeLink>();
     csvWriter.NextRecord();
@@ -304,7 +304,7 @@ async Task LogLinkToJson(AwesomeLink link) {
     string jsonLine = JsonSerializer.Serialize(link, new JsonSerializerOptions { WriteIndented = false });
     
     // append to log file
-    await File.AppendAllTextAsync(JsonLogPath, jsonLine + Environment.NewLine);
+    await File.AppendAllTextAsync(jsonLogPath, jsonLine + Environment.NewLine);
 }
 
 string AddLinkExtras(string url) {
@@ -330,8 +330,8 @@ string ToMarkdownLink(AwesomeLink link) {
 async Task RebuildReadme() {
     // Read all links from CSV
     List<AwesomeLink> allLinks = new List<AwesomeLink>();
-    if (File.Exists(CsvDBPath)) {
-        using StreamReader reader = new StreamReader(CsvDBPath);
+    if (File.Exists(csvDbPath)) {
+        using StreamReader reader = new StreamReader(csvDbPath);
         using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing);
@@ -375,28 +375,28 @@ async Task RebuildReadme() {
     // WriteLine(generatedSection);
 
     // Read README.md and replace '# Links' section using Markdig AST
-    const string ReadmePath = "README.md";
-    if (!File.Exists(ReadmePath)) {
+    const string readmePath = "README.md";
+    if (!File.Exists(readmePath)) {
         WriteLine("README.md not found; skipping rebuild.");
         return;
     }
 
-    string readme = await File.ReadAllTextAsync(ReadmePath);
+    string readme = await File.ReadAllTextAsync(readmePath);
 
     // delete everything starting with the marker to the end of the file
-    int idx = readme.IndexOf(LinksMarker);
+    int idx = readme.IndexOf(linksMarker, StringComparison.Ordinal);
     if (idx >= 0) {
-        readme = readme.Substring(0, idx + LinksMarker.Length);
+        readme = readme.Substring(0, idx + linksMarker.Length);
     } else {
         // If no marker found, append at the end
-        readme += "\n\n" + LinksMarker;
+        readme += "\n\n" + linksMarker;
     }
 
     // append the generated section
     readme += "\n\n" + generatedSection + "\n";
     WriteLine("Writing updated README.md:");
     WriteLine(readme);
-    await File.WriteAllTextAsync(ReadmePath, readme);
+    await File.WriteAllTextAsync(readmePath, readme);
 }
 
 record AwesomeLink(string Title, string Url, string Description, string Category, string Subcategory, DateTime? CreatedAt);
