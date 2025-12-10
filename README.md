@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 140 links contributed by the community.
+Enjoy awesome 141 links contributed by the community.
 
 
 # Auth
@@ -60,6 +60,7 @@ Enjoy awesome 140 links contributed by the community.
 - [FileHelpers ![stars](https://img.shields.io/github/stars/MarcosMeli/FileHelpers?style=social&label=)](https://github.com/MarcosMeli/FileHelpers) - The FileHelpers library for importing/exporting data from fixed length or delimited records in files databases or streams.
 - [FlatBuffers ![stars](https://img.shields.io/github/stars/google/flatbuffers?style=social&label=)](https://github.com/google/flatbuffers) - Memory efficient serialization library with .NET support.
 - [Json.NET ![stars](https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json?style=social&label=)](https://github.com/JamesNK/Newtonsoft.Json) - Popular high-performance JSON framework for .NET.
+- [MemoryPack ![stars](https://img.shields.io/github/stars/Cysharp/MemoryPack?style=social&label=)](https://github.com/Cysharp/MemoryPack) - Blazing fast, zero-cost binary serialization.
 - [MessagePack ![stars](https://img.shields.io/github/stars/MessagePack-CSharp/MessagePack-CSharp?style=social&label=)](https://github.com/MessagePack-CSharp/MessagePack-CSharp) - Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.
 - [NPOI ![stars](https://img.shields.io/github/stars/nissl-lab/npoi?style=social&label=)](https://github.com/nissl-lab/npoi) - .NET library for reading and writing Microsoft Office binary and OOXML file formats.
 - [Parquet.Net ![stars](https://img.shields.io/github/stars/aloneguid/parquet-dotnet?style=social&label=)](https://github.com/aloneguid/parquet-dotnet) - Fully managed Apache Parquet implementation.
@@ -194,7 +195,7 @@ Enjoy awesome 140 links contributed by the community.
 
 # Tools
 
-- [DotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
+- [dotPeek](https://www.jetbrains.com/decompiler/) - Free .NET Decompiler and Assembly Browser.
 
 ## Online Compilers
 - [.NET Lab](https://lab.razor.fyi/#csharp) - C# and Razor compiler playground in the browser via Blazor WebAssembly.
