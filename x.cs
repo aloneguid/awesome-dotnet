@@ -96,7 +96,7 @@ async Task ProcessOpenIssue(Issue issue) {
         WriteLine($"  📝 Logged link to JSON log.");
         
         // Update RSS feed
-        await RebuildRSSFeed();
+        await RebuildRssFeed();
         WriteLine($"  📡 Updated RSS feed.");
 
         var sb = new StringBuilder();
@@ -313,14 +313,14 @@ async Task LogLinkToJson(AwesomeLink link) {
     await File.AppendAllTextAsync(jsonLogPath, jsonLine + Environment.NewLine);
 }
 
-async Task RebuildRSSFeed() {
+async Task RebuildRssFeed() {
     const int maxFeedItems = 50;
     
     // read last 50 lines from jsonLogPath
     var recentLinks = new List<AwesomeLink>();
     if (File.Exists(jsonLogPath)) {
         string[] allLines = await File.ReadAllLinesAsync(jsonLogPath);
-        var lastLines = allLines.Reverse().Take(maxFeedItems).Reverse();
+        IEnumerable<string> lastLines = allLines.Reverse().Take(maxFeedItems).Reverse();
         foreach (string line in lastLines) {
             try {
                 AwesomeLink? link = JsonSerializer.Deserialize<AwesomeLink>(line);
