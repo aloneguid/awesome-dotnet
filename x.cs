@@ -367,7 +367,26 @@ async Task RebuildReadme() {
         }
     }
     
-    // Build actual links
+    // Build links (table style)
+    foreach(var category in grouped) {
+        sb.AppendLine();
+        sb.AppendLine($"# {category.Category}");
+        sb.AppendLine("Name|Rating|Description");
+        sb.AppendLine("---|---|---");
+        foreach(var sub in category.Subgroups) {
+            if(!string.IsNullOrWhiteSpace(sub.Subcategory)) {
+                sb.AppendLine();
+                sb.AppendLine($"## {sub.Subcategory}");
+            } else {
+                sb.AppendLine();
+            }
+            foreach (AwesomeLink link in sub.Links) {
+                sb.AppendLine($"[{link.Title}]({link.Url}) | ⭐ | {link.Description}");
+            }
+        }
+    }
+    
+    // Build links (list style)
     foreach (var category in grouped) {
         sb.AppendLine();
         sb.AppendLine($"# {category.Category}");
