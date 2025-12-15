@@ -16,6 +16,7 @@ const int minThumbsUp = 5;
 const string csvDbPath = "links.csv";
 const string jsonLogPath = "log.json";
 const string linksMarker = "<!-- auto-generated content below -->";
+const string TableIntro = "Link|Rating|Description\n-|-|-\n";
 string[] acronyms = ["YouTube", "CI/CD"];
 var acronymMap = acronyms.ToDictionary(k => k.ToLower(), v => v);
 
@@ -129,7 +130,7 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
     }
     else {
         awl = SanitizeLink(awl);
-        string md = "Name|Ratin|Description\n-|-|-\n" + ToMarkdownLink(awl);
+        string md = TableIntro + ToMarkdownLink(awl);
         string titledMd = $"# {awl.Category}\n\n";
         if(!string.IsNullOrEmpty(awl.Subcategory)) {
             titledMd += $"## {awl.Subcategory}\n\n";
@@ -378,8 +379,8 @@ async Task RebuildReadme() {
                 sb.AppendLine($"## {sub.Subcategory}");
                 sb.AppendLine();
             }
-            sb.AppendLine("Name|Rating|Description");
-            sb.AppendLine("---|---|---");
+
+            sb.AppendLine(TableIntro);
             
             foreach(AwesomeLink link in sub.Links) {
                 sb.AppendLine(ToMarkdownLink(link));
