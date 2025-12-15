@@ -45,18 +45,30 @@ Enjoy awesome 145 links contributed by the community.
   - [NET Conf](#net-conf)
 
 # API
+
+Name|Rating|Description
+---|---|---
 [Cloudflare.NET ![stars](https://img.shields.io/github/stars/Alos-no/Cloudflare.NET?style=social&label=)](https://github.com/Alos-no/Cloudflare.NET)| |.NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.
 
 # Auth
+
+Name|Rating|Description
+---|---|---
 [Abblix Oidc.Server ![stars](https://img.shields.io/github/stars/Abblix/Oidc.Server?style=social&label=)](https://github.com/Abblix/Oidc.Server)| |Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.
 [AspNetSaml ![stars](https://img.shields.io/github/stars/jitbit/AspNetSaml?style=social&label=)](https://github.com/jitbit/AspNetSaml/)| |Popular SSO/SAML library for ASP.NET.
 
 # Big Data
+
+Name|Rating|Description
+---|---|---
 [Apache Spark for .NET ![stars](https://img.shields.io/github/stars/dotnet/spark?style=social&label=)](https://github.com/dotnet/spark)| |.NET bindings for Apache Spark for large-scale data processing.
 [Deedle ![stars](https://img.shields.io/github/stars/fslaborg/Deedle?style=social&label=)](https://github.com/fslaborg/Deedle)| |Easy to use .NET library for data and time series manipulation and scientific programming.
 [ML.NET ![stars](https://img.shields.io/github/stars/dotnet/machinelearning?style=social&label=)](https://github.com/dotnet/machinelearning)| |ML.NET is an open source and cross-platform machine learning framework for .NET.
 
 # CLI
+
+Name|Rating|Description
+---|---|---
 [Argx ![stars](https://img.shields.io/github/stars/mihaicaragheorghe/argx?style=social&label=)](https://github.com/mihaicaragheorghe/argx)| |A modern command-line argument parsing library for .NET.
 [CliFx ![stars](https://img.shields.io/github/stars/Tyrrrz/CliFx?style=social&label=)](https://github.com/Tyrrrz/CliFx)| |Declarative framework for building command line interfaces with dependency injection and validation support.
 [Cocona ![stars](https://img.shields.io/github/stars/mayuki/Cocona?style=social&label=)](https://github.com/mayuki/Cocona)| |Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.
@@ -69,6 +81,9 @@ Enjoy awesome 145 links contributed by the community.
 [System.CommandLine ![stars](https://img.shields.io/github/stars/dotnet/command-line-api?style=social&label=)](https://github.com/dotnet/command-line-api)| |System.CommandLine is a powerful command line parser for building modern CLI applications.
 
 # Compression
+
+Name|Rating|Description
+---|---|---
 [FastLZMA2Net ![stars](https://img.shields.io/github/stars/kingsznhone/FastLZMA2Net?style=social&label=)](https://github.com/kingsznhone/FastLZMA2Net)| |Fast LZMA2 Wrapper for .NET. Windows only.
 [K4os.Compression.LZ4 ![stars](https://img.shields.io/github/stars/MiloszKrajewski/K4os.Compression.LZ4?style=social&label=)](https://github.com/MiloszKrajewski/K4os.Compression.LZ4)| |LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).
 [lzo.net ![stars](https://img.shields.io/github/stars/zivillian/lzo.net?style=social&label=)](https://github.com/zivillian/lzo.net)| |Implementation of the lzo decoder in plain C#/.NET.
@@ -78,10 +93,16 @@ Enjoy awesome 145 links contributed by the community.
 [ZstdSharp ![stars](https://img.shields.io/github/stars/oleg-st/ZstdSharp?style=social&label=)](https://github.com/oleg-st/ZstdSharp)| |Port of zstd compression library to C#.
 
 # Continuous Integration
+
+Name|Rating|Description
+---|---|---
 [Cake](https://cakebuild.net/)| |Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.
 [Sharpliner ![stars](https://img.shields.io/github/stars/sharpliner/sharpliner?style=social&label=)](https://github.com/sharpliner/sharpliner)| |Use C# instead of YAML to define your Azure DevOps pipelines.
 
 # Data Formats
+
+Name|Rating|Description
+---|---|---
 [Apache Avro ![stars](https://img.shields.io/github/stars/apache/avro?style=social&label=)](https://github.com/apache/avro)| |Apache Avro is a data serialization system with .NET implementation.
 [ClosedXML ![stars](https://img.shields.io/github/stars/ClosedXML/ClosedXML?style=social&label=)](https://github.com/ClosedXML/ClosedXML)| |ClosedXML makes it easier for developers to create Excel 2007+ files.
 [CsvHelper ![stars](https://img.shields.io/github/stars/JoshClose/CsvHelper?style=social&label=)](https://github.com/JoshClose/CsvHelper)| |Library to help reading and writing CSV files.
@@ -98,12 +119,18 @@ Enjoy awesome 145 links contributed by the community.
 [Protobuf-net ![stars](https://img.shields.io/github/stars/protobuf-net/protobuf-net?style=social&label=)](https://github.com/protobuf-net/protobuf-net)| |Protocol Buffers library for idiomatic .NET.
 
 # Data Generators
+
+Name|Rating|Description
+---|---|---
 [Bogus ![stars](https://img.shields.io/github/stars/bchavez/Bogus?style=social&label=)](https://github.com/bchavez/Bogus)| |A simple fake data generator for C# F# and VB.NET for testing and seeding databases.
 [faker-csharp ![stars](https://img.shields.io/github/stars/petabridge/faker-csharp?style=social&label=)](https://github.com/petabridge/faker-csharp)| |Faker for C#.
 [Faker.Net ![stars](https://img.shields.io/github/stars/Kuree/Faker.Net?style=social&label=)](https://github.com/Kuree/Faker.Net)| |Generate massive amounts of fake data in .NET (abandoned).
 [GenFu ![stars](https://img.shields.io/github/stars/MisterJames/GenFu?style=social&label=)](https://github.com/MisterJames/GenFu)| |GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.
 
 # Databases
+
+Name|Rating|Description
+---|---|---
 [Dapper ![stars](https://img.shields.io/github/stars/DapperLib/Dapper?style=social&label=)](https://github.com/DapperLib/Dapper)| |Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.
 [Entity Framework Core ![stars](https://img.shields.io/github/stars/dotnet/efcore?style=social&label=)](https://github.com/dotnet/efcore)| |EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.
 [Marten ![stars](https://img.shields.io/github/stars/JasperFx/marten?style=social&label=)](https://github.com/JasperFx/marten)| |.NET Transactional Document DB and Event Store on PostgreSQL.
@@ -111,6 +138,9 @@ Enjoy awesome 145 links contributed by the community.
 [StackExchange.Redis ![stars](https://img.shields.io/github/stars/StackExchange/StackExchange.Redis?style=social&label=)](https://github.com/StackExchange/StackExchange.Redis)| |General purpose, the most popular Redis client.
 
 # Distributed Systems
+
+Name|Rating|Description
+---|---|---
 [Akka.NET ![stars](https://img.shields.io/github/stars/akkadotnet/akka.net?style=social&label=)](https://github.com/akkadotnet/akka.net)| |Canonical actor model implementation for .NET with local and distributed actors.
 [EventStore ![stars](https://img.shields.io/github/stars/EventStore/EventStore?style=social&label=)](https://github.com/EventStore/EventStore)| |The stream database optimised for event sourcing.
 [MassTransit ![stars](https://img.shields.io/github/stars/MassTransit/MassTransit?style=social&label=)](https://github.com/MassTransit/MassTransit)| |Distributed application framework for .NET supporting message-based architectures.
@@ -120,6 +150,9 @@ Enjoy awesome 145 links contributed by the community.
 [Rebus ![stars](https://img.shields.io/github/stars/rebus-org/Rebus?style=social&label=)](https://github.com/rebus-org/Rebus)| |Simple and lean service bus implementation for .NET.
 
 # Game Engines
+
+Name|Rating|Description
+---|---|---
 [CryEngine](https://www.cryengine.com/)| |The most powerful game development platform for you and your team to create world-class entertainment experiences.
 [Defold](https://forum.defold.com/t/defold-c-support/79479)| |Engine with experimental C# support.
 [Evergine](https://evergine.com/)| |Another decent game engine.
@@ -144,6 +177,9 @@ Enjoy awesome 145 links contributed by the community.
 [Unity](https://unity.com/)| |The most popular game engine in the world.
 
 # IDE
+
+Name|Rating|Description
+---|---|---
 [JetBrains Rider](https://www.jetbrains.com/rider/)| |The world's most loved .NET and game dev IDE. Now free for non-commercial use.
 [LinqPad](https://www.linqpad.net/)| |The .NET Programmer’s Playground.
 [OmniSharp](https://www.omnisharp.net/)| |Makes C# development available in vim, neovim, sublime, emacs, brackets.
@@ -152,6 +188,9 @@ Enjoy awesome 145 links contributed by the community.
 [Visual Studio Code](https://code.visualstudio.com/)| |Free and built on open source. Integrated Git, debugging and extensions. Install C# Dev Kit.
 
 # Libraries
+
+Name|Rating|Description
+---|---|---
 [Castle.Core ![stars](https://img.shields.io/github/stars/castleproject/Core?style=social&label=)](https://github.com/castleproject/Core)| |About Castle Core, including Castle DynamicProxy, Logging Services and DictionaryAdapter.
 
 Name|Rating|Description
@@ -159,6 +198,9 @@ Name|Rating|Description
 [Silverfly ![stars](https://img.shields.io/github/stars/furesoft/Silverfly?style=social&label=)](https://github.com/furesoft/Silverfly)| |A pratt parser framework.
 
 # Logging
+
+Name|Rating|Description
+---|---|---
 [Exceptionless ![stars](https://img.shields.io/github/stars/exceptionless/Exceptionless.Net?style=social&label=)](https://github.com/exceptionless/Exceptionless.Net)| |Exceptionless .NET Client for collecting errors events and logs.
 [Log4net ![stars](https://img.shields.io/github/stars/apache/logging-log4net?style=social&label=)](https://github.com/apache/logging-log4net)| |Apache log4net is a versatile widely-used logging library for .NET.
 [Microsoft.Extensions.Logging ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime)| |A lightweight and extensible logging API that is a part of ASP.NET Core and can be used in any .NET application.
@@ -181,6 +223,9 @@ Name|Rating|Description
 [EFCore.Kusto ![stars](https://img.shields.io/github/stars/anasik/EFCore.Kusto?style=social&label=)](https://github.com/anasik/EFCore.Kusto)| |An EF Core database provider for Azure Data Explorer (ADX) aka Kusto.
 
 # Other
+
+Name|Rating|Description
+---|---|---
 [AutoMapper ![stars](https://img.shields.io/github/stars/AutoMapper/AutoMapper?style=social&label=)](https://github.com/AutoMapper/AutoMapper)| |A convention-based object-object mapper in .NET.
 [Aviyal ![stars](https://img.shields.io/github/stars/TheAjaykrishnanR/aviyal?style=social&label=)](https://github.com/TheAjaykrishnanR/aviyal)| |Window manager for windows written purely in C# thats simple, lightweight and portable.
 [NodaTime ![stars](https://img.shields.io/github/stars/nodatime/nodatime?style=social&label=)](https://github.com/nodatime/nodatime)| |Noda Time is an alternative date and time API for .NET. It helps you to think about your data more clearly, and express operations on that data more precisely.
@@ -194,6 +239,9 @@ Name|Rating|Description
 [Fast ULID library, replacement for GUID - ByteAether.Ulid ![stars](https://img.shields.io/github/stars/ByteAether/Ulid?style=social&label=)](https://github.com/ByteAether/Ulid)| |Universally Unique Lexicographically Sortable Identifiers (ULIDs), designed to be globally unique, sortable, human-readable, and AoT compatible.
 
 # Programming Languages
+
+Name|Rating|Description
+---|---|---
 [Boo ![stars](https://img.shields.io/github/stars/boo-lang/boo?style=social&label=)](https://github.com/boo-lang/boo)| |A statically typed CLI language, inspired by Python.
 [IronPython](https://ironpython.net/)| |Open-source implementation of the Python programming language which is tightly integrated with .NET. IronPython can use .NET and Python libraries, and other .NET languages can use Python code just as easily.
 [IronScheme ![stars](https://img.shields.io/github/stars/IronScheme/IronScheme?style=social&label=)](https://github.com/IronScheme/IronScheme)| |IronScheme aims to be a R6RS conforming Scheme-like implementation for all .NET implementations and platforms.
@@ -201,6 +249,9 @@ Name|Rating|Description
 [Oxygene](https://www.remobjects.com/elements/oxygene/)| |An Object Pascal-based CLI language.
 
 # Runtimes
+
+Name|Rating|Description
+---|---|---
 [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)| |The original .NET implementation for Windows desktop applications.
 [.NET MAUI Runtime ![stars](https://img.shields.io/github/stars/dotnet/maui?style=social&label=)](https://github.com/dotnet/maui)| |Runtime components for .NET Multi-platform App UI.
 [.NET Runtime ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)](https://github.com/dotnet/runtime)| |.NET is a cross-platform runtime for cloud mobile desktop and IoT apps.
@@ -213,12 +264,21 @@ Name|Rating|Description
 [Xamarin Runtime ![stars](https://img.shields.io/github/stars/xamarin/xamarin-android?style=social&label=)](https://github.com/xamarin/xamarin-android)| |Runtime for Xamarin.Android and Xamarin.iOS applications.
 
 # Source Generators
+
+Name|Rating|Description
+---|---|---
 [NotNot.AppSettings](https://www.nuget.org/packages/NotNot.AppSettings/)| |Automatically create strongly typed C# settings objects from AppSettings.json.
 
 # Text Processing
+
+Name|Rating|Description
+---|---|---
 [Humanizer ![stars](https://img.shields.io/github/stars/Humanizr/Humanizer?style=social&label=)](https://github.com/Humanizr/Humanizer)| |Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.
 
 # Tools
+
+Name|Rating|Description
+---|---|---
 [dotPeek](https://www.jetbrains.com/decompiler/)| |Free .NET Decompiler and Assembly Browser.
 
 Name|Rating|Description
@@ -232,6 +292,9 @@ Name|Rating|Description
 [BenchmarkDotNet ![stars](https://img.shields.io/github/stars/dotnet/BenchmarkDotNet?style=social&label=)](https://github.com/dotnet/BenchmarkDotNet)| |De facto .NET benchmarking tool.
 
 # UI
+
+Name|Rating|Description
+---|---|---
 [Avalonia ![stars](https://img.shields.io/github/stars/AvaloniaUI/Avalonia?style=social&label=)](https://github.com/AvaloniaUI/Avalonia)| |Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems.
 [Blazor ![stars](https://img.shields.io/github/stars/dotnet/aspnetcore?style=social&label=)](https://github.com/dotnet/aspnetcore)| |Blazor lets you build interactive web UIs using C# instead of JavaScript.
 [Eto.Forms ![stars](https://img.shields.io/github/stars/picoe/Eto?style=social&label=)](https://github.com/picoe/Eto)| |Cross platform GUI framework for desktop and mobile applications in .NET.
@@ -244,10 +307,16 @@ Name|Rating|Description
 [WPF ![stars](https://img.shields.io/github/stars/dotnet/wpf?style=social&label=)](https://github.com/dotnet/wpf)| |WPF is a .NET Core UI framework for building Windows desktop applications.
 
 # Unit Testing
+
+Name|Rating|Description
+---|---|---
 [MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro)| |The official Microsoft Testing Framework. Integrates with VS, VS Code, CLI, pipelines and more.
 [XUnit ![stars](https://img.shields.io/github/stars/xunit/xunit?style=social&label=)](https://github.com/xunit/xunit)| |Free, open source, community-focused unit testing tool for .NET.
 
 # Videos
+
+Name|Rating|Description
+---|---|---
 [.NET Foundation](https://www.youtube.com/@NETFoundation)| |The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.
 [Deep .NET](https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1)| |YouTube playlist with deeper dive into .NET from Microsoft.
 [Dotnet](https://www.youtube.com/@dotnet)| |The official .NET YouTube channel.
