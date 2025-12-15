@@ -1,4 +1,5 @@
 Title,Url,Description,Category,Subcategory,CreatedAt
+Cloudflare.NET,https://github.com/Alos-no/Cloudflare.NET,".NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.",API,,12/15/2025 08:04:31
 Abblix Oidc.Server,https://github.com/Abblix/Oidc.Server,Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.,Auth,,
 AspNetSaml,https://github.com/jitbit/AspNetSaml/,Popular SSO/SAML library for ASP.NET.,Auth,,
 Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Big Data,,
@@ -15,13 +16,13 @@ Sharprompt,https://github.com/shibayan/Sharprompt,Interactive command-line promp
 Spectre.Console,https://github.com/spectreconsole/spectre.console,A .NET library that makes it easier to create beautiful console applications.,CLI,,
 System.CommandLine,https://github.com/dotnet/command-line-api,System.CommandLine is a powerful command line parser for building modern CLI applications.,CLI,,
 FastLZMA2Net,https://github.com/kingsznhone/FastLZMA2Net,Fast LZMA2 Wrapper for .NET. Windows only.,Compression,,
-K4os.Compression.LZ4,https://github.com/MiloszKrajewski/K4os.Compression.LZ4,LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).,Compression,,12/08/2025 14:48
-lzo.net,https://github.com/zivillian/lzo.net,Implementation of the lzo decoder in plain C#/.NET.,Compression,,12/08/2025 15:03
+K4os.Compression.LZ4,https://github.com/MiloszKrajewski/K4os.Compression.LZ4,LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).,Compression,,12/08/2025 14:48:00
+lzo.net,https://github.com/zivillian/lzo.net,Implementation of the lzo decoder in plain C#/.NET.,Compression,,12/08/2025 15:03:00
 SharpCompress,https://github.com/adamhathcock/sharpcompress,Fully managed C# library to deal with many compression types and formats.,Compression,,
 Snappier,https://github.com/brantburnett/Snappier,"Pure C# port of Google's Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.",Compression,,
 Snappy,https://github.com/robertvazan/snappy.net,"Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn't been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.",Compression,,
 ZstdSharp,https://github.com/oleg-st/ZstdSharp,Port of zstd compression library to C#.,Compression,,
-Cake,https://cakebuild.net/,"Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.",Continuous Integration,,12/05/2025 10:34
+Cake,https://cakebuild.net/,"Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.",Continuous Integration,,12/05/2025 10:34:00
 Sharpliner,https://github.com/sharpliner/sharpliner,Use C# instead of YAML to define your Azure DevOps pipelines.,Continuous Integration,,
 Apache Avro,https://github.com/apache/avro,Apache Avro is a data serialization system with .NET implementation.,Data Formats,,
 ClosedXML,https://github.com/ClosedXML/ClosedXML,ClosedXML makes it easier for developers to create Excel 2007+ files.,Data Formats,,
@@ -132,11 +133,11 @@ WinForms,https://github.com/dotnet/winforms,Windows Forms is a .NET UI framework
 WPF,https://github.com/dotnet/wpf,WPF is a .NET Core UI framework for building Windows desktop applications.,UI,,
 MSTest,https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro,"The official Microsoft Testing Framework. Integrates with VS, VS Code, CLI, pipelines and more.",Unit Testing,,
 XUnit,https://github.com/xunit/xunit,"Free, open source, community-focused unit testing tool for .NET.",Unit Testing,,
-Deep .NET,https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1,YouTube playlist with deeper dive into .NET from Microsoft.,Videos,,12/07/2025 16:23
-2022,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn,.NET Conf 2022.,Videos,NET Conf,12/05/2025 10:42
+.NET Foundation,https://www.youtube.com/@NETFoundation,The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.,Videos,,
+Deep .NET,https://www.youtube.com/watch?v=R-z2Hv-7nxk&list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1,YouTube playlist with deeper dive into .NET from Microsoft.,Videos,,12/07/2025 16:23:00
+Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,,
+NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,,
+2022,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn,.NET Conf 2022.,Videos,NET Conf,12/05/2025 10:42:00
 2023,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU,.NET Conf 2023.,Videos,NET Conf,
 2024,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXeSG8BgCVru3zQtw_K4ANY,.NET Conf 2024.,Videos,NET Conf,
 2025,https://www.youtube.com/playlist?list=PLdo4fOcmZ0oXtIlvq1tuORUtZqVG-HdCt,.NET Conf 2025.,Videos,NET Conf,
-.NET Foundation,https://www.youtube.com/@NETFoundation,The heartbeat of .NET - where projects and communities come together to get things done in our open-source world.,Videos,,
-Dotnet,https://www.youtube.com/@dotnet,The official .NET YouTube channel.,Videos,,
-NDC Conferences,https://www.youtube.com/@NDC,High-end events for software developers.,Videos,,

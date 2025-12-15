@@ -8,8 +8,12 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 141 links contributed by the community.
+Enjoy awesome 142 links contributed by the community.
 
+
+# API
+
+- [Cloudflare.NET ![stars](https://img.shields.io/github/stars/Alos-no/Cloudflare.NET?style=social&label=)](https://github.com/Alos-no/Cloudflare.NET) - .NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.
 
 # Auth
 
