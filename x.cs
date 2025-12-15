@@ -355,6 +355,19 @@ async Task RebuildReadme() {
     var sb = new StringBuilder();
     sb.AppendLine($"Enjoy awesome {"link".ToQuantity(allLinks.Count)} contributed by the community.");
     sb.AppendLine();
+    
+    // Build TOC
+    sb.AppendLine("# Table of Contents");
+    foreach (var category in grouped) {
+        sb.AppendLine($"- [{category.Category}](#{category.Category.ToLower().Replace(' ', '-')})");
+        foreach (var sub in category.Subgroups) {
+            if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
+                sb.AppendLine($"  - [{sub.Subcategory}](#{sub.Subcategory.ToLower().Replace(' ', '-')})");
+            }
+        }
+    }
+    
+    // Build actual links
     foreach (var category in grouped) {
         sb.AppendLine();
         sb.AppendLine($"# {category.Category}");
