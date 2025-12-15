@@ -376,6 +376,10 @@ async Task RebuildReadme() {
 
         foreach(var sub in category.Subgroups) {
             sb.AppendLine();
+            if(!string.IsNullOrWhiteSpace(sub.Subcategory)) {
+                sb.AppendLine($"## {sub.Subcategory}");
+                sb.AppendLine();
+            }
             sb.AppendLine("Name|Rating|Description");
             sb.AppendLine("---|---|---");
             
@@ -385,22 +389,6 @@ async Task RebuildReadme() {
         }
     }
     
-    // Build links (list style)
-    foreach (var category in grouped) {
-        sb.AppendLine();
-        sb.AppendLine($"# {category.Category}");
-        foreach (var sub in category.Subgroups) {
-            if (!string.IsNullOrWhiteSpace(sub.Subcategory)) {
-                sb.AppendLine();
-                sb.AppendLine($"## {sub.Subcategory}");
-            } else {
-                sb.AppendLine();
-            }
-            foreach (AwesomeLink link in sub.Links) {
-                sb.AppendLine(ToMarkdownLink(link));
-            }
-        }
-    }
     string generatedSection = sb.ToString().TrimEnd();
     // WriteLine("generated section:");
     // WriteLine(generatedSection);
