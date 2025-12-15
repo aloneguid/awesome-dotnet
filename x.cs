@@ -129,7 +129,7 @@ async Task ProcessIssueUpdatesIfUpdated(Issue issue) {
     }
     else {
         awl = SanitizeLink(awl);
-        string md = ToMarkdownLink(awl);
+        string md = "Name|Ratin|Description\n-|-|-\n" + ToMarkdownLink(awl);
         string titledMd = $"# {awl.Category}\n\n";
         if(!string.IsNullOrEmpty(awl.Subcategory)) {
             titledMd += $"## {awl.Subcategory}\n\n";
@@ -322,11 +322,9 @@ string AddLinkExtras(string url) {
     return "";
 }
 
-string ToMarkdownLink(AwesomeLink link, bool useListStyle = true) {
+string ToMarkdownLink(AwesomeLink link) {
     string extras = AddLinkExtras(link.Url);
-    return useListStyle
-        ? $"- [{link.Title}{extras}]({link.Url}) - {link.Description}"
-        : $"[{link.Title}]({link.Url})|{extras}|{link.Description}";
+    return $"[{link.Title}]({link.Url})|{extras}|{link.Description}";
 }
 
 async Task RebuildReadme() {
@@ -384,7 +382,7 @@ async Task RebuildReadme() {
             sb.AppendLine("---|---|---");
             
             foreach(AwesomeLink link in sub.Links) {
-                sb.AppendLine(ToMarkdownLink(link, false));
+                sb.AppendLine(ToMarkdownLink(link));
             }
         }
     }
