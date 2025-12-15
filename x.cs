@@ -96,7 +96,7 @@ async Task ProcessOpenIssue(Issue issue) {
         WriteLine($"  📝 Logged link to JSON log.");
         
         // Update RSS feed
-        await LogLinkToFeed(link);
+        await RebuildRSSFeed();
         WriteLine($"  📡 Updated RSS feed.");
 
         var sb = new StringBuilder();
@@ -313,18 +313,24 @@ async Task LogLinkToJson(AwesomeLink link) {
     await File.AppendAllTextAsync(jsonLogPath, jsonLine + Environment.NewLine);
 }
 
-async Task LogLinkToFeed(AwesomeLink link) {
+async Task RebuildRSSFeed() {
     const int maxFeedItems = 50;
     
-    // Read all links from CSV and sort by CreatedAt descending
-    List<AwesomeLink> allLinks = new List<AwesomeLink>();
-    if (File.Exists(csvDbPath)) {
-        using var reader = new StreamReader(csvDbPath);
-        using var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
-        allLinks = csvReader.GetRecords<AwesomeLink>()
-            .OrderByDescending(l => l.CreatedAt ?? DateTime.MinValue)
-            .Take(maxFeedItems)
-            .ToList();
+    // read last 50 lines from jsonLogPath
+    var recentLinks = new List<AwesomeLink>();
+    if (File.Exists(jsonLogPath)) {
+        string[] allLines = await File.ReadAllLinesAsync(jsonLogPath);
+        var lastLines = allLines.Reverse().Take(maxFeedItems).Reverse();
+        foreach (string line in lastLines) {
+            try {
+                AwesomeLink? link = JsonSerializer.Deserialize<AwesomeLink>(line);
+                if (link != null) {
+                    recentLinks.Add(link);
+                }
+            } catch {
+                // ignore malformed lines
+            }
+        }
     }
     
     // Build RSS feed
@@ -337,7 +343,7 @@ async Task LogLinkToFeed(AwesomeLink link) {
     sb.AppendLine("    <description>Community-curated awesome .NET resources and links</description>");
     sb.AppendLine($"    <lastBuildDate>{DateTime.UtcNow:R}</lastBuildDate>");
     
-    foreach (var item in allLinks) {
+    foreach (var item in recentLinks) {
         sb.AppendLine("    <item>");
         sb.AppendLine($"      <title>{System.Security.SecurityElement.Escape(item.Title)}</title>");
         sb.AppendLine($"      <link>{System.Security.SecurityElement.Escape(item.Url)}</link>");
