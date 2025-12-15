@@ -371,17 +371,16 @@ async Task RebuildReadme() {
     foreach(var category in grouped) {
         sb.AppendLine();
         sb.AppendLine($"# {category.Category}");
-        sb.AppendLine("Name|Rating|Description");
-        sb.AppendLine("---|---|---");
+
         foreach(var sub in category.Subgroups) {
             if(!string.IsNullOrWhiteSpace(sub.Subcategory)) {
                 sb.AppendLine();
-                sb.AppendLine($"## {sub.Subcategory}");
-            } else {
-                sb.AppendLine();
+                sb.AppendLine("Name|Rating|Description");
+                sb.AppendLine("---|---|---");
             }
-            foreach (AwesomeLink link in sub.Links) {
-                sb.AppendLine($"[{link.Title}]({link.Url}) | ⭐ | {link.Description}");
+            foreach(AwesomeLink link in sub.Links) {
+                string extras = AddLinkExtras(link.Url);
+                sb.AppendLine($"[{link.Title}{extras}]({link.Url})| |{link.Description}");
             }
         }
     }
