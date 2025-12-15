@@ -4,34 +4,41 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Mon, 15 Dec 2025 11:29:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 11:39:07 GMT</lastBuildDate>
     <item>
-      <title>FastEndpoints</title>
-      <link>https://github.com/FastEndpoints/FastEndpoints</link>
-      <description>A light-weight REST API development framework for ASP.NET 8 and newer.</description>
-      <category>API</category>
-      <pubDate>Mon, 15 Dec 2025 11:29:55 GMT</pubDate>
+      <title>Cake</title>
+      <link>https://cakebuild.net/</link>
+      <description>Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.</description>
+      <category>Continuous Integration</category>
+      <pubDate>Fri, 05 Dec 2025 10:34:10 GMT</pubDate>
     </item>
     <item>
-      <title>faker-csharp</title>
-      <link>https://github.com/petabridge/faker-csharp</link>
-      <description>Faker for C#.</description>
-      <category>Data Generators</category>
-      <pubDate>Mon, 15 Dec 2025 11:02:10 GMT</pubDate>
+      <title>2022</title>
+      <link>https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn</link>
+      <description>.NET Conf 2022</description>
+      <category>Videos</category>
+      <pubDate>Fri, 05 Dec 2025 10:42:48 GMT</pubDate>
     </item>
     <item>
-      <title>Faker.Net</title>
-      <link>https://github.com/Kuree/Faker.Net</link>
-      <description>Generate massive amounts of fake data in .NET (abandoned).</description>
-      <category>Data Generators</category>
-      <pubDate>Mon, 15 Dec 2025 10:55:17 GMT</pubDate>
+      <title>Deep .NET</title>
+      <link>https://www.youtube.com/watch?v=R-z2Hv-7nxk&amp;list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1</link>
+      <description>YouTube playlist with deeper dive into .NET from Microsoft</description>
+      <category>Videos</category>
+      <pubDate>Sun, 07 Dec 2025 16:23:38 GMT</pubDate>
     </item>
     <item>
-      <title>GenFu</title>
-      <link>https://github.com/MisterJames/GenFu</link>
-      <description>GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.</description>
-      <category>Data Generators</category>
-      <pubDate>Mon, 15 Dec 2025 10:55:15 GMT</pubDate>
+      <title>K4os.Compression.LZ4</title>
+      <link>https://github.com/MiloszKrajewski/K4os.Compression.LZ4</link>
+      <description>LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net)</description>
+      <category>Compression</category>
+      <pubDate>Mon, 08 Dec 2025 14:48:22 GMT</pubDate>
+    </item>
+    <item>
+      <title>lzo.net</title>
+      <link>https://github.com/zivillian/lzo.net</link>
+      <description>implementation of the lzo decoder in plain C#/.NET</description>
+      <category>Compression</category>
+      <pubDate>Mon, 08 Dec 2025 15:03:00 GMT</pubDate>
     </item>
     <item>
       <title>Cloudflare.NET</title>
@@ -41,279 +48,46 @@
       <pubDate>Mon, 15 Dec 2025 08:04:31 GMT</pubDate>
     </item>
     <item>
-      <title>lzo.net</title>
-      <link>https://github.com/zivillian/lzo.net</link>
-      <description>Implementation of the lzo decoder in plain C#/.NET.</description>
-      <category>Compression</category>
-      <pubDate>Mon, 08 Dec 2025 15:03:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>K4os.Compression.LZ4</title>
-      <link>https://github.com/MiloszKrajewski/K4os.Compression.LZ4</link>
-      <description>LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net).</description>
-      <category>Compression</category>
-      <pubDate>Mon, 08 Dec 2025 14:48:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Deep .NET</title>
-      <link>https://www.youtube.com/watch?v=R-z2Hv-7nxk&amp;list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1</link>
-      <description>YouTube playlist with deeper dive into .NET from Microsoft.</description>
-      <category>Videos</category>
-      <pubDate>Sun, 07 Dec 2025 16:23:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2022</title>
-      <link>https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVlqu_V8EXUDDnPsYwemxjn</link>
-      <description>.NET Conf 2022.</description>
-      <category>Videos</category>
-      <pubDate>Fri, 05 Dec 2025 10:42:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Cake</title>
-      <link>https://cakebuild.net/</link>
-      <description>Cake (C# Make) is a free and open source cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.</description>
-      <category>Continuous Integration</category>
-      <pubDate>Fri, 05 Dec 2025 10:34:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Abblix Oidc.Server</title>
-      <link>https://github.com/Abblix/Oidc.Server</link>
-      <description>Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.</description>
-      <category>Auth</category>
-    </item>
-    <item>
-      <title>AspNetSaml</title>
-      <link>https://github.com/jitbit/AspNetSaml/</link>
-      <description>Popular SSO/SAML library for ASP.NET.</description>
-      <category>Auth</category>
-    </item>
-    <item>
-      <title>Apache Spark for .NET</title>
-      <link>https://github.com/dotnet/spark</link>
-      <description>.NET bindings for Apache Spark for large-scale data processing.</description>
-      <category>Big Data</category>
-    </item>
-    <item>
-      <title>Deedle</title>
-      <link>https://github.com/fslaborg/Deedle</link>
-      <description>Easy to use .NET library for data and time series manipulation and scientific programming.</description>
-      <category>Big Data</category>
-    </item>
-    <item>
-      <title>ML.NET</title>
-      <link>https://github.com/dotnet/machinelearning</link>
-      <description>ML.NET is an open source and cross-platform machine learning framework for .NET.</description>
-      <category>Big Data</category>
-    </item>
-    <item>
-      <title>Argx</title>
-      <link>https://github.com/mihaicaragheorghe/argx</link>
-      <description>A modern command-line argument parsing library for .NET.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>CliFx</title>
-      <link>https://github.com/Tyrrrz/CliFx</link>
-      <description>Declarative framework for building command line interfaces with dependency injection and validation support.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Cocona</title>
-      <link>https://github.com/mayuki/Cocona</link>
-      <description>Micro-framework for .NET console application. Cocona makes it easy to build console applications with command line parsing.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Colorful.Console</title>
-      <link>https://github.com/tomakita/Colorful.Console</link>
-      <description>Style your .NET console output with ease using RGB colors and gradients.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>CommandLineParser</title>
-      <link>https://github.com/commandlineparser/commandline</link>
-      <description>The best C# command line parser that brings standardized *nix getopt style to .NET.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Crayon</title>
-      <link>https://github.com/riezebosch/crayon</link>
-      <description>Extremely simple console coloring for .NET applications.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Gui.cs</title>
-      <link>https://github.com/gui-cs/Terminal.Gui</link>
-      <description>Cross-platform Terminal UI toolkit for .NET that makes it easy to build rich console applications.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Sharprompt</title>
-      <link>https://github.com/shibayan/Sharprompt</link>
-      <description>Interactive command-line prompts for .NET Core inspired by Inquirer.js.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>Spectre.Console</title>
-      <link>https://github.com/spectreconsole/spectre.console</link>
-      <description>A .NET library that makes it easier to create beautiful console applications.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>System.CommandLine</title>
-      <link>https://github.com/dotnet/command-line-api</link>
-      <description>System.CommandLine is a powerful command line parser for building modern CLI applications.</description>
-      <category>CLI</category>
-    </item>
-    <item>
-      <title>FastLZMA2Net</title>
-      <link>https://github.com/kingsznhone/FastLZMA2Net</link>
-      <description>Fast LZMA2 Wrapper for .NET. Windows only.</description>
-      <category>Compression</category>
-    </item>
-    <item>
-      <title>SharpCompress</title>
-      <link>https://github.com/adamhathcock/sharpcompress</link>
-      <description>Fully managed C# library to deal with many compression types and formats.</description>
-      <category>Compression</category>
-    </item>
-    <item>
-      <title>Snappier</title>
-      <link>https://github.com/brantburnett/Snappier</link>
-      <description>Pure C# port of Google&apos;s Snappy compression algorithm. It is designed with speed as the primary goal, rather than compression ratio, and is ideal for compressing network traffic.</description>
-      <category>Compression</category>
-    </item>
-    <item>
-      <title>Snappy</title>
-      <link>https://github.com/robertvazan/snappy.net</link>
-      <description>Uses P/Invoke to C++ for great performance. However, it only works on Windows, and is a bit heap allocation heavy in some cases. It also hasn&apos;t been updated since 2014 (as of 10/2020). This project may still be the best choice if your project is on the legacy .NET Framework on Windows, where Snappier is much less performant.</description>
-      <category>Compression</category>
-    </item>
-    <item>
-      <title>ZstdSharp</title>
-      <link>https://github.com/oleg-st/ZstdSharp</link>
-      <description>Port of zstd compression library to C#.</description>
-      <category>Compression</category>
-    </item>
-    <item>
-      <title>Sharpliner</title>
-      <link>https://github.com/sharpliner/sharpliner</link>
-      <description>Use C# instead of YAML to define your Azure DevOps pipelines.</description>
-      <category>Continuous Integration</category>
-    </item>
-    <item>
-      <title>Apache Avro</title>
-      <link>https://github.com/apache/avro</link>
-      <description>Apache Avro is a data serialization system with .NET implementation.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>ClosedXML</title>
-      <link>https://github.com/ClosedXML/ClosedXML</link>
-      <description>ClosedXML makes it easier for developers to create Excel 2007+ files.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>CsvHelper</title>
-      <link>https://github.com/JoshClose/CsvHelper</link>
-      <description>Library to help reading and writing CSV files.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>EPPlus</title>
-      <link>https://github.com/EPPlusSoftware/EPPlus</link>
-      <description>EPPlus-Excel spreadsheets for .NET.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>ExcelDataReader</title>
-      <link>https://github.com/ExcelDataReader/ExcelDataReader</link>
-      <description>Lightweight and fast library for reading Microsoft Excel files.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>FileHelpers</title>
-      <link>https://github.com/MarcosMeli/FileHelpers</link>
-      <description>The FileHelpers library for importing/exporting data from fixed length or delimited records in files databases or streams.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>FlatBuffers</title>
-      <link>https://github.com/google/flatbuffers</link>
-      <description>Memory efficient serialization library with .NET support.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>Json.NET</title>
-      <link>https://github.com/JamesNK/Newtonsoft.Json</link>
-      <description>Popular high-performance JSON framework for .NET.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>MemoryPack</title>
-      <link>https://github.com/Cysharp/MemoryPack</link>
-      <description>Blazing fast, zero-cost binary serialization.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>MessagePack</title>
-      <link>https://github.com/MessagePack-CSharp/MessagePack-CSharp</link>
-      <description>Extremely Fast MessagePack Serializer for C# with built-in LZ4 compression.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>NPOI</title>
-      <link>https://github.com/nissl-lab/npoi</link>
-      <description>.NET library for reading and writing Microsoft Office binary and OOXML file formats.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>Parquet.Net</title>
-      <link>https://github.com/aloneguid/parquet-dotnet</link>
-      <description>Fully managed Apache Parquet implementation.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>Protobuf</title>
-      <link>https://github.com/protocolbuffers/protobuf</link>
-      <description>Google&apos;s data interchange format, an official .NET library.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>Protobuf-net</title>
-      <link>https://github.com/protobuf-net/protobuf-net</link>
-      <description>Protocol Buffers library for idiomatic .NET.</description>
-      <category>Data Formats</category>
-    </item>
-    <item>
-      <title>Bogus</title>
-      <link>https://github.com/bchavez/Bogus</link>
-      <description>A simple fake data generator for C# F# and VB.NET for testing and seeding databases.</description>
+      <title>GenFu</title>
+      <link>https://github.com/MisterJames/GenFu</link>
+      <description>GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.</description>
       <category>Data Generators</category>
+      <pubDate>Mon, 15 Dec 2025 10:55:15 GMT</pubDate>
     </item>
     <item>
-      <title>Dapper</title>
-      <link>https://github.com/DapperLib/Dapper</link>
-      <description>Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.</description>
-      <category>Databases</category>
+      <title>Faker.Net</title>
+      <link>https://github.com/Kuree/Faker.Net</link>
+      <description>Generate massive amounts of fake data in .NET (abandoned)</description>
+      <category>Data Generators</category>
+      <pubDate>Mon, 15 Dec 2025 10:55:17 GMT</pubDate>
     </item>
     <item>
-      <title>Entity Framework Core</title>
-      <link>https://github.com/dotnet/efcore</link>
-      <description>EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.</description>
-      <category>Databases</category>
+      <title>faker-csharp</title>
+      <link>https://github.com/petabridge/faker-csharp</link>
+      <description>Faker for C#</description>
+      <category>Data Generators</category>
+      <pubDate>Mon, 15 Dec 2025 11:02:10 GMT</pubDate>
     </item>
     <item>
-      <title>Marten</title>
-      <link>https://github.com/JasperFx/marten</link>
-      <description>.NET Transactional Document DB and Event Store on PostgreSQL.</description>
-      <category>Databases</category>
+      <title>FastEndpoints</title>
+      <link>https://github.com/FastEndpoints/FastEndpoints</link>
+      <description>A light-weight REST API development framework for ASP.NET 8 and newer</description>
+      <category>API</category>
+      <pubDate>Mon, 15 Dec 2025 11:29:10 GMT</pubDate>
     </item>
     <item>
-      <title>Npgsql</title>
-      <link>https://github.com/npgsql/npgsql</link>
-      <description>The .NET data provider for PostgreSQL.</description>
-      <category>Databases</category>
+      <title>FastEndpoints</title>
+      <link>https://github.com/FastEndpoints/FastEndpoints</link>
+      <description>A light-weight REST API development framework for ASP.NET 8 and newer</description>
+      <category>API</category>
+      <pubDate>Mon, 15 Dec 2025 11:29:55 GMT</pubDate>
+    </item>
+    <item>
+      <title>FastEndpoints</title>
+      <link>https://github.com/FastEndpoints/FastEndpoints</link>
+      <description>A light-weight REST API development framework for ASP.NET 8 and newer.</description>
+      <category>API</category>
+      <pubDate>Mon, 15 Dec 2025 11:39:07 GMT</pubDate>
     </item>
   </channel>
 </rss>
