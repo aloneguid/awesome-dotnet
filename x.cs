@@ -373,11 +373,10 @@ async Task RebuildReadme() {
         sb.AppendLine($"# {category.Category}");
 
         foreach(var sub in category.Subgroups) {
-            if(!string.IsNullOrWhiteSpace(sub.Subcategory)) {
-                sb.AppendLine();
-                sb.AppendLine("Name|Rating|Description");
-                sb.AppendLine("---|---|---");
-            }
+            sb.AppendLine();
+            sb.AppendLine("Name|Rating|Description");
+            sb.AppendLine("---|---|---");
+            
             foreach(AwesomeLink link in sub.Links) {
                 string extras = AddLinkExtras(link.Url);
                 sb.AppendLine($"[{link.Title}{extras}]({link.Url})| |{link.Description}");
