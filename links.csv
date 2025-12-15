@@ -39,6 +39,7 @@ Parquet.Net,https://github.com/aloneguid/parquet-dotnet,Fully managed Apache Par
 Protobuf,https://github.com/protocolbuffers/protobuf,"Google's data interchange format, an official .NET library.",Data Formats,,
 Protobuf-net,https://github.com/protobuf-net/protobuf-net,Protocol Buffers library for idiomatic .NET.,Data Formats,,
 Bogus,https://github.com/bchavez/Bogus,A simple fake data generator for C# F# and VB.NET for testing and seeding databases.,Data Generators,,
+faker-csharp,https://github.com/petabridge/faker-csharp,Faker for C#.,Data Generators,,12/15/2025 11:02:10
 Faker.Net,https://github.com/Kuree/Faker.Net,Generate massive amounts of fake data in .NET (abandoned).,Data Generators,,12/15/2025 10:55:17
 GenFu,https://github.com/MisterJames/GenFu,"GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.",Data Generators,,12/15/2025 10:55:15
 Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for .NET and owns the title of King of Micro ORM in terms of speed.,Databases,,
