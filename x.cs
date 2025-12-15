@@ -15,6 +15,7 @@ using Humanizer;
 const int minThumbsUp = 5;
 const string csvDbPath = "links.csv";
 const string jsonLogPath = "log.json";
+const string feedPath = "feed.xml";
 const string linksMarker = "<!-- auto-generated content below -->";
 const string TableIntro = "Link|Rating|Description\n|-|-|-|\n";
 string[] acronyms = ["YouTube", "CI/CD"];
@@ -93,6 +94,10 @@ async Task ProcessOpenIssue(Issue issue) {
         // Log link to JSON (append to log file)
         await LogLinkToJson(link);
         WriteLine($"  📝 Logged link to JSON log.");
+        
+        // Update RSS feed
+        await LogLinkToFeed(link);
+        WriteLine($"  📡 Updated RSS feed.");
 
         var sb = new StringBuilder();
         sb.Append("Thank you! The link suggestion is now merged, because ");
@@ -306,6 +311,48 @@ async Task LogLinkToJson(AwesomeLink link) {
     
     // append to log file
     await File.AppendAllTextAsync(jsonLogPath, jsonLine + Environment.NewLine);
+}
+
+async Task LogLinkToFeed(AwesomeLink link) {
+    const int maxFeedItems = 50;
+    
+    // Read all links from CSV and sort by CreatedAt descending
+    List<AwesomeLink> allLinks = new List<AwesomeLink>();
+    if (File.Exists(csvDbPath)) {
+        using var reader = new StreamReader(csvDbPath);
+        using var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
+        allLinks = csvReader.GetRecords<AwesomeLink>()
+            .OrderByDescending(l => l.CreatedAt ?? DateTime.MinValue)
+            .Take(maxFeedItems)
+            .ToList();
+    }
+    
+    // Build RSS feed
+    var sb = new StringBuilder();
+    sb.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
+    sb.AppendLine("<rss version=\"2.0\">");
+    sb.AppendLine("  <channel>");
+    sb.AppendLine("    <title>Awesome .NET Links</title>");
+    sb.AppendLine($"    <link>https://github.com/{owner}/{repo}</link>");
+    sb.AppendLine("    <description>Community-curated awesome .NET resources and links</description>");
+    sb.AppendLine($"    <lastBuildDate>{DateTime.UtcNow:R}</lastBuildDate>");
+    
+    foreach (var item in allLinks) {
+        sb.AppendLine("    <item>");
+        sb.AppendLine($"      <title>{System.Security.SecurityElement.Escape(item.Title)}</title>");
+        sb.AppendLine($"      <link>{System.Security.SecurityElement.Escape(item.Url)}</link>");
+        sb.AppendLine($"      <description>{System.Security.SecurityElement.Escape(item.Description)}</description>");
+        sb.AppendLine($"      <category>{System.Security.SecurityElement.Escape(item.Category)}</category>");
+        if (item.CreatedAt.HasValue) {
+            sb.AppendLine($"      <pubDate>{item.CreatedAt.Value:R}</pubDate>");
+        }
+        sb.AppendLine("    </item>");
+    }
+    
+    sb.AppendLine("  </channel>");
+    sb.AppendLine("</rss>");
+    
+    await File.WriteAllTextAsync(feedPath, sb.ToString());
 }
 
 string AddLinkExtras(string url) {
