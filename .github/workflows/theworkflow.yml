@@ -46,4 +46,5 @@ jobs:
           git add README.md
           git add links.csv
           git add log.json
+          git add feed.xml
           git diff --staged --quiet || (git commit -m "update local files" && git push origin HEAD)
