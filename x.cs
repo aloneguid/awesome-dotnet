@@ -322,9 +322,11 @@ string AddLinkExtras(string url) {
     return "";
 }
 
-string ToMarkdownLink(AwesomeLink link) {
+string ToMarkdownLink(AwesomeLink link, bool useListStyle = true) {
     string extras = AddLinkExtras(link.Url);
-    return $"- [{link.Title}{extras}]({link.Url}) - {link.Description}";
+    return useListStyle
+        ? $"- [{link.Title}{extras}]({link.Url}) - {link.Description}"
+        : $"[{link.Title}]({link.Url})|{extras}|{link.Description}";
 }
 
 async Task RebuildReadme() {
@@ -378,8 +380,7 @@ async Task RebuildReadme() {
             sb.AppendLine("---|---|---");
             
             foreach(AwesomeLink link in sub.Links) {
-                string extras = AddLinkExtras(link.Url);
-                sb.AppendLine($"[{link.Title}{extras}]({link.Url})| |{link.Description}");
+                sb.AppendLine(ToMarkdownLink(link, false));
             }
         }
     }
