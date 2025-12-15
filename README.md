@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 145 links contributed by the community.
+Enjoy awesome 146 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -49,6 +49,7 @@ Enjoy awesome 145 links contributed by the community.
 Link|Rating|Description
 |-|-|-|
 [Cloudflare.NET](https://github.com/Alos-no/Cloudflare.NET)| ![stars](https://img.shields.io/github/stars/Alos-no/Cloudflare.NET?style=social&label=)|.NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.
+[FastEndpoints](https://github.com/FastEndpoints/FastEndpoints)| ![stars](https://img.shields.io/github/stars/FastEndpoints/FastEndpoints?style=social&label=)|A light-weight REST API development framework for ASP.NET 8 and newer.
 
 # Auth
 
