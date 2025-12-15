@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 142 links contributed by the community.
+Enjoy awesome 144 links contributed by the community.
 
 
 # API
@@ -74,6 +74,8 @@ Enjoy awesome 142 links contributed by the community.
 # Data Generators
 
 - [Bogus ![stars](https://img.shields.io/github/stars/bchavez/Bogus?style=social&label=)](https://github.com/bchavez/Bogus) - A simple fake data generator for C# F# and VB.NET for testing and seeding databases.
+- [Faker.Net ![stars](https://img.shields.io/github/stars/Kuree/Faker.Net?style=social&label=)](https://github.com/Kuree/Faker.Net) - Generate massive amounts of fake data in .NET (abandoned).
+- [GenFu ![stars](https://img.shields.io/github/stars/MisterJames/GenFu?style=social&label=)](https://github.com/MisterJames/GenFu) - GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.
 
 # Databases
 
