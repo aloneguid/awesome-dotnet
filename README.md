@@ -8,8 +8,41 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 144 links contributed by the community.
+Enjoy awesome 145 links contributed by the community.
 
+# Table of Contents
+- [API](#api)
+- [Auth](#auth)
+- [Big Data](#big-data)
+- [CLI](#cli)
+- [Compression](#compression)
+- [Continuous Integration](#continuous-integration)
+- [Data Formats](#data-formats)
+- [Data Generators](#data-generators)
+- [Databases](#databases)
+- [Distributed Systems](#distributed-systems)
+- [Game Engines](#game-engines)
+- [IDE](#ide)
+- [Libraries](#libraries)
+  - [Parsing](#parsing)
+- [Logging](#logging)
+- [Media](#media)
+  - [Audio](#audio)
+- [ORM](#orm)
+  - [EF Core Providers Connectors](#ef-core-providers-connectors)
+- [Other](#other)
+  - [Identifiers](#identifiers)
+- [Programming Languages](#programming-languages)
+- [Runtimes](#runtimes)
+- [Source Generators](#source-generators)
+- [Text Processing](#text-processing)
+- [Tools](#tools)
+  - [Online Compilers](#online-compilers)
+  - [Performance](#performance)
+- [UI](#ui)
+- [Unit Testing](#unit-testing)
+- [Videos](#videos)
+  - [NET Conf](#net-conf)
 
 # API
 
@@ -74,6 +107,7 @@ Enjoy awesome 144 links contributed by the community.
 # Data Generators
 
 - [Bogus ![stars](https://img.shields.io/github/stars/bchavez/Bogus?style=social&label=)](https://github.com/bchavez/Bogus) - A simple fake data generator for C# F# and VB.NET for testing and seeding databases.
+- [faker-csharp ![stars](https://img.shields.io/github/stars/petabridge/faker-csharp?style=social&label=)](https://github.com/petabridge/faker-csharp) - Faker for C#.
 - [Faker.Net ![stars](https://img.shields.io/github/stars/Kuree/Faker.Net?style=social&label=)](https://github.com/Kuree/Faker.Net) - Generate massive amounts of fake data in .NET (abandoned).
 - [GenFu ![stars](https://img.shields.io/github/stars/MisterJames/GenFu?style=social&label=)](https://github.com/MisterJames/GenFu) - GenFu is a library you can use to generate realistic test data. It is composed of several property fillers that can populate commonly named properties through reflection using an internal database of values or randomly created data. You can override any of the fillers, give GenFu hints on how to fill them.
 
