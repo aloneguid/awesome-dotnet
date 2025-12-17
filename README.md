@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 147 links contributed by the community.
+Enjoy awesome 148 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -51,6 +51,7 @@ Link|Rating|Description
 [Cloudflare.NET](https://github.com/Alos-no/Cloudflare.NET)| ![stars](https://img.shields.io/github/stars/Alos-no/Cloudflare.NET?style=social&label=)|.NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.
 [FastEndpoints](https://github.com/FastEndpoints/FastEndpoints)| ![stars](https://img.shields.io/github/stars/FastEndpoints/FastEndpoints?style=social&label=)|A light-weight REST API development framework for ASP.NET 8 and newer.
 [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot)| ![stars](https://img.shields.io/github/stars/TelegramBots/Telegram.Bot?style=social&label=)|Client for [Telegram Bot ](https://core.telegram.org/bots) API.
+[WTelegramClient](https://github.com/wiz0u/WTelegramClient)| ![stars](https://img.shields.io/github/stars/wiz0u/WTelegramClient?style=social&label=)|Telegram Client API (MTProto) library written 100% in C# and .NET.
 
 # Auth
 

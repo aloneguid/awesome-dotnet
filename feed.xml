@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Wed, 17 Dec 2025 11:29:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 11:34:53 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -95,6 +95,13 @@
       <description>Client for [Telegram Bot ](https://core.telegram.org/bots) API.</description>
       <category>API</category>
       <pubDate>Wed, 17 Dec 2025 11:29:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>WTelegramClient</title>
+      <link>https://github.com/wiz0u/WTelegramClient</link>
+      <description>Telegram Client API (MTProto) library written 100% in C# and .NET</description>
+      <category>API</category>
+      <pubDate>Wed, 17 Dec 2025 11:34:53 GMT</pubDate>
     </item>
   </channel>
 </rss>

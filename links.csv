@@ -2,6 +2,7 @@ Title,Url,Description,Category,Subcategory,CreatedAt
 Cloudflare.NET,https://github.com/Alos-no/Cloudflare.NET,".NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.",API,,12/15/2025 08:04:31
 FastEndpoints,https://github.com/FastEndpoints/FastEndpoints,A light-weight REST API development framework for ASP.NET 8 and newer.,API,,12/15/2025 11:39:07
 Telegram.Bot,https://github.com/TelegramBots/Telegram.Bot,Client for [Telegram Bot ](https://core.telegram.org/bots) API.,API,,12/17/2025 11:29:38
+WTelegramClient,https://github.com/wiz0u/WTelegramClient,Telegram Client API (MTProto) library written 100% in C# and .NET.,API,,12/17/2025 11:34:53
 Abblix Oidc.Server,https://github.com/Abblix/Oidc.Server,Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.,Auth,,
 AspNetSaml,https://github.com/jitbit/AspNetSaml/,Popular SSO/SAML library for ASP.NET.,Auth,,
 Apache Spark for .NET,https://github.com/dotnet/spark,.NET bindings for Apache Spark for large-scale data processing.,Big Data,,
