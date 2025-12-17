@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Mon, 15 Dec 2025 11:39:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 11:29:38 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -88,6 +88,13 @@
       <description>A light-weight REST API development framework for ASP.NET 8 and newer.</description>
       <category>API</category>
       <pubDate>Mon, 15 Dec 2025 11:39:07 GMT</pubDate>
+    </item>
+    <item>
+      <title>Telegram.Bot</title>
+      <link>https://github.com/TelegramBots/Telegram.Bot</link>
+      <description>Client for [Telegram Bot ](https://core.telegram.org/bots) API.</description>
+      <category>API</category>
+      <pubDate>Wed, 17 Dec 2025 11:29:38 GMT</pubDate>
     </item>
   </channel>
 </rss>
