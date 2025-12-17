@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Wed, 17 Dec 2025 11:34:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 12:04:34 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -102,6 +102,13 @@
       <description>Telegram Client API (MTProto) library written 100% in C# and .NET</description>
       <category>API</category>
       <pubDate>Wed, 17 Dec 2025 11:34:53 GMT</pubDate>
+    </item>
+    <item>
+      <title>Breeze</title>
+      <link>https://breeze.github.io/doc-main/</link>
+      <description>Breeze is a library that helps you manage data in rich client applications. If you store data in a database, query and save those data as complex object graphs, and share these graphs across multiple screens of your JavaScript client, Breeze is for you.</description>
+      <category>API</category>
+      <pubDate>Wed, 17 Dec 2025 12:04:33 GMT</pubDate>
     </item>
   </channel>
 </rss>

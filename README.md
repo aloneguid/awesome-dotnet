@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 148 links contributed by the community.
+Enjoy awesome 149 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -48,6 +48,7 @@ Enjoy awesome 148 links contributed by the community.
 
 Link|Rating|Description
 |-|-|-|
+[Breeze](https://breeze.github.io/doc-main/)||Breeze is a library that helps you manage data in rich client applications. If you store data in a database, query and save those data as complex object graphs, and share these graphs across multiple screens of your JavaScript client, Breeze is for you.
 [Cloudflare.NET](https://github.com/Alos-no/Cloudflare.NET)| ![stars](https://img.shields.io/github/stars/Alos-no/Cloudflare.NET?style=social&label=)|.NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.
 [FastEndpoints](https://github.com/FastEndpoints/FastEndpoints)| ![stars](https://img.shields.io/github/stars/FastEndpoints/FastEndpoints?style=social&label=)|A light-weight REST API development framework for ASP.NET 8 and newer.
 [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot)| ![stars](https://img.shields.io/github/stars/TelegramBots/Telegram.Bot?style=social&label=)|Client for [Telegram Bot ](https://core.telegram.org/bots) API.
