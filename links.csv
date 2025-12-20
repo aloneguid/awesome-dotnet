@@ -51,6 +51,7 @@ Dapper,https://github.com/DapperLib/Dapper,Dapper is a simple object mapper for 
 Entity Framework Core,https://github.com/dotnet/efcore,EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.,Databases,,
 Marten,https://github.com/JasperFx/marten,.NET Transactional Document DB and Event Store on PostgreSQL.,Databases,,
 Npgsql,https://github.com/npgsql/npgsql,The .NET data provider for PostgreSQL.,Databases,,
+pldotnet,https://github.com/Brick-Abode/pldotnet,Pl/dotnet adds full support for C# and F# to PostgreSQL.,Databases,,12/20/2025 11:47:57
 StackExchange.Redis,https://github.com/StackExchange/StackExchange.Redis,"General purpose, the most popular Redis client.",Databases,,
 Akka.NET,https://github.com/akkadotnet/akka.net,Canonical actor model implementation for .NET with local and distributed actors.,Distributed Systems,,
 EventStore,https://github.com/EventStore/EventStore,The stream database optimised for event sourcing.,Distributed Systems,,

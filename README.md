@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 150 links contributed by the community.
+Enjoy awesome 151 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -140,6 +140,7 @@ Link|Rating|Description
 [Entity Framework Core](https://github.com/dotnet/efcore)| ![stars](https://img.shields.io/github/stars/dotnet/efcore?style=social&label=)|EF Core is a modern object-database mapper for .NET. It supports LINQ queries change tracking updates and schema migrations.
 [Marten](https://github.com/JasperFx/marten)| ![stars](https://img.shields.io/github/stars/JasperFx/marten?style=social&label=)|.NET Transactional Document DB and Event Store on PostgreSQL.
 [Npgsql](https://github.com/npgsql/npgsql)| ![stars](https://img.shields.io/github/stars/npgsql/npgsql?style=social&label=)|The .NET data provider for PostgreSQL.
+[pldotnet](https://github.com/Brick-Abode/pldotnet)| ![stars](https://img.shields.io/github/stars/Brick-Abode/pldotnet?style=social&label=)|Pl/dotnet adds full support for C# and F# to PostgreSQL.
 [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis)| ![stars](https://img.shields.io/github/stars/StackExchange/StackExchange.Redis?style=social&label=)|General purpose, the most popular Redis client.
 
 # Distributed Systems

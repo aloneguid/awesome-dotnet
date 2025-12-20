@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Sat, 20 Dec 2025 11:02:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 11:47:57 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -116,6 +116,13 @@
       <description>Reads the IETF `RateLimit` / `RateLimit-Policy` headers and automatically throttles `HttpClient` (and Polly v8 pipelines) before you get 429s.</description>
       <category>API</category>
       <pubDate>Sat, 20 Dec 2025 11:02:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>pldotnet</title>
+      <link>https://github.com/Brick-Abode/pldotnet</link>
+      <description>pl/dotnet adds full support for C# and F# to PostgreSQL.</description>
+      <category>Databases</category>
+      <pubDate>Sat, 20 Dec 2025 11:47:57 GMT</pubDate>
     </item>
   </channel>
 </rss>
