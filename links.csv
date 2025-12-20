@@ -2,6 +2,7 @@ Title,Url,Description,Category,Subcategory,CreatedAt
 Breeze,https://breeze.github.io/doc-main/,"Breeze is a library that helps you manage data in rich client applications. If you store data in a database, query and save those data as complex object graphs, and share these graphs across multiple screens of your JavaScript client, Breeze is for you.",API,,12/17/2025 12:04:33
 Cloudflare.NET,https://github.com/Alos-no/Cloudflare.NET,".NET SDK to interact with the Cloudflare REST API, and R2 Object Storage.",API,,12/15/2025 08:04:31
 FastEndpoints,https://github.com/FastEndpoints/FastEndpoints,A light-weight REST API development framework for ASP.NET 8 and newer.,API,,12/15/2025 11:39:07
+RateLimitHeaders,https://github.com/Alos-no/RateLimitHeaders,Reads the IETF `RateLimit` / `RateLimit-Policy` headers and automatically throttles `HttpClient` (and Polly v8 pipelines) before you get 429s.,API,,12/20/2025 11:02:38
 Telegram.Bot,https://github.com/TelegramBots/Telegram.Bot,Client for [Telegram Bot ](https://core.telegram.org/bots) API.,API,,12/17/2025 11:29:38
 WTelegramClient,https://github.com/wiz0u/WTelegramClient,Telegram Client API (MTProto) library written 100% in C# and .NET.,API,,12/17/2025 11:34:53
 Abblix Oidc.Server,https://github.com/Abblix/Oidc.Server,Flexible OpenID Connect and OAuth 2.0 server-side implementation for modern ASP.NET projects.,Auth,,

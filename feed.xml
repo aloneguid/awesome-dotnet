@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Wed, 17 Dec 2025 12:04:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 11:02:38 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -109,6 +109,13 @@
       <description>Breeze is a library that helps you manage data in rich client applications. If you store data in a database, query and save those data as complex object graphs, and share these graphs across multiple screens of your JavaScript client, Breeze is for you.</description>
       <category>API</category>
       <pubDate>Wed, 17 Dec 2025 12:04:33 GMT</pubDate>
+    </item>
+    <item>
+      <title>RateLimitHeaders</title>
+      <link>https://github.com/Alos-no/RateLimitHeaders</link>
+      <description>Reads the IETF `RateLimit` / `RateLimit-Policy` headers and automatically throttles `HttpClient` (and Polly v8 pipelines) before you get 429s.</description>
+      <category>API</category>
+      <pubDate>Sat, 20 Dec 2025 11:02:38 GMT</pubDate>
     </item>
   </channel>
 </rss>
