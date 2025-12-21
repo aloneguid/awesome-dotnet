@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Sat, 20 Dec 2025 11:47:57 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 23:02:45 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -123,6 +123,13 @@
       <description>pl/dotnet adds full support for C# and F# to PostgreSQL.</description>
       <category>Databases</category>
       <pubDate>Sat, 20 Dec 2025 11:47:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>pythonnet</title>
+      <link>https://github.com/pythonnet/pythonnet</link>
+      <description>Python for .NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR) and provides a powerful application scripting tool for .NET developers.</description>
+      <category>Programming Languages</category>
+      <pubDate>Sun, 21 Dec 2025 23:02:45 GMT</pubDate>
     </item>
   </channel>
 </rss>

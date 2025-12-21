@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 151 links contributed by the community.
+Enjoy awesome 152 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -261,6 +261,7 @@ Link|Rating|Description
 [IronScheme](https://github.com/IronScheme/IronScheme)| ![stars](https://img.shields.io/github/stars/IronScheme/IronScheme?style=social&label=)|IronScheme aims to be a R6RS conforming Scheme-like implementation for all .NET implementations and platforms.
 [Lua-CSharp](https://github.com/nuskey8/Lua-CSharp)| ![stars](https://img.shields.io/github/stars/nuskey8/Lua-CSharp?style=social&label=)|High performance Lua interpreter implemented in C# for .NET and Unity.
 [Oxygene](https://www.remobjects.com/elements/oxygene/)||An Object Pascal-based CLI language.
+[pythonnet](https://github.com/pythonnet/pythonnet)| ![stars](https://img.shields.io/github/stars/pythonnet/pythonnet?style=social&label=)|Python for .NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR) and provides a powerful application scripting tool for .NET developers.
 
 # Runtimes
 
