@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Sun, 21 Dec 2025 23:02:45 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:10:34 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -130,6 +130,13 @@
       <description>Python for .NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR) and provides a powerful application scripting tool for .NET developers.</description>
       <category>Programming Languages</category>
       <pubDate>Sun, 21 Dec 2025 23:02:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>Facet</title>
+      <link>https://github.com/Tim-Maes/Facet</link>
+      <description>Source generator that eliminates DTO boilerplate by auto-generating DTOs, mappings, and EF Core projections at compile time.</description>
+      <category>Source Generators</category>
+      <pubDate>Mon, 22 Dec 2025 00:10:34 GMT</pubDate>
     </item>
   </channel>
 </rss>

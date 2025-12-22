@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 152 links contributed by the community.
+Enjoy awesome 153 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -282,6 +282,7 @@ Link|Rating|Description
 
 Link|Rating|Description
 |-|-|-|
+[Facet](https://github.com/Tim-Maes/Facet)| ![stars](https://img.shields.io/github/stars/Tim-Maes/Facet?style=social&label=)|Source generator that eliminates DTO boilerplate by auto-generating DTOs, mappings, and EF Core projections at compile time.
 [NotNot.AppSettings](https://www.nuget.org/packages/NotNot.AppSettings/)||Automatically create strongly typed C# settings objects from AppSettings.json.
 
 # Text Processing
