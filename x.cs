@@ -245,6 +245,16 @@ string Sanitize(string input, bool capitalize = true, bool endWithFullStop = fal
     return input;
 }
 
+string SanitizeLinkName(string name) {
+    int idx = name.IndexOf("]:", StringComparison.Ordinal);
+    if(idx != -1) {
+        name = name.Substring(idx + 3);
+    }
+
+    name = name.Trim();
+    return name;
+}
+
 string SanitizeCategoryName(string category) {
     // make sure it's camel cased
     category = category.Trim();
@@ -261,7 +271,7 @@ string SanitizeSubcategoryName(string subcategory) {
 
 AwesomeLink SanitizeLink(AwesomeLink link) {
     return new AwesomeLink(
-        link.Title.Trim(),
+        SanitizeLinkName(link.Title),
         Sanitize(link.Url, false, false),
         Sanitize(link.Description, true, true),
         SanitizeCategoryName(link.Category),
@@ -270,15 +280,21 @@ AwesomeLink SanitizeLink(AwesomeLink link) {
     );
 }
 
-async Task SaveLinkToCsv(AwesomeLink newLink) {
+List<AwesomeLink> ReadLinksCsv() {
     var allLinks = new List<AwesomeLink>();
 
     if (File.Exists(csvDbPath)) {
         using var reader = new StreamReader(csvDbPath);
         using var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
-        List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
+        var existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing.Select(SanitizeLink));
     }
+
+    return allLinks;
+}
+
+async Task SaveLinkToCsv(AwesomeLink newLink) {
+    List<AwesomeLink> allLinks = ReadLinksCsv();
     newLink = SanitizeLink(newLink);
 
     // Remove any existing entry with the same URL (case-insensitive)
@@ -383,10 +399,10 @@ string ToMarkdownLink(AwesomeLink link) {
 
 async Task RebuildReadme() {
     // Read all links from CSV
-    List<AwesomeLink> allLinks = new List<AwesomeLink>();
+    var allLinks = new List<AwesomeLink>();
     if (File.Exists(csvDbPath)) {
-        using StreamReader reader = new StreamReader(csvDbPath);
-        using CsvReader csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
+        using var reader = new StreamReader(csvDbPath);
+        using var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture);
         List<AwesomeLink> existing = csvReader.GetRecords<AwesomeLink>().ToList();
         allLinks.AddRange(existing);
     }
