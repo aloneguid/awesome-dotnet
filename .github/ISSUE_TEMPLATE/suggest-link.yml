@@ -1,28 +1,19 @@
 name: Suggest a Link
 description: Suggest a new link to be added to the awesome list
-title: "...short name e.g. xUnit..."
+title: "...short name..."
 labels: ["link"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for suggesting a link! If this issue gets at least **5 likes (👍)**, the link will be automatically added to the README.
-  - type: input
+  - type: dropdown
     id: category
     attributes:
       label: Category
       description: What category does this belong to?
-      placeholder: "Libraries, Frameworks, Tools..."
-    validations:
-      required: true
-  - type: input
-    id: subcategory
-    attributes:
-      label: Subcategory
-      description: What subcategory does this belong to? (Optional)
-      placeholder: "Web, Mobile, Data Science..."
-    validations:
-      required: false
+      multiple: false
+      options: ["API", "CLI", "Database", "Documentation", "Framework", "Library", "Tool", "Other"]
   - type: input
     id: url
     attributes:
