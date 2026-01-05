@@ -1,6 +1,6 @@
 name: Suggest a Link
 description: Suggest a new link to be added to the awesome list
-title: "...short name..."
+title: "[LINK NAME]: "
 labels: ["link"]
 body:
   - type: markdown
@@ -14,6 +14,8 @@ body:
       description: What category does this belong to?
       multiple: false
       options: ["API", "CLI", "Database", "Documentation", "Framework", "Library", "Tool", "Other"]
+    validations:
+      required: true
   - type: input
     id: url
     attributes:
