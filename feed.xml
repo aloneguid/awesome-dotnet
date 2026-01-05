@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Mon, 05 Jan 2026 17:00:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 22:06:55 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -151,6 +151,13 @@
       <description>modern, fluent, asynchronous, testable, portable, buzzword-laden URL builder and HTTP client library for .NET.</description>
       <category>Networking</category>
       <pubDate>Mon, 05 Jan 2026 17:00:40 GMT</pubDate>
+    </item>
+    <item>
+      <title>Stream</title>
+      <link>https://github.com/GetStream/stream-chat-net</link>
+      <description>Official .NET API client for Stream Chat, a service for building chat applications.</description>
+      <category>API</category>
+      <pubDate>Mon, 05 Jan 2026 22:06:55 GMT</pubDate>
     </item>
   </channel>
 </rss>
