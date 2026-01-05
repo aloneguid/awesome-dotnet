@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Mon, 22 Dec 2025 00:10:34 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 16:25:25 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -137,6 +137,13 @@
       <description>Source generator that eliminates DTO boilerplate by auto-generating DTOs, mappings, and EF Core projections at compile time.</description>
       <category>Source Generators</category>
       <pubDate>Mon, 22 Dec 2025 00:10:34 GMT</pubDate>
+    </item>
+    <item>
+      <title>.NET Secure coding guidelines</title>
+      <link>https://learn.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines</link>
+      <description>Official .NET Secure coding guidelines</description>
+      <category>Security</category>
+      <pubDate>Mon, 05 Jan 2026 16:25:25 GMT</pubDate>
     </item>
   </channel>
 </rss>

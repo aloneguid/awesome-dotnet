@@ -8,7 +8,7 @@ To add a new link, [create a new issue](../../issues/new/choose) and fill in all
 
 <!-- auto-generated content below -->
 
-Enjoy awesome 153 links contributed by the community.
+Enjoy awesome 154 links contributed by the community.
 
 # Table of Contents
 - [API](#api)
@@ -34,6 +34,7 @@ Enjoy awesome 153 links contributed by the community.
   - [Identifiers](#identifiers)
 - [Programming Languages](#programming-languages)
 - [Runtimes](#runtimes)
+- [Security](#security)
 - [Source Generators](#source-generators)
 - [Text Processing](#text-processing)
 - [Tools](#tools)
@@ -277,6 +278,12 @@ Link|Rating|Description
 [NativeAOT](https://github.com/dotnet/runtime)| ![stars](https://img.shields.io/github/stars/dotnet/runtime?style=social&label=)|Ahead-of-time (AOT) compilation support for .NET applications.
 [Unity Runtime](https://docs.unity3d.com/Manual/dotnetProfileSupport.html)||Customized .NET runtime used by Unity game engine.
 [Xamarin Runtime](https://github.com/xamarin/xamarin-android)| ![stars](https://img.shields.io/github/stars/xamarin/xamarin-android?style=social&label=)|Runtime for Xamarin.Android and Xamarin.iOS applications.
+
+# Security
+
+Link|Rating|Description
+|-|-|-|
+[.NET Secure coding guidelines](https://learn.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines)||Official .NET Secure coding guidelines.
 
 # Source Generators
 

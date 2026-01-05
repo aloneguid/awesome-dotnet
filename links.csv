@@ -124,6 +124,7 @@ Mono Runtime,https://github.com/dotnet/runtime,The Mono runtime is a .NET runtim
 NativeAOT,https://github.com/dotnet/runtime,Ahead-of-time (AOT) compilation support for .NET applications.,Runtimes,,
 Unity Runtime,https://docs.unity3d.com/Manual/dotnetProfileSupport.html,Customized .NET runtime used by Unity game engine.,Runtimes,,
 Xamarin Runtime,https://github.com/xamarin/xamarin-android,Runtime for Xamarin.Android and Xamarin.iOS applications.,Runtimes,,
+.NET Secure coding guidelines,https://learn.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines,Official .NET Secure coding guidelines.,Security,,01/05/2026 16:25:25
 Facet,https://github.com/Tim-Maes/Facet,"Source generator that eliminates DTO boilerplate by auto-generating DTOs, mappings, and EF Core projections at compile time.",Source Generators,,12/22/2025 00:10:34
 NotNot.AppSettings,https://www.nuget.org/packages/NotNot.AppSettings/,Automatically create strongly typed C# settings objects from AppSettings.json.,Source Generators,,
 Humanizer,https://github.com/Humanizr/Humanizer,"Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities.",Text Processing,,
