@@ -4,7 +4,7 @@
     <title>Awesome .NET Links</title>
     <link>https://github.com/aloneguid/awesome-dotnet</link>
     <description>Community-curated awesome .NET resources and links</description>
-    <lastBuildDate>Mon, 05 Jan 2026 16:25:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 17:00:40 GMT</lastBuildDate>
     <item>
       <title>Cake</title>
       <link>https://cakebuild.net/</link>
@@ -144,6 +144,13 @@
       <description>Official .NET Secure coding guidelines</description>
       <category>Security</category>
       <pubDate>Mon, 05 Jan 2026 16:25:25 GMT</pubDate>
+    </item>
+    <item>
+      <title>Flurl</title>
+      <link>https://flurl.dev/</link>
+      <description>modern, fluent, asynchronous, testable, portable, buzzword-laden URL builder and HTTP client library for .NET.</description>
+      <category>Networking</category>
+      <pubDate>Mon, 05 Jan 2026 17:00:40 GMT</pubDate>
     </item>
   </channel>
 </rss>
